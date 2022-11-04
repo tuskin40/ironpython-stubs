@@ -3,6 +3,7 @@ class Category(APIObject,IDisposable):
  def Dispose(self):
   """ Dispose(self: APIObject,A_0: bool) """
   pass
+  
  @staticmethod
  def GetCategory(document,categoryId):
   """
@@ -94,6 +95,8 @@ class Category(APIObject,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
+
+  
  AllowsBoundParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """To check if the category can have project parameters.
 
