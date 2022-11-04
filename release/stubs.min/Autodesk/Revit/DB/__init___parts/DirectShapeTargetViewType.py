@@ -1,9 +1,7 @@
 class DirectShapeTargetViewType(Enum,IComparable,IFormattable,IConvertible):
  """
  View types for which DirectShape objects are allowed to have alternative shape representations. Currently limited to Plan Views.
-
  
-
  enum DirectShapeTargetViewType,values: Default (1),Plan (2),Undefined (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class DirectShapeTargetViewType(Enum,IComparable,IFormattable,IConvertible):
  Plan=None
  Undefined=None
  value__=None
-

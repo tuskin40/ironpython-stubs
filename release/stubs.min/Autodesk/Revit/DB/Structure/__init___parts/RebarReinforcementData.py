@@ -4,17 +4,11 @@ class RebarReinforcementData(ReinforcementData,IDisposable):
  def Create(rebarId,iEnd):
   """
   Create(rebarId: ElementId,iEnd: int) -> RebarReinforcementData
-
   
-
    Creates a new instance of RebarReinforcementData,or ll if the operation fails.
-
   
-
    rebarId: the Id of the rebar
-
    iEnd: The end of rebar where the coupler stays. This should be 0 or 1
-
    Returns: Creates a new instance of RebarReinforcementData
   """
   pass
@@ -36,27 +30,15 @@ class RebarReinforcementData(ReinforcementData,IDisposable):
  End=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The end of the rebar. The end should be 0 or 1.
 
-
-
 Get: End(self: RebarReinforcementData) -> int
 
-
-
 Set: End(self: RebarReinforcementData)=value
-
 """
-
  RebarId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The id of the Rebar
 
-
-
 Get: RebarId(self: RebarReinforcementData) -> ElementId
 
-
-
 Set: RebarId(self: RebarReinforcementData)=value
-
 """
-
 

@@ -1,9 +1,7 @@
 class ModelCurveArrArray(APIObject,IDisposable,IEnumerable):
  """
  An array that can contain any type of object.
-
  
-
  ModelCurveArrArray()
  """
  def Append(self,item):
@@ -12,7 +10,6 @@ class ModelCurveArrArray(APIObject,IDisposable,IEnumerable):
  def Clear(self):
   """
   Clear(self: ModelCurveArrArray)
-
    Removes every item from the array,rendering it empty.
   """
   pass
@@ -22,22 +19,16 @@ class ModelCurveArrArray(APIObject,IDisposable,IEnumerable):
  def ForwardIterator(self):
   """
   ForwardIterator(self: ModelCurveArrArray) -> ModelCurveArrArrayIterator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: ModelCurveArrArray) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
@@ -53,11 +44,8 @@ class ModelCurveArrArray(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: ModelCurveArrArray) -> ModelCurveArrArrayIterator
-
   
-
    Retrieve a backward moving iterator to the array.
-
    Returns: Returns a backward moving iterator to the array.
   """
   pass
@@ -82,23 +70,13 @@ class ModelCurveArrArray(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the array is empty.
 
-
-
 Get: IsEmpty(self: ModelCurveArrArray) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of objects that are in the array.
 
-
-
 Get: Size(self: ModelCurveArrArray) -> int
 
-
-
 """
-
 

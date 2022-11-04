@@ -1,9 +1,7 @@
 class DoubleClickAction(Enum,IComparable,IFormattable,IConvertible):
  """
  Possible actions Revit can take in response to the user double-clicking on an element.
-
  
-
  enum DoubleClickAction,values: ActivateView (3),DeactivateView (5),EditFamily (1),EditType (2),EnterEditMode (4),NoAction (0)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class DoubleClickAction(Enum,IComparable,IFormattable,IConvertible):
  EnterEditMode=None
  NoAction=None
  value__=None
-

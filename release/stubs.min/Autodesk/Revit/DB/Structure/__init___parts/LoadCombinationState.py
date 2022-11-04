@@ -1,9 +1,7 @@
 class LoadCombinationState(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies load combination state.
-
  
-
  enum LoadCombinationState,values: Serviceability (0),Ultimate (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class LoadCombinationState(Enum,IComparable,IFormattable,IConvertible):
  Serviceability=None
  Ultimate=None
  value__=None
-

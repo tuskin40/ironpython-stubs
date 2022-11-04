@@ -24,34 +24,19 @@ class Control(Element,IDisposable):
  Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The control origin.
 
-
-
 Get: Origin(self: Control) -> XYZ
 
-
-
 """
-
  Shape=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The control shape.
 
-
-
 Get: Shape(self: Control) -> ControlShape
 
-
-
 """
-
  View=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The view.
 
-
-
 Get: View(self: Control) -> View
 
-
-
 """
-
 

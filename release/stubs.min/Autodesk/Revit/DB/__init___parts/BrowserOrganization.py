@@ -3,19 +3,12 @@ class BrowserOrganization(ElementType,IDisposable):
  def AreFiltersSatisfied(self,elementId):
   """
   AreFiltersSatisfied(self: BrowserOrganization,elementId: ElementId) -> bool
-
   
-
    Determines if the given element satisfies the filters defined by the browser 
-
     organization.
-
   
-
   
-
    elementId: The element to check.
-
    Returns: True if the given element satisfies the filter.
   """
   pass
@@ -29,19 +22,12 @@ class BrowserOrganization(ElementType,IDisposable):
  def GetCurrentBrowserOrganizationForSheets(document):
   """
   GetCurrentBrowserOrganizationForSheets(document: Document) -> BrowserOrganization
-
   
-
    Gets the Autodesk.Revit.DB.BrowserOrganization that applies to the Sheets 
-
     section of the project browser.
-
   
-
   
-
    document: Revit document from which to get the organization data.
-
    Returns: The BrowserOrganization for sheets,or null if no sheets exist.
   """
   pass
@@ -49,38 +35,24 @@ class BrowserOrganization(ElementType,IDisposable):
  def GetCurrentBrowserOrganizationForViews(document):
   """
   GetCurrentBrowserOrganizationForViews(document: Document) -> BrowserOrganization
-
   
-
    Gets the Autodesk.Revit.DB.BrowserOrganization  that applies to the Views 
-
     section of the project browser.
-
   
-
   
-
    document: Revit document from which to get the organization data.
-
    Returns: The BrowserOrganization for views,or null if no view sections exist
   """
   pass
  def GetFolderItems(self,elementId):
   """
   GetFolderItems(self: BrowserOrganization,elementId: ElementId) -> IList[FolderItemInfo]
-
   
-
    Returns a collection of leaf Autodesk.Revit.DB.FolderItemInfo objects each 
-
     containing the given element Id.
-
   
-
   
-
    elementId: Element id located at a leaf position in the project browser.
-
    Returns: An array of FolderItemInfo objects.
   """
   pass
@@ -102,23 +74,13 @@ class BrowserOrganization(ElementType,IDisposable):
  SortingOrder=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The sorting order if sorting of items is applicable in the browser.
 
-
-
 Get: SortingOrder(self: BrowserOrganization) -> SortingOrder
 
-
-
 """
-
  SortingParameterId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Id of the parameter used to determine the sorting order of items in the browser.
 
-
-
 Get: SortingParameterId(self: BrowserOrganization) -> ElementId
 
-
-
 """
-
 

@@ -3,38 +3,24 @@ class WireMaterialType(ElementType,IDisposable):
  def AddGroundConductorSize(self,ampacity,size):
   """
   AddGroundConductorSize(self: WireMaterialType,ampacity: Int64,size: str) -> GroundConductorSize
-
   
-
    Add new electrical ground conductor size type into this material type.
-
   
-
    ampacity: Ampacity of ground conductor size to be added.
-
    size: Size of ground conductor size to be added.
-
    Returns: New added ground conductor size.
   """
   pass
  def AddTemperatureRatingType(self,name,baseOn):
   """
   AddTemperatureRatingType(self: WireMaterialType,name: str,baseOn: TemperatureRatingType) -> TemperatureRatingType
-
   
-
    Add a new temperature rating type into material type.
-
   
-
    name: Name of temperature type to be added.
-
    baseOn: The new temperature rating will be created base on this existing temperature 
-
     rating type.
-
   
-
    Returns: New constructed temperature rating type.
   """
   pass
@@ -50,22 +36,16 @@ class WireMaterialType(ElementType,IDisposable):
  def RemoveGroundConductorSize(self,grdConductorSize):
   """
   RemoveGroundConductorSize(self: WireMaterialType,grdConductorSize: GroundConductorSize)
-
    Remove an existing ground conductor size from this material type.
-
   
-
    grdConductorSize: The ground size type to be removed.
   """
   pass
  def RemoveTemperatureRatingType(self,temperatureRating):
   """
   RemoveTemperatureRatingType(self: WireMaterialType,temperatureRating: TemperatureRatingType)
-
    Remove an existing temperature rating type from this material type.
-
   
-
    temperatureRating: The temperature rating type to be removed.
   """
   pass
@@ -84,43 +64,24 @@ class WireMaterialType(ElementType,IDisposable):
  GroundConductorSizes=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get all ground conductor size types defined in this wire material type.
 
-
-
 Get: GroundConductorSizes(self: WireMaterialType) -> GroundConductorSizeSet
 
-
-
 """
-
  IsInUse=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicate whether the wire material type is in use.
 
-
-
 Get: IsInUse(self: WireMaterialType) -> bool
 
-
-
 """
-
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get name of wire material type.
 
-
-
 Set: Name(self: WireMaterialType)=value
-
 """
-
  TemperatureRatings=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get all temperature rating type definitions defined in this wire material type.
 
-
-
 Get: TemperatureRatings(self: WireMaterialType) -> TemperatureRatingTypeSet
 
-
-
 """
-
 

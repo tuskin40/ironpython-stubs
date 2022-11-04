@@ -1,7 +1,6 @@
 class RevitLinkUIUtils(object):
  """
  A class containing functions for displaying user interface related to
-
     Revit links.
  """
  @staticmethod
@@ -11,4 +10,3 @@ class RevitLinkUIUtils(object):
  __all__=[
   'ReportLinkLoadResults',
  ]
-

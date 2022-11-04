@@ -1,7 +1,6 @@
 class TilePattern(ElementType,IDisposable):
  """
  An object representing a tile pattern that may
-
  be applied to a DividedSurface.
  """
  def Dispose(self):
@@ -27,26 +26,15 @@ class TilePattern(ElementType,IDisposable):
   pass
  TilePatternType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The built-in system tile pattern specified by
-
 this object.
-
-
 
 Get: TilePatternType(self: TilePattern) -> TilePatternsBuiltIn
 
-
-
 """
-
  TilesPerSeedNode=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get the number of tiles located at each seed node.
 
-
-
 Get: TilesPerSeedNode(self: TilePattern) -> int
 
-
-
 """
-
 

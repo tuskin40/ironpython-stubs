@@ -4,15 +4,10 @@ class UIThemeManager(object):
  def GetThemeName(frameTheme):
   """
   GetThemeName(frameTheme: UITheme) -> str
-
   
-
    Gets the theme name for the given theme type.
-
   
-
    frameTheme: The theme.
-
    Returns: The name of the theme.
   """
   pass
@@ -21,4 +16,3 @@ class UIThemeManager(object):
  __all__=[
   'GetThemeName',
  ]
-

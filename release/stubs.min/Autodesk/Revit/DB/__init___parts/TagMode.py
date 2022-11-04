@@ -1,9 +1,7 @@
 class TagMode(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing tag mode that are supported for IndependentTags.
-
  
-
  enum TagMode,values: TM_ADDBY_CATEGORY (0),TM_ADDBY_MATERIAL (2),TM_ADDBY_MULTICATEGORY (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class TagMode(Enum,IComparable,IFormattable,IConvertible):
  TM_ADDBY_MATERIAL=None
  TM_ADDBY_MULTICATEGORY=None
  value__=None
-

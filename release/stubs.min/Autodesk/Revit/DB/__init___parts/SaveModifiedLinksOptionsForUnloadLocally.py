@@ -1,11 +1,8 @@
 class SaveModifiedLinksOptionsForUnloadLocally(Enum,IComparable,IFormattable,IConvertible):
  """
  Class giving options when saving linked files which are unloaded locally and have been modified
-
     in-memory by shared coordinates operations.
-
  
-
  enum SaveModifiedLinksOptionsForUnloadLocally,values: DoNotSaveLinks (1),SaveLinks (0)
  """
  def __eq__(self,*args):
@@ -34,4 +31,3 @@ class SaveModifiedLinksOptionsForUnloadLocally(Enum,IComparable,IFormattable,ICo
  DoNotSaveLinks=None
  SaveLinks=None
  value__=None
-

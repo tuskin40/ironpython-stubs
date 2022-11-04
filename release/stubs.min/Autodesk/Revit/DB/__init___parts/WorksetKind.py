@@ -1,9 +1,7 @@
 class WorksetKind(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates one of the standard kinds of workset (as available in the UI).
-
  
-
  enum WorksetKind,values: FamilyWorkset (1),OtherWorkset (0),StandardWorkset (3),UserWorkset (4),ViewWorkset (2)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class WorksetKind(Enum,IComparable,IFormattable,IConvertible):
  UserWorkset=None
  value__=None
  ViewWorkset=None
-

@@ -21,12 +21,7 @@ class AssemblyDifference(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: AssemblyDifference) -> bool
 
-
-
 """
-
 

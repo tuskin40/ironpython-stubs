@@ -1,9 +1,7 @@
 class SectionType(Enum,IComparable,IFormattable,IConvertible):
  """
  Declares the section data type.
-
  
-
  enum SectionType,values: Body (1),Footer (3),Header (0),None (-1),Summary (2)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class SectionType(Enum,IComparable,IFormattable,IConvertible):
  None=None
  Summary=None
  value__=None
-

@@ -3,28 +3,19 @@ class IExternalResourceUIServer(IExternalServer):
  def GetDBServerId(self):
   """
   GetDBServerId(self: IExternalResourceUIServer) -> Guid
-
   
-
    Implement this method to return the id of the server which is associated with 
-
     this UI server.
-
   
-
    Returns: The id of the associated DB server.
   """
   pass
  def HandleBrowseResult(self,resultType,browsingItemPath):
   """
   HandleBrowseResult(self: IExternalResourceUIServer,resultType: ExternalResourceUIBrowseResultType,browsingItemPath: str)
-
    Implement this method to handle browsing external resources operation result.
-
   
-
    resultType: The result of browsing operation.
-
    browsingItemPath: The absolute path of item which is browsing.
   """
   pass

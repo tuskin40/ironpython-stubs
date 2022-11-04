@@ -6,14 +6,8 @@ class IViewSheetSet:
  Views=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The views.
 
-
-
 Get: Views(self: IViewSheetSet) -> ViewSet
 
-
-
 Set: Views(self: IViewSheetSet)=value
-
 """
-
 

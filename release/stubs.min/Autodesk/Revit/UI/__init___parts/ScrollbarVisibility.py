@@ -1,9 +1,7 @@
 class ScrollbarVisibility(Enum,IComparable,IFormattable,IConvertible):
  """
  Lists all the visibility types of the scrollbar in the preview view.
-
  
-
  enum ScrollbarVisibility,values: Both (3),Horizontal (1),None (0),Vertical (2)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ScrollbarVisibility(Enum,IComparable,IFormattable,IConvertible):
  None=None
  value__=None
  Vertical=None
-

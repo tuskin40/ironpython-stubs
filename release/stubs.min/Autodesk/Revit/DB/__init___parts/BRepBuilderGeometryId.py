@@ -1,9 +1,7 @@
 class BRepBuilderGeometryId(object,IDisposable):
  """
  This class is used by the BRepBuilder class to identify objects it creates (faces,edges,etc.).
-
  
-
  BRepBuilderGeometryId(other: BRepBuilderGeometryId)
  """
  def Dispose(self):
@@ -13,11 +11,8 @@ class BRepBuilderGeometryId(object,IDisposable):
  def InvalidGeometryId():
   """
   InvalidGeometryId() -> BRepBuilderGeometryId
-
   
-
    Returns an invalid BRepBuilderGeometryId,used as a return value to indicate an 
-
     error.
   """
   pass
@@ -43,12 +38,7 @@ class BRepBuilderGeometryId(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: BRepBuilderGeometryId) -> bool
 
-
-
 """
-
 

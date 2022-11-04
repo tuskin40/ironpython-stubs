@@ -24,23 +24,13 @@ class Path3d(SketchBase,IDisposable):
  AllCurveLoops=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get all the Curve Loops of Path3d.
 
-
-
 Get: AllCurveLoops(self: Path3d) -> CurveArrArray
 
-
-
 """
-
  NumCurveLoops=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get the Number of Curve Loops of Path3d.
 
-
-
 Get: NumCurveLoops(self: Path3d) -> int
 
-
-
 """
-
 

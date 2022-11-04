@@ -1,11 +1,8 @@
 class ItemSelectionDialogResult(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing the possible responses from a prompted dialog where the
-
     user is asked to select one or more items.
-
  
-
  enum ItemSelectionDialogResult,values: Canceled (1),Confirmed (0)
  """
  def __eq__(self,*args):
@@ -34,4 +31,3 @@ class ItemSelectionDialogResult(Enum,IComparable,IFormattable,IConvertible):
  Canceled=None
  Confirmed=None
  value__=None
-

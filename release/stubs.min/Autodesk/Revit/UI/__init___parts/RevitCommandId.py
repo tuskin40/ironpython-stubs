@@ -7,21 +7,13 @@ class RevitCommandId(object,IDisposable):
  def LookupCommandId(name):
   """
   LookupCommandId(name: str) -> RevitCommandId
-
   
-
    Looks up and retrieves the Revit command id with the given id string.
-
   
-
    name: he Revit command name. Refer to the entries in the Revit journal to find the 
-
     string to use for a particular command.
-
   
-
    Returns: The Revit command id. Returning "null" if a command with the given name was not 
-
     found.
   """
   pass
@@ -29,17 +21,11 @@ class RevitCommandId(object,IDisposable):
  def LookupPostableCommandId(postableCommand):
   """
   LookupPostableCommandId(postableCommand: PostableCommand) -> RevitCommandId
-
   
-
    Looks up and retrieves the Revit command id with the given id string.
-
   
-
    postableCommand: The postable command.
-
    Returns: The Revit command id. Returning ll if a command with the given name was not 
-
     found.
   """
   pass
@@ -60,57 +46,21 @@ class RevitCommandId(object,IDisposable):
   pass
  CanHaveBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the command can be assigned a binding to an external add-in.
-
-
-
 Get: CanHaveBinding(self: RevitCommandId) -> bool
-
-
-
 """
-
  HasBinding=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether a replacement of either the Execute or CanExecute events (or both) have been applied to this command.
-
-
-
 Get: HasBinding(self: RevitCommandId) -> bool
-
-
-
 """
-
  Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The command id.
-
-
-
 Get: Id(self: RevitCommandId) -> UInt32
-
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: RevitCommandId) -> bool
-
-
-
 """
-
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The command name.
-
-
-
 Get: Name(self: RevitCommandId) -> str
-
-
-
 """
-
-

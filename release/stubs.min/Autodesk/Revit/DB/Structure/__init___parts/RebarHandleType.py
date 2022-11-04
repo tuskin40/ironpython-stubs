@@ -1,9 +1,7 @@
 class RebarHandleType(Enum,IComparable,IFormattable,IConvertible):
  """
  The various types of handles on a Rebar instance that can be joined to References
-
  
-
  enum RebarHandleType,values: Edge (3),EndOfBar (2),OutOfPlaneExtent (4),RebarPlane (0),StartOfBar (1)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class RebarHandleType(Enum,IComparable,IFormattable,IConvertible):
  RebarPlane=None
  StartOfBar=None
  value__=None
-

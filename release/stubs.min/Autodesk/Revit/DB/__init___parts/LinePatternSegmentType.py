@@ -1,9 +1,7 @@
 class LinePatternSegmentType(Enum,IComparable,IFormattable,IConvertible):
  """
  Represents the type of a line pattern segment.
-
  
-
  enum LinePatternSegmentType,values: Dash (0),Dot (2),Invalid (3),Space (1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class LinePatternSegmentType(Enum,IComparable,IFormattable,IConvertible):
  Invalid=None
  Space=None
  value__=None
-

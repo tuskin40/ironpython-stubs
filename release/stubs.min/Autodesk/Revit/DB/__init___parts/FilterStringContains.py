@@ -1,9 +1,7 @@
 class FilterStringContains(FilterStringRuleEvaluator,IDisposable):
  """
  Tests whether string values from the document contain a certain string.
-
  
-
  FilterStringContains()
  """
  def Dispose(self):

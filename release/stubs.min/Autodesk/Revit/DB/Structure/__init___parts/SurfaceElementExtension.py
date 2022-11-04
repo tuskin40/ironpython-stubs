@@ -1,9 +1,7 @@
 class SurfaceElementExtension(Enum,IComparable,IFormattable,IConvertible):
  """
  Presets for given Analytical Extension.
-
  
-
  enum SurfaceElementExtension,values: BottomOrTop (0),Plane (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class SurfaceElementExtension(Enum,IComparable,IFormattable,IConvertible):
  BottomOrTop=None
  Plane=None
  value__=None
-

@@ -1,11 +1,8 @@
 class TextNoteOptions(object,IDisposable):
  """
  Options to use when creating a new text note element.
-
  
-
  TextNoteOptions(typeId: ElementId)
-
  TextNoteOptions()
  """
  def Dispose(self):
@@ -27,7 +24,6 @@ class TextNoteOptions(object,IDisposable):
  def __new__(self,typeId=None):
   """
   __new__(cls: type,typeId: ElementId)
-
   __new__(cls: type)
   """
   pass
@@ -37,64 +33,35 @@ class TextNoteOptions(object,IDisposable):
  HorizontalAlignment=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Horizontal alignment of the text.
 
-
-
 Get: HorizontalAlignment(self: TextNoteOptions) -> HorizontalTextAlignment
 
-
-
 Set: HorizontalAlignment(self: TextNoteOptions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: TextNoteOptions) -> bool
 
-
-
 """
-
  KeepRotatedTextReadable=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Flag controling whether a rotate text is to stay oriented to be always readable.
 
-
-
 Get: KeepRotatedTextReadable(self: TextNoteOptions) -> bool
 
-
-
 Set: KeepRotatedTextReadable(self: TextNoteOptions)=value
-
 """
-
  Rotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Base line angle of a text note,in radians.
 
-
-
 Get: Rotation(self: TextNoteOptions) -> float
 
-
-
 Set: Rotation(self: TextNoteOptions)=value
-
 """
-
  TypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of a text type that defines the style of a text note.
 
-
-
 Get: TypeId(self: TextNoteOptions) -> ElementId
 
-
-
 Set: TypeId(self: TextNoteOptions)=value
-
 """
-
 

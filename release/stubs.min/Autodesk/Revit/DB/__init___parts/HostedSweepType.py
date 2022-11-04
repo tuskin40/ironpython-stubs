@@ -1,7 +1,6 @@
 class HostedSweepType(HostObjAttributes,IDisposable):
  """
  An object that represents the attributes for sweep host objects
-
  in Autodesk Revit.
  """
  def Dispose(self):

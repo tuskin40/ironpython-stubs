@@ -1,9 +1,7 @@
 class VerticalTextAlignment(Enum,IComparable,IFormattable,IConvertible):
  """
  Supported kinds of text vertical alignment within the text containing box.
-
  
-
  enum VerticalTextAlignment,values: Bottom (1),Middle (2),Top (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class VerticalTextAlignment(Enum,IComparable,IFormattable,IConvertible):
  Middle=None
  Top=None
  value__=None
-

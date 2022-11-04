@@ -1,9 +1,7 @@
 class UnitSystem(Enum,IComparable,IFormattable,IConvertible):
  """
  A system of measurement: Metric or Imperial units.
-
  
-
  enum UnitSystem,values: Imperial (1),Metric (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class UnitSystem(Enum,IComparable,IFormattable,IConvertible):
  Imperial=None
  Metric=None
  value__=None
-

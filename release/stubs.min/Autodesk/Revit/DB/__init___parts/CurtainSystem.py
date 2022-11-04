@@ -3,11 +3,8 @@ class CurtainSystem(CurtainSystemBase,IDisposable):
  def AddCurtainGrid(self,face):
   """
   AddCurtainGrid(self: CurtainSystem,face: Reference)
-
    Add CurtainGrid on the specified face for the CurtainSystem.
-
   
-
    face: The face new CurtainGrid will be created on.
   """
   pass
@@ -23,11 +20,8 @@ class CurtainSystem(CurtainSystemBase,IDisposable):
  def RemoveCurtainGrid(self,face):
   """
   RemoveCurtainGrid(self: CurtainSystem,face: Reference)
-
    Remove CurtainGrid from the specified face for the CurtainSystem.
-
   
-
    face: The face CurtainGrid will be removed from.
   """
   pass
@@ -46,25 +40,14 @@ class CurtainSystem(CurtainSystemBase,IDisposable):
  CurtainGrids=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get all the CurtainGrid object of this CurtainSystem. Each CurtainGrid corresponds to one face.
 
-
-
 Get: CurtainGrids(self: CurtainSystem) -> CurtainGridSet
 
-
-
 """
-
  CurtainSystemType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """get or set the type of the CurtainSystem.
 
-
-
 Get: CurtainSystemType(self: CurtainSystem) -> CurtainSystemType
 
-
-
 Set: CurtainSystemType(self: CurtainSystem)=value
-
 """
-
 

@@ -1,9 +1,7 @@
 class DecimalSymbol(Enum,IComparable,IFormattable,IConvertible):
  """
  The symbol used to separate the integer and fractional parts of a number.
-
  
-
  enum DecimalSymbol,values: Comma (1),Dot (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DecimalSymbol(Enum,IComparable,IFormattable,IConvertible):
  Comma=None
  Dot=None
  value__=None
-

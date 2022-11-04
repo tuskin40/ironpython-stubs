@@ -3,13 +3,9 @@ class Part(Element,IDisposable):
  def CanOffsetFace(self,face):
   """
   CanOffsetFace(self: Part,face: Face) -> bool
-
   
-
    Checks if it is possible to offset the given face.
-
   
-
    face: face to be checked.
   """
   pass
@@ -22,30 +18,21 @@ class Part(Element,IDisposable):
  def GetSourceElementIds(self):
   """
   GetSourceElementIds(self: Part) -> ICollection[LinkElementId]
-
   
-
    Gets a collection of elements from which this Part is created by the PartMaker.
-
 
     
      May return more than one source only if there is merge involved somewhere 
-
     in the history of this Part.
-
   
-
    Returns: The collection of elements
   """
   pass
  def GetSourceElementOriginalCategoryIds(self):
   """
   GetSourceElementOriginalCategoryIds(self: Part) -> ICollection[ElementId]
-
   
-
    Gets the category ids of the source elements which were used to form this part.
-
    Returns: The category ids.
   """
   pass
@@ -55,7 +42,6 @@ class Part(Element,IDisposable):
  def ResetPartShape(self):
   """
   ResetPartShape(self: Part)
-
    Resets all face offsets applied to part faces.
   """
   pass
@@ -65,21 +51,13 @@ class Part(Element,IDisposable):
  def SetFaceOffset(self,face,offset):
   """
   SetFaceOffset(self: Part,face: Face,offset: float)
-
    Offsets the given part face in the direction that points out of the solid shape 
-
     with the specified amount.
-
      Negative value will offset the face into the 
-
     solid shape.
-
   
-
   
-
    face: The face to offset.
-
    offset: The magnitude of the offset.
   """
   pass
@@ -95,38 +73,21 @@ class Part(Element,IDisposable):
  Excluded=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """True if the part is excluded,false otherwise
 
-
-
 Get: Excluded(self: Part) -> bool
 
-
-
 Set: Excluded(self: Part)=value
-
 """
-
  OriginalCategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The category Id of the original element corresponding to this Part.
 
-
-
 Get: OriginalCategoryId(self: Part) -> ElementId
 
-
-
 Set: OriginalCategoryId(self: Part)=value
-
 """
-
  PartMaker=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The PartMaker that created this Part.
 
-
-
 Get: PartMaker(self: Part) -> PartMaker
 
-
-
 """
-
 

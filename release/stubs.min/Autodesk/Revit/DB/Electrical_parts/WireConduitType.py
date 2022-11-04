@@ -21,8 +21,5 @@ class WireConduitType(APIObject,IDisposable):
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get: Name(self: WireConduitType) -> str
 
-
-
 """
-
 

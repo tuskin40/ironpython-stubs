@@ -1,9 +1,7 @@
 class PrintRange(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all Print Range types of Print.
-
  
-
  enum PrintRange,values: Current (0),Select (2),Visible (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class PrintRange(Enum,IComparable,IFormattable,IConvertible):
  Select=None
  value__=None
  Visible=None
-

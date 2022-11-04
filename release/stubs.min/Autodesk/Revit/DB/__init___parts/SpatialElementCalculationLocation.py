@@ -1,7 +1,6 @@
 class SpatialElementCalculationLocation(Element,IDisposable):
  """
  The Spatial Element Calculation Location is used to specify the room/space where an
-
     element should be considered as placed.
  """
  def Dispose(self):
@@ -28,12 +27,7 @@ class SpatialElementCalculationLocation(Element,IDisposable):
  MarkerPosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The position of the spatial element calculation location marker.
 
-
-
 Get: MarkerPosition(self: SpatialElementCalculationLocation) -> XYZ
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class ViewDisplayEdges(Enum,IComparable,IFormattable,IConvertible):
  """
  A collection of settings defining how visible edges are displayed
-
  
-
  enum ViewDisplayEdges,values: None (0),Simple (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ViewDisplayEdges(Enum,IComparable,IFormattable,IConvertible):
  None=None
  Simple=None
  value__=None
-

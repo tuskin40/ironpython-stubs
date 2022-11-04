@@ -1,9 +1,7 @@
 class ReinforcementRoundingSource(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing the possible sources for reinforcement rounding overrides.
-
  
-
  enum ReinforcementRoundingSource,values: Element (3),None (0),ReinforcementSettings (1),Type (2)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ReinforcementRoundingSource(Enum,IComparable,IFormattable,IConvertible):
  ReinforcementSettings=None
  Type=None
  value__=None
-

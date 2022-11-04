@@ -1,9 +1,7 @@
 class LoadCaseCategory(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies load case category.
-
  
-
  enum LoadCaseCategory,values: Accidental (5),Dead (0),Live (1),RoofLive (4),Seismic (7),Snow (3),Temperature (6),Wind (2)
  """
  def __eq__(self,*args):
@@ -38,4 +36,3 @@ class LoadCaseCategory(Enum,IComparable,IFormattable,IConvertible):
  Temperature=None
  value__=None
  Wind=None
-

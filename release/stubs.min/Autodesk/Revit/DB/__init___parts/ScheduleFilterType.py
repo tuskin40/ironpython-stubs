@@ -1,9 +1,7 @@
 class ScheduleFilterType(Enum,IComparable,IFormattable,IConvertible):
  """
  Type of schedule filter.
-
  
-
  enum ScheduleFilterType,values: BeginsWith (10),Contains (8),EndsWith (12),Equal (2),GreaterThan (4),GreaterThanOrEqual (5),HasParameter (1),Invalid (0),IsAssociatedWithGlobalParameter (14),IsNotAssociatedWithGlobalParameter (15),LessThan (6),LessThanOrEqual (7),NotBeginsWith (11),NotContains (9),NotEndsWith (13),NotEqual (3)
  """
  def __eq__(self,*args):
@@ -46,4 +44,3 @@ class ScheduleFilterType(Enum,IComparable,IFormattable,IConvertible):
  NotEndsWith=None
  NotEqual=None
  value__=None
-

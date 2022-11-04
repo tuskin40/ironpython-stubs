@@ -4,9 +4,7 @@ class UIFabricationUtils(object):
  def GetOpenConnectorIndicatorAwayColor():
   """
   GetOpenConnectorIndicatorAwayColor() -> Color
-
   
-
    Gets the color of the open connector indicator in away direction.
   """
   pass
@@ -14,9 +12,7 @@ class UIFabricationUtils(object):
  def GetOpenConnectorIndicatorPlanColor():
   """
   GetOpenConnectorIndicatorPlanColor() -> Color
-
   
-
    Gets the color of the open connector indicator in plan view.
   """
   pass
@@ -24,9 +20,7 @@ class UIFabricationUtils(object):
  def GetOpenConnectorIndicatorTowardsColor():
   """
   GetOpenConnectorIndicatorTowardsColor() -> Color
-
   
-
    Gets the color of the open connector indicator in towards direction.
   """
   pass
@@ -34,7 +28,6 @@ class UIFabricationUtils(object):
  def SetOpenConnectorIndicatorAwayColor(color):
   """
   SetOpenConnectorIndicatorAwayColor(color: Color)
-
    Sets the color of the open connector indicator in away direction
   """
   pass
@@ -42,7 +35,6 @@ class UIFabricationUtils(object):
  def SetOpenConnectorIndicatorPlanColor(color):
   """
   SetOpenConnectorIndicatorPlanColor(color: Color)
-
    Sets the color of the open connector indicator in plan view.
   """
   pass
@@ -50,7 +42,6 @@ class UIFabricationUtils(object):
  def SetOpenConnectorIndicatorTowardsColor(color):
   """
   SetOpenConnectorIndicatorTowardsColor(color: Color)
-
    Sets the color of the open connector indicator in towards direction
   """
   pass
@@ -62,4 +53,3 @@ class UIFabricationUtils(object):
   'SetOpenConnectorIndicatorPlanColor',
   'SetOpenConnectorIndicatorTowardsColor',
  ]
-

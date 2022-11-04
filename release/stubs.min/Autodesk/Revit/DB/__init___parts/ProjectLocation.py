@@ -6,17 +6,11 @@ class ProjectLocation(Instance,IDisposable):
  def Duplicate(self,name):
   """
   Duplicate(self: ProjectLocation,name: str) -> ProjectLocation
-
   
-
    Generate a copy of this project location with the specified name.
-
   
-
    name: The name to be assigned to the duplicated project location.
-
    Returns: If successful a duplicate of this project location object with the specified 
-
     name.
   """
   pass
@@ -41,25 +35,14 @@ class ProjectLocation(Instance,IDisposable):
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The name of the project location.
 
-
-
 Get: Name(self: ProjectLocation) -> str
 
-
-
 Set: Name(self: ProjectLocation)=value
-
 """
-
  SiteLocation=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The site location to which this project location refers.
 
-
-
 Get: SiteLocation(self: ProjectLocation) -> SiteLocation
 
-
-
 """
-
 

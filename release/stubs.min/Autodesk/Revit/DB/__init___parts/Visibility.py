@@ -1,9 +1,7 @@
 class Visibility(Enum,IComparable,IFormattable,IConvertible):
  """
  Describes the visibility of a particular geometry object.
-
  
-
  enum Visibility,values: Contextual (2),Highlight (1),Invisible (3),Visible (0)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class Visibility(Enum,IComparable,IFormattable,IConvertible):
  Invisible=None
  value__=None
  Visible=None
-

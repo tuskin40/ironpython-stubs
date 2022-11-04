@@ -1,9 +1,7 @@
 class FailureResolutionType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enumeration to classify FailureResolutions by nature of operation they perform on failing Elements.
-
  
-
  enum FailureResolutionType,values: CreateElements (2),Default (1),DeleteElements (3),DetachElements (7),FixElements (6),Invalid (0),MoveElements (5),Others (100000),QuitEditMode (8),SaveDocument (11),SetValue (10),ShowElements (12),SkipElements (4),UnlockConstraints (9)
  """
  def __eq__(self,*args):
@@ -44,4 +42,3 @@ class FailureResolutionType(Enum,IComparable,IFormattable,IConvertible):
  SkipElements=None
  UnlockConstraints=None
  value__=None
-

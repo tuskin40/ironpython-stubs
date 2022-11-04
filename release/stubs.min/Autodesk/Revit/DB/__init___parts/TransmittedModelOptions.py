@@ -1,11 +1,8 @@
 class TransmittedModelOptions(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum giving desired behavior when opening or saving a transmitted
-
     workshared model.
-
  
-
  enum TransmittedModelOptions,values: CancelOperation (2),KeepAsTransmitted (1),SaveAsNewCentral (0)
  """
  def __eq__(self,*args):
@@ -35,4 +32,3 @@ class TransmittedModelOptions(Enum,IComparable,IFormattable,IConvertible):
  KeepAsTransmitted=None
  SaveAsNewCentral=None
  value__=None
-

@@ -1,9 +1,7 @@
 class StructuralReleaseType(Enum,IComparable,IFormattable,IConvertible):
  """
  Type of structural release,which is used for the BuiltIn parameter STRUCTURAL_END_RELEASE_TYPE.
-
  
-
  enum StructuralReleaseType,values: kBendingMoment (2),kFixed (0),kPinned (1),kUserDefined (3)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class StructuralReleaseType(Enum,IComparable,IFormattable,IConvertible):
  kPinned=None
  kUserDefined=None
  value__=None
-

@@ -1,9 +1,7 @@
 class ACADVersion(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing available AutoCAD versions,into which a file may be exported.
-
  
-
  enum ACADVersion,values: Default (22),R2007 (3),R2010 (16),R2013 (22)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ACADVersion(Enum,IComparable,IFormattable,IConvertible):
  R2010=None
  R2013=None
  value__=None
-

@@ -24,12 +24,7 @@ class FaceSplitter(Element,IDisposable):
  SplitElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The id of the element whose face is split by this element.
 
-
-
 Get: SplitElementId(self: FaceSplitter) -> ElementId
 
-
-
 """
-
 

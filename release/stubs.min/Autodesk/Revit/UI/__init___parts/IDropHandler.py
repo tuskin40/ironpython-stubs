@@ -3,13 +3,9 @@ class IDropHandler:
  def Execute(self,document,data):
   """
   Execute(self: IDropHandler,document: UIDocument,data: object)
-
    Implement this method to handle the drop event for your data.
-
   
-
    document: The document on which the data was dropped.
-
    data: The data.
   """
   pass

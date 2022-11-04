@@ -21,34 +21,19 @@ class ConicalFace(Face,IDisposable):
  Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Axis of the surface.
 
-
-
 Get: Axis(self: ConicalFace) -> XYZ
 
-
-
 """
-
  HalfAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Half angle of the surface.
 
-
-
 Get: HalfAngle(self: ConicalFace) -> float
 
-
-
 """
-
  Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Origin of the surface.
 
-
-
 Get: Origin(self: ConicalFace) -> XYZ
 
-
-
 """
-
 

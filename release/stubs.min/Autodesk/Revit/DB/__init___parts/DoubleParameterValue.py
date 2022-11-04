@@ -1,11 +1,8 @@
 class DoubleParameterValue(ParameterValue,IDisposable):
  """
  A class that holds a Double value of a parameter element.
-
  
-
  DoubleParameterValue(value: float)
-
  DoubleParameterValue()
  """
  def Dispose(self):
@@ -27,21 +24,14 @@ class DoubleParameterValue(ParameterValue,IDisposable):
  def __new__(self,value=None):
   """
   __new__(cls: type,value: float)
-
   __new__(cls: type)
   """
   pass
  Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The stored value
 
-
-
 Get: Value(self: DoubleParameterValue) -> float
 
-
-
 Set: Value(self: DoubleParameterValue)=value
-
 """
-
 

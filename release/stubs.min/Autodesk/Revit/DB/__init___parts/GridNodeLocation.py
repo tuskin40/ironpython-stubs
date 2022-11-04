@@ -1,11 +1,8 @@
 class GridNodeLocation(Enum,IComparable,IFormattable,IConvertible):
  """
  Location of a grid node relative to the face boundary.
-
  See Autodesk.Revit.DB.DividedSurface.
-
  
-
  enum GridNodeLocation,values: Boundary (1),Exterior (2),Interior (0)
  """
  def __eq__(self,*args):
@@ -35,4 +32,3 @@ class GridNodeLocation(Enum,IComparable,IFormattable,IConvertible):
  Exterior=None
  Interior=None
  value__=None
-

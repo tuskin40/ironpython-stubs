@@ -1,9 +1,7 @@
 class RebarShapeConstraintSegmentLength(RebarShapeConstraint,IDisposable):
  """
  A constraint that controls the length of a segment.
-
  
-
  RebarShapeConstraintSegmentLength(paramId: ElementId,refType0: RebarShapeSegmentEndReferenceType,refType1: RebarShapeSegmentEndReferenceType)
  """
  def Dispose(self):
@@ -12,17 +10,11 @@ class RebarShapeConstraintSegmentLength(RebarShapeConstraint,IDisposable):
  def GetSegmentEndReferenceType(self,index):
   """
   GetSegmentEndReferenceType(self: RebarShapeConstraintSegmentLength,index: int) -> RebarShapeSegmentEndReferenceType
-
   
-
    Choice of two possibilities for the start and end references of the length 
-
     constraint.
-
   
-
   
-
    index: Which reference on the constraint. Either 0 or 1.
   """
   pass

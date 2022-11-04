@@ -1,153 +1,91 @@
 class FormatOptions(object,IDisposable):
  """
  Options for formatting numbers with units.
-
  
-
  FormatOptions(other: FormatOptions)
-
  FormatOptions(displayUnit: DisplayUnitType,unitSymbol: UnitSymbolType,accuracy: float)
-
  FormatOptions(displayUnit: DisplayUnitType,accuracy: float)
-
  FormatOptions(displayUnit: DisplayUnitType,unitSymbol: UnitSymbolType)
-
  FormatOptions(displayUnit: DisplayUnitType)
-
  FormatOptions()
  """
  def CanHaveUnitSymbol(self,displayUnit=None):
   """
   CanHaveUnitSymbol(displayUnit: DisplayUnitType) -> bool
-
   
-
    Checks whether a unit symbol can be specified for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    Returns: True if a unit symbol can be specified,false otherwise.
-
   CanHaveUnitSymbol(self: FormatOptions) -> bool
-
   
-
    Checks whether a unit symbol can be specified for the display unit in this 
-
     FormatOptions.
-
   
-
    Returns: True if a unit symbol can be specified,false otherwise.
   """
   pass
  def CanSuppressLeadingZeros(self,displayUnit=None):
   """
   CanSuppressLeadingZeros(displayUnit: DisplayUnitType) -> bool
-
   
-
    Checks whether leading zeros can be suppressed for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    Returns: True if leading zeros can be suppressed,false otherwise.
-
   CanSuppressLeadingZeros(self: FormatOptions) -> bool
-
   
-
    Checks whether leading zeros can be suppressed for the display unit in this 
-
     FormatOptions.
-
   
-
    Returns: True if leading zeros can be suppressed,false otherwise.
   """
   pass
  def CanSuppressSpaces(self,displayUnit=None):
   """
   CanSuppressSpaces(displayUnit: DisplayUnitType) -> bool
-
   
-
    Checks whether spaces can be suppressed for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    Returns: True if spaces can be suppressed,false otherwise.
-
   CanSuppressSpaces(self: FormatOptions) -> bool
-
   
-
    Checks whether spaces can be suppressed for the display unit in this 
-
     FormatOptions.
-
   
-
    Returns: True if spaces can be suppressed,false otherwise.
   """
   pass
  def CanSuppressTrailingZeros(self,displayUnit=None):
   """
   CanSuppressTrailingZeros(displayUnit: DisplayUnitType) -> bool
-
   
-
    Checks whether trailing zeros can be suppressed for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    Returns: True if trailing zeros can be suppressed,false otherwise.
-
   CanSuppressTrailingZeros(self: FormatOptions) -> bool
-
   
-
    Checks whether trailing zeros can be suppressed for the display unit in this 
-
     FormatOptions.
-
   
-
    Returns: True if trailing zeros can be suppressed,false otherwise.
   """
   pass
  def CanUsePlusPrefix(self,displayUnit=None):
   """
   CanUsePlusPrefix(displayUnit: DisplayUnitType) -> bool
-
   
-
    Checks whether a plus prefix can be displayed for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    Returns: True if a plus prefix can be displayed,false otherwise.
-
   CanUsePlusPrefix(self: FormatOptions) -> bool
-
   
-
    Checks whether a plus prefix can be displayed for the display unit in this 
-
     FormatOptions.
-
   
-
    Returns: True if a plus prefix can be displayed,false otherwise.
   """
   pass
@@ -157,82 +95,51 @@ class FormatOptions(object,IDisposable):
  def GetValidUnitSymbols(self,displayUnit=None):
   """
   GetValidUnitSymbols(displayUnit: DisplayUnitType) -> IList[UnitSymbolType]
-
   
-
    Gets all valid unit symbols for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    Returns: The valid unit symbols.
-
   GetValidUnitSymbols(self: FormatOptions) -> IList[UnitSymbolType]
-
   
-
    Gets all valid unit symbols for the display unit in this FormatOptions.
-
    Returns: The valid unit symbols.
   """
   pass
  def IsValidAccuracy(self,*__args):
   """
   IsValidAccuracy(displayUnit: DisplayUnitType,accuracy: float) -> bool
-
   
-
    Checks whether an accuracy is valid for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    accuracy: The accuracy to check.
-
    Returns: True if the accuracy is valid,false otherwise.
-
   IsValidAccuracy(self: FormatOptions,accuracy: float) -> bool
-
   
-
    Checks whether an accuracy is valid for the display unit in this FormatOptions.
-
   
-
    accuracy: The accuracy to check.
-
    Returns: True if the accuracy is valid,false otherwise.
   """
   pass
  def IsValidForUnitType(self,unitType):
   """
   IsValidForUnitType(self: FormatOptions,unitType: UnitType) -> bool
-
   
-
    Checks whether this FormatOptions is valid for a given unit type.
-
   
-
    unitType: The unit type.
-
    Returns: True if the FormatOptions is valid,false otherwise.
   """
   pass
  def IsValidUnitSymbol(self,*__args):
   """
   IsValidUnitSymbol(displayUnit: DisplayUnitType,unitSymbol: UnitSymbolType) -> bool
-
   
-
    Checks whether a unit symbol is valid for a given display unit.
-
   
-
    displayUnit: The display unit.
-
    unitSymbol: The unit symbol to check.
 
    Returns: True if the unit symbol is valid,false otherwise.

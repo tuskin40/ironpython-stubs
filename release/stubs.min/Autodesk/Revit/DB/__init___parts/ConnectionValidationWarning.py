@@ -1,9 +1,7 @@
 class ConnectionValidationWarning(object,IDisposable):
  """
  Contains information about a specific connection validation problem.
-
  
-
  ConnectionValidationWarning(resolution: ConnectionResolution,reason: ConnectionWarning,part1: ElementId,part2: ElementId)
  """
  def Dispose(self):
@@ -12,9 +10,7 @@ class ConnectionValidationWarning(object,IDisposable):
  def GetParts(self):
   """
   GetParts(self: ConnectionValidationWarning) -> ISet[ElementId]
-
   
-
    Get ElementIds of affected parts.
   """
   pass
@@ -40,34 +36,19 @@ class ConnectionValidationWarning(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ConnectionValidationWarning) -> bool
 
-
-
 """
-
  Reason=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Enumeration for reason of warning.
 
-
-
 Get: Reason(self: ConnectionValidationWarning) -> ConnectionWarning
 
-
-
 """
-
  Resolution=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Enumeration for resolution that was applied.
 
-
-
 Get: Resolution(self: ConnectionValidationWarning) -> ConnectionResolution
 
-
-
 """
-
 

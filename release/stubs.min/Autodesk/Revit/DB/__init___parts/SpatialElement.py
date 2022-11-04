@@ -1,7 +1,6 @@
 class SpatialElement(Element,IDisposable):
  """
  Represents an enclosed area or volume in the Revit model.  This is the parent class for 
-
  rooms,spaces and areas.
  """
  def Dispose(self):
@@ -10,13 +9,9 @@ class SpatialElement(Element,IDisposable):
  def GetBoundarySegments(self,options):
   """
   GetBoundarySegments(self: SpatialElement,options: SpatialElementBoundaryOptions) -> IList[IList[BoundarySegment]]
-
   
-
    Returns the boundary segments.
-
   
-
    options: The SpatialElementBoundaryOptions.
   """
   pass
@@ -41,67 +36,37 @@ class SpatialElement(Element,IDisposable):
  Area=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The area.
 
-
-
 Get: Area(self: SpatialElement) -> float
 
-
-
 """
-
  Level=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Gets the level of the room.
 
-
-
 Get: Level(self: SpatialElement) -> Level
 
-
-
 """
-
  Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The location of the element.
 
-
-
 Get: Location(self: SpatialElement) -> Location
 
-
-
 """
-
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """A human readable name for the Element.
 
-
-
 Set: Name(self: SpatialElement)=value
-
 """
-
  Number=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number.
 
-
-
 Get: Number(self: SpatialElement) -> str
 
-
-
 Set: Number(self: SpatialElement)=value
-
 """
-
  Perimeter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The perimeter.
 
-
-
 Get: Perimeter(self: SpatialElement) -> float
 
-
-
 """
-
 

@@ -1,26 +1,20 @@
 class CurveArray(APIObject,IDisposable,IEnumerable):
  """
  An array that can contain curves.
-
  
-
  CurveArray()
  """
  def Append(self,item):
   """
   Append(self: CurveArray,item: Curve)
-
    Add the curve to the end of the array.
-
   
-
    item: The curve to be added.
   """
   pass
  def Clear(self):
   """
   Clear(self: CurveArray)
-
    Removes every curve from the array,rendering it empty.
   """
   pass
@@ -30,37 +24,26 @@ class CurveArray(APIObject,IDisposable,IEnumerable):
  def ForwardIterator(self):
   """
   ForwardIterator(self: CurveArray) -> CurveArrayIterator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: CurveArray) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def Insert(self,item,index):
   """
   Insert(self: CurveArray,item: Curve,index: int)
-
    Insert the specified curve into the array.
-
   
-
    item: The curve to be inserted into the array.
-
    index: The curve will be inserted before this index.
-
    Returns: Returns whether the curve was inserted into the array.
   """
   pass
@@ -73,11 +56,8 @@ class CurveArray(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: CurveArray) -> CurveArrayIterator
-
   
-
    Retrieve a backward moving iterator to the array.
-
    Returns: Returns a backward moving iterator to the array.
   """
   pass
@@ -102,23 +82,13 @@ class CurveArray(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the array is empty.
 
-
-
 Get: IsEmpty(self: CurveArray) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of curves that are in the array.
 
-
-
 Get: Size(self: CurveArray) -> int
 
-
-
 """
-
 

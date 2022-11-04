@@ -4,17 +4,11 @@ class ImageView(ViewDrafting,IDisposable):
  def Create(document,imageFileName):
   """
   Create(document: Document,imageFileName: str) -> ImageView
-
   
-
    Create an ImageView containing an image imported from disk.
-
   
-
    document: The document in which to create the view.
-
    imageFileName: The full path to the image file.
-
    Returns: The newly created view.
   """
   pass
@@ -42,12 +36,7 @@ class ImageView(ViewDrafting,IDisposable):
  ImageInstanceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the image in the view.
 
-
-
 Get: ImageInstanceId(self: ImageView) -> ElementId
 
-
-
 """
-
 

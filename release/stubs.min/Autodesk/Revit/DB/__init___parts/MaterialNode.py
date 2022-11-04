@@ -6,26 +6,18 @@ class MaterialNode(RenderNode,IDisposable):
  def GetAppearance(self):
   """
   GetAppearance(self: MaterialNode) -> Asset
-
   
-
    Appearance properties associated with the material.
-
    Returns: An instance of a rendering material asset
   """
   pass
  def GetAppearanceOverride(self):
   """
   GetAppearanceOverride(self: MaterialNode) -> Asset
-
   
-
    Returns appearance properties that override the preset appearance of the 
-
     material.
-
   
-
    Returns: An instance of a rendering material asset,of null if there is no override.
   """
   pass
@@ -44,78 +36,43 @@ class MaterialNode(RenderNode,IDisposable):
  Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The color the material is being rendered at
 
-
-
 Get: Color(self: MaterialNode) -> Color
 
-
-
 """
-
  Glossiness=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The level of glossiness of the material
 
-
-
 Get: Glossiness(self: MaterialNode) -> int
 
-
-
 """
-
  HasOverriddenAppearance=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies if the default rendering appearance the material has is being overridden.
 
-
-
 Get: HasOverriddenAppearance(self: MaterialNode) -> bool
 
-
-
 """
-
  MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Id of the element assocated with this material in the model.
 
-
-
 Get: MaterialId(self: MaterialNode) -> ElementId
 
-
-
 """
-
  Smoothness=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The level of smoothness of the material.
 
-
-
 Get: Smoothness(self: MaterialNode) -> int
 
-
-
 """
-
  ThumbnailFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The path if a file that contains a thumbnail image of the material.
 
-
-
 Get: ThumbnailFile(self: MaterialNode) -> str
 
-
-
 """
-
  Transparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The value of transparency the material is being rendered with
 
-
-
 Get: Transparency(self: MaterialNode) -> float
 
-
-
 """
-
 

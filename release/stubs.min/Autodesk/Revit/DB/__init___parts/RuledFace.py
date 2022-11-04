@@ -21,23 +21,13 @@ class RuledFace(Face,IDisposable):
  IsExtruded=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Determines if this is an extruded ruled surface.
 
-
-
 Get: IsExtruded(self: RuledFace) -> bool
 
-
-
 """
-
  RulingsAreParallel=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Determines if the rulings of this ruled surface are parallel.
 
-
-
 Get: RulingsAreParallel(self: RuledFace) -> bool
 
-
-
 """
-
 

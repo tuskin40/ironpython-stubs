@@ -1,9 +1,7 @@
 class CheckoutStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the ownership status of an element
-
  
-
  enum CheckoutStatus,values: NotOwned (2),OwnedByCurrentUser (0),OwnedByOtherUser (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class CheckoutStatus(Enum,IComparable,IFormattable,IConvertible):
  OwnedByCurrentUser=None
  OwnedByOtherUser=None
  value__=None
-

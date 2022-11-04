@@ -1,9 +1,7 @@
 class WireDistributionDirection(Enum,IComparable,IFormattable,IConvertible):
  """
  Defines the direction of the distribution of wires in a Fabric Sheet.
-
  
-
  enum WireDistributionDirection,values: Major (0),Minor (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class WireDistributionDirection(Enum,IComparable,IFormattable,IConvertible):
  Major=None
  Minor=None
  value__=None
-

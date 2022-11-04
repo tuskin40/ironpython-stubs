@@ -4,79 +4,42 @@ class LoadCase(Element,IDisposable):
  def Create(document,name,natureId,*__args):
   """
   Create(document: Document,name: str,natureId: ElementId,loadCaseCategory: LoadCaseCategory) -> LoadCase
-
   
-
    Creates a new LoadCase.
-
   
-
    document: The Document to which new load case element will be added.
-
    name: The name of the load case.
-
    natureId: The load nature ID.
-
    loadCaseCategory: The predefined load case category.
-
    Returns: The newly created load case element if successful,ll otherwise.
-
   Create(document: Document,name: str,natureId: ElementId,subcategoryId: ElementId) -> LoadCase
-
   
-
    Creates a new LoadCase.
-
   
-
    document: The Document to which new load case element will be added.
-
    name: The name of the load case.
-
    natureId: The load nature ID.
-
    subcategoryId: The load case subcategory ID. Could be one of predefined or user defined load 
-
     case category.
-
      Built-in structural Load Cases 
-
     (Autodesk.Revit.DB.BuiltInCategory.OST_LoadCases) subcategories are:
-
      
-
     Autodesk.Revit.DB.BuiltInCategory.OST_LoadCasesDeadAutodesk.Revit.DB.BuiltInCate
-
     gory.OST_LoadCasesLiveAutodesk.Revit.DB.BuiltInCategory.OST_LoadCasesWindAutodes
-
     k.Revit.DB.BuiltInCategory.OST_LoadCasesSnowAutodesk.Revit.DB.BuiltInCategory.OS
-
     T_LoadCasesRoofLiveAutodesk.Revit.DB.BuiltInCategory.OST_LoadCasesAccidentalAuto
-
     desk.Revit.DB.BuiltInCategory.OST_LoadCasesTemperatureAutodesk.Revit.DB.BuiltInC
-
     ategory.OST_LoadCasesSeismic
-
   
-
    Returns: The newly created load case element if successful,ll otherwise.
-
   Create(document: Document,name: str,natureId: ElementId,natureCategory: LoadNatureCategory) -> LoadCase
-
   
-
    Creates a new LoadCase.
-
   
-
    document: The Document to which new load case element will be added.
-
    name: The name of the load case.
-
    natureId: The load nature ID.
-
    natureCategory: The predefined load nature category.
-
    Returns: The newly created load case element if successful,ll otherwise.
   """
   pass
@@ -89,36 +52,23 @@ class LoadCase(Element,IDisposable):
  def IsLoadCaseSubcategoryId(self,loadCaseSubcategoryId):
   """
   IsLoadCaseSubcategoryId(self: LoadCase,loadCaseSubcategoryId: ElementId) -> bool
-
   
-
    Checks whether provided element ID refer to subcategory of Structural Load 
-
     Cases (Autodesk.Revit.DB.BuiltInCategory.OST_LoadCases) category - one of 
-
     built-in or user defined.
-
   
-
   
-
    loadCaseSubcategoryId: The ID to check.
-
    Returns: True if the ID refers to load case category element,false otherwise.
   """
   pass
  def IsLoadNatureId(self,natureId):
   """
   IsLoadNatureId(self: LoadCase,natureId: ElementId) -> bool
-
   
-
    Checks whether provided element ID refer to LoadNature element.
-
   
-
    natureId: The ID to check.
-
    Returns: True if the ID refers to LoadNature element,false otherwise.
   """
   pass
@@ -126,15 +76,10 @@ class LoadCase(Element,IDisposable):
  def IsNumberUnique(document,number):
   """
   IsNumberUnique(document: Document,number: int) -> bool
-
   
-
    Checks that a given number is unique among all load cases.
-
   
-
    number: The number to check.
-
    Returns: True if the given number is unique among all load cases,false otherwise.
   """
   pass
@@ -156,53 +101,29 @@ class LoadCase(Element,IDisposable):
  NatureCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The nature category of the load case.
 
-
-
 Get: NatureCategory(self: LoadCase) -> LoadNatureCategory
 
-
-
 Set: NatureCategory(self: LoadCase)=value
-
 """
-
  NatureId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The nature ID of the load case.
 
-
-
 Get: NatureId(self: LoadCase) -> ElementId
 
-
-
 Set: NatureId(self: LoadCase)=value
-
 """
-
  Number=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns unique load case number.
 
-
-
 Get: Number(self: LoadCase) -> int
 
-
-
 Set: Number(self: LoadCase)=value
-
 """
-
  SubcategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Build-in or user defined subcategory of Structural Load Cases (Autodesk.Revit.DB.BuiltInCategory.OST_LoadCases) category.
 
-
-
 Get: SubcategoryId(self: LoadCase) -> ElementId
 
-
-
 Set: SubcategoryId(self: LoadCase)=value
-
 """
-
 

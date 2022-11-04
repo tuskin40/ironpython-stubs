@@ -1,9 +1,7 @@
 class PhaseStatusPresentation(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing the options for element display in a phase filter.
-
  
-
  enum PhaseStatusPresentation,values: DontShow (0),ShowByCategory (1),ShowOverriden (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class PhaseStatusPresentation(Enum,IComparable,IFormattable,IConvertible):
  ShowByCategory=None
  ShowOverriden=None
  value__=None
-

@@ -1,11 +1,8 @@
 class TriangulationInterfaceForTriangulatedShellComponent(TriangulationInterface,IDisposable):
  """
  This class is used to call FacetingUtils::convertTrianglesToQuads with a triangulation defined
-
     by a TriangulatedShellComponent.
-
  
-
  TriangulationInterfaceForTriangulatedShellComponent(externalTriangulatedShellComponent: TriangulatedShellComponent)
  """
  def Dispose(self):

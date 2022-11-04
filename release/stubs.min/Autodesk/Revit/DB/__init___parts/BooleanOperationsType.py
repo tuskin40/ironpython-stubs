@@ -1,9 +1,7 @@
 class BooleanOperationsType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing boolean types that are supported for boolean operation.
-
  
-
  enum BooleanOperationsType,values: Difference (1),Intersect (2),Union (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class BooleanOperationsType(Enum,IComparable,IFormattable,IConvertible):
  Intersect=None
  Union=None
  value__=None
-

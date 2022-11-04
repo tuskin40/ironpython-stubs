@@ -18,23 +18,13 @@ class AssemblyMemberDifferentType(AssemblyMemberDifference,IDisposable):
  TypeId1=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Type id of the first assembly member
 
-
-
 Get: TypeId1(self: AssemblyMemberDifferentType) -> ElementId
 
-
-
 """
-
  TypeId2=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Type id of the second assembly member
 
-
-
 Get: TypeId2(self: AssemblyMemberDifferentType) -> ElementId
 
-
-
 """
-
 

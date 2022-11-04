@@ -6,30 +6,20 @@ class ReferenceWithContext(object,IDisposable):
  def GetInstanceTransform(self):
   """
   GetInstanceTransform(self: ReferenceWithContext) -> Transform
-
   
-
    Gets the transform of the instance.
-
    Returns: The transform of an instance when the reference is returned by 
-
     FindReferencesWithContextByDirection(XYZ,XYZ,View3D) or 
-
     ReferenceIntersector.Find(XYZ,XYZ).
   """
   pass
  def GetReference(self):
   """
   GetReference(self: ReferenceWithContext) -> Reference
-
   
-
    Gets the reference of the geometric object.
-
    Returns: The reference of a geometric object when it is returned by 
-
     FindReferencesWithContextByDirection(XYZ,XYZ,View3D) or 
-
     ReferenceIntersector.Find(XYZ,XYZ).
   """
   pass
@@ -51,23 +41,13 @@ class ReferenceWithContext(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ReferenceWithContext) -> bool
 
-
-
 """
-
  Proximity=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The proximity value to the ray's origin when the reference is returned by FindReferencesWithContextByDirection(XYZ,XYZ,View3D) or ReferenceIntersector.Find(XYZ,XYZ).
 
-
-
 Get: Proximity(self: ReferenceWithContext) -> float
 
-
-
 """
-
 

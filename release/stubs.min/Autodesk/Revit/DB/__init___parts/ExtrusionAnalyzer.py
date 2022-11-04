@@ -1,17 +1,13 @@
 class ExtrusionAnalyzer(object,IDisposable):
  """
  This geometry utility allows you to attempt to "fit" a given piece of geometry into
-
     the shape of an extrusion.
  """
  def CalculateFaceAlignment(self):
   """
   CalculateFaceAlignment(self: ExtrusionAnalyzer) -> IDictionary[Face,ExtrusionAnalyzerFaceAlignment]
-
   
-
    Calculates the alignment status of each face of the solid.
-
    Returns: Maps each face of the solid to its alignment status.
   """
   pass
@@ -19,25 +15,15 @@ class ExtrusionAnalyzer(object,IDisposable):
  def Create(solidGeometry,plane,direction):
   """
   Create(solidGeometry: Solid,plane: Plane,direction: XYZ) -> ExtrusionAnalyzer
-
   
-
    Creates an ExtrusionAnalyzer and computes and stores the solid's shadow.
-
   
-
    solidGeometry: The geometry to analyze.
-
    plane: The plane to use for the base plane for the extrusion.
-
    direction: The direction to use for the calculation for the extrusion.
-
      The direction 
-
     must be transverse to the base plane.
-
   
-
    Returns: The newly created ExtrusionAnalyzer object.
   """
   pass
@@ -47,11 +33,8 @@ class ExtrusionAnalyzer(object,IDisposable):
  def GetExtrusionBase(self):
   """
   GetExtrusionBase(self: ExtrusionAnalyzer) -> Face
-
   
-
    Obtains the face that represents the base contour of the extrusion analysis.
-
    Returns: The face that represents the base contour.
   """
   pass
@@ -73,45 +56,25 @@ class ExtrusionAnalyzer(object,IDisposable):
  EndParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The end parameter (distance along the extrusion direction from the input plane) calculated by the extrusion analysis.
 
-
-
 Get: EndParameter(self: ExtrusionAnalyzer) -> float
 
-
-
 """
-
  ExtrusionDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The direction of extrusion specified for the extrusion analysis.
 
-
-
 Get: ExtrusionDirection(self: ExtrusionAnalyzer) -> XYZ
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ExtrusionAnalyzer) -> bool
 
-
-
 """
-
  StartParameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The start parameter (distance along the extrusion direction from the input plane) calculated by the extrusion analysis.
 
-
-
 Get: StartParameter(self: ExtrusionAnalyzer) -> float
 
-
-
 """
-
 

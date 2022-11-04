@@ -21,60 +21,33 @@ class Leader(APIObject,IDisposable):
  Anchor=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Anchor point of the Leader
 
-
-
 Get: Anchor(self: Leader) -> XYZ
 
-
-
 """
-
  Elbow=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Elbow point of the Leader.
 
-
-
 Get: Elbow(self: Leader) -> XYZ
 
-
-
 Set: Elbow(self: Leader)=value
-
 """
-
  End=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """End point of the Leader.
 
-
-
 Get: End(self: Leader) -> XYZ
 
-
-
 Set: End(self: Leader)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: Leader) -> bool
 
-
-
 """
-
  LeaderShape=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Geometric style of the leader
 
-
-
 Get: LeaderShape(self: Leader) -> LeaderShape
 
-
-
 """
-
 

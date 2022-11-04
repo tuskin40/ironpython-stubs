@@ -1,11 +1,8 @@
 class LogicalAndFilter(ElementLogicalFilter,IDisposable):
  """
  A filter that contains a set of filters. The filter passes when all filters in the set pass.
-
  
-
  LogicalAndFilter(filters: IList[ElementFilter])
-
  LogicalAndFilter(filter1: ElementFilter,filter2: ElementFilter)
  """
  def Dispose(self):
@@ -27,7 +24,6 @@ class LogicalAndFilter(ElementLogicalFilter,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,filters: IList[ElementFilter])
-
   __new__(cls: type,filter1: ElementFilter,filter2: ElementFilter)
   """
   pass

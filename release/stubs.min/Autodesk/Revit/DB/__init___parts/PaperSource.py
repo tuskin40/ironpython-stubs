@@ -21,12 +21,7 @@ class PaperSource(APIObject,IDisposable):
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve the paper source name of current project.
 
-
-
 Get: Name(self: PaperSource) -> str
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class RevitLinkLoadResultType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum listing the possible results after loading a linked model.
-
  
-
  enum RevitLinkLoadResultType,values: ExternalServerMissing (9),LinkExists (10),LinkLoaded (1),LinkMayBeUpgraded (8),LinkNotFound (2),LinkNotLoadedOtherError (7),LinkNotOpenable (3),LinkOpenAsHost (4),SameCentralModelAsHost (6),SameModelAsHost (5),Uninitialized (0)
  """
  def __eq__(self,*args):
@@ -41,4 +39,3 @@ class RevitLinkLoadResultType(Enum,IComparable,IFormattable,IConvertible):
  SameModelAsHost=None
  Uninitialized=None
  value__=None
-

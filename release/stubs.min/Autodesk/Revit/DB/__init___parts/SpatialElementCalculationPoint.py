@@ -1,7 +1,6 @@
 class SpatialElementCalculationPoint(SpatialElementCalculationLocation,IDisposable):
  """
  SpatialElementCalculationPoint is used as the search point for family instances
-
     placement inside rooms and spaces.
  """
  def Dispose(self):
@@ -28,14 +27,8 @@ class SpatialElementCalculationPoint(SpatialElementCalculationLocation,IDisposab
  Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The position of the "in" spatial element calculation point.
 
-
-
 Get: Position(self: SpatialElementCalculationPoint) -> XYZ
 
-
-
 Set: Position(self: SpatialElementCalculationPoint)=value
-
 """
-
 

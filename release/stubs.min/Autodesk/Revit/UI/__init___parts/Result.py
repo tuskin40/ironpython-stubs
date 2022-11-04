@@ -1,9 +1,7 @@
 class Result(Enum,IComparable,IFormattable,IConvertible):
  """
  Informs Autodesk Revit of the status of your application after execution.
-
  
-
  enum Result,values: Cancelled (1),Failed (-1),Succeeded (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class Result(Enum,IComparable,IFormattable,IConvertible):
  Failed=None
  Succeeded=None
  value__=None
-

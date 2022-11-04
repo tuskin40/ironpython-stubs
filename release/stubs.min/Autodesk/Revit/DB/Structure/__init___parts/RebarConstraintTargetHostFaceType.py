@@ -1,11 +1,8 @@
 class RebarConstraintTargetHostFaceType(Enum,IComparable,IFormattable,IConvertible):
  """
  A type to help identify the individual face on a host element to which a Rebar handle
-
     is constrained.
-
  
-
  enum RebarConstraintTargetHostFaceType,values: Bottom (2),End0 (3),End1 (4),FaceWithTagId (0),Side0 (5),Side1 (6),Top (1)
  """
  def __eq__(self,*args):
@@ -39,4 +36,3 @@ class RebarConstraintTargetHostFaceType(Enum,IComparable,IFormattable,IConvertib
  Side1=None
  Top=None
  value__=None
-

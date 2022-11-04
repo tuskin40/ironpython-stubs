@@ -1,9 +1,7 @@
 class EaveCutterType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type to store type of EaveCutter.
-
  
-
  enum EaveCutterType,values: PlumbCut (33615),TwoCutPlumb (33619),TwoCutSquare (33618)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class EaveCutterType(Enum,IComparable,IFormattable,IConvertible):
  TwoCutPlumb=None
  TwoCutSquare=None
  value__=None
-

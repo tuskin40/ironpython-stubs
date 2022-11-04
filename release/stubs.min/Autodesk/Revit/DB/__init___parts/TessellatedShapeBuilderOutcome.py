@@ -1,11 +1,8 @@
 class TessellatedShapeBuilderOutcome(Enum,IComparable,IFormattable,IConvertible):
  """
  Describes the outcome of TessellatedShapeBuilder attempt
-
     to build geometrical objects.
-
  
-
  enum TessellatedShapeBuilderOutcome,values: Mesh (1),Mixed (2),Nothing (3),Sheet (5),Solid (4)
  """
  def __eq__(self,*args):
@@ -37,4 +34,3 @@ class TessellatedShapeBuilderOutcome(Enum,IComparable,IFormattable,IConvertible)
  Sheet=None
  Solid=None
  value__=None
-

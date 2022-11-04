@@ -24,36 +24,20 @@ class FloorType(HostObjAttributes,IDisposable):
  IsFoundationSlab=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns whether the element FloorAttributes type is FoundationSlab.
 
-
-
 Get: IsFoundationSlab(self: FloorType) -> bool
 
-
-
 """
-
  StructuralMaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the identifier of the material that defines the element's structural analysis properties.
 
-
-
 Get: StructuralMaterialId(self: FloorType) -> ElementId
 
-
-
 Set: StructuralMaterialId(self: FloorType)=value
-
 """
-
  ThermalProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The calculated and settable thermal properties of the FloorType
 
-
-
 Get: ThermalProperties(self: FloorType) -> ThermalProperties
 
-
-
 """
-
 

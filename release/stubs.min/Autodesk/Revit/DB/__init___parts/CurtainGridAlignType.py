@@ -1,9 +1,7 @@
 class CurtainGridAlignType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated to list CurtainGrid patterns.
-
  
-
  enum CurtainGridAlignType,values: Beginning (1),Center (2),End (3),NoJustify (0)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class CurtainGridAlignType(Enum,IComparable,IFormattable,IConvertible):
  End=None
  NoJustify=None
  value__=None
-

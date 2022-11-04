@@ -18,40 +18,22 @@ class GradientBackgroundSettings(BackgroundSettings,IDisposable):
  GroundColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The color of the ground.
 
-
-
 Get: GroundColor(self: GradientBackgroundSettings) -> Color
 
-
-
 Set: GroundColor(self: GradientBackgroundSettings)=value
-
 """
-
  HorizonColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The color of the horizon.
 
-
-
 Get: HorizonColor(self: GradientBackgroundSettings) -> Color
 
-
-
 Set: HorizonColor(self: GradientBackgroundSettings)=value
-
 """
-
  SkyColor=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The color of the top of the sky.
 
-
-
 Get: SkyColor(self: GradientBackgroundSettings) -> Color
 
-
-
 Set: SkyColor(self: GradientBackgroundSettings)=value
-
 """
-
 

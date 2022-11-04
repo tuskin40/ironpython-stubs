@@ -1,20 +1,15 @@
 class PrimarySizeCriterion(RoutingCriterionBase,IDisposable):
  """
  This class contains a size criterion for a RoutingPreferenceRule.
-
  
-
  PrimarySizeCriterion(minimumSize: float,maximumSize: float)
  """
  @staticmethod
  def All():
   """
   All() -> PrimarySizeCriterion
-
   
-
    Creates a criterion with a range of all sizes.
-
    Returns: The new criterion.
   """
   pass
@@ -25,11 +20,8 @@ class PrimarySizeCriterion(RoutingCriterionBase,IDisposable):
  def None():
   """
   None() -> PrimarySizeCriterion
-
   
-
    Creates a criterion with a range of no sizes.
-
    Returns: The new criterion.
   """
   pass
@@ -52,27 +44,15 @@ class PrimarySizeCriterion(RoutingCriterionBase,IDisposable):
  MaximumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The maximum size of this criterion.
 
-
-
 Get: MaximumSize(self: PrimarySizeCriterion) -> float
 
-
-
 Set: MaximumSize(self: PrimarySizeCriterion)=value
-
 """
-
  MinimumSize=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The minimum size of this criterion.
 
-
-
 Get: MinimumSize(self: PrimarySizeCriterion) -> float
 
-
-
 Set: MinimumSize(self: PrimarySizeCriterion)=value
-
 """
-
 

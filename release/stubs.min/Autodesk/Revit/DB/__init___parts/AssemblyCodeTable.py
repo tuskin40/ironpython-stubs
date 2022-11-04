@@ -7,15 +7,10 @@ class AssemblyCodeTable(KeyBasedTreeEntryTable,IDisposable):
  def GetAssemblyCodeTable(doc):
   """
   GetAssemblyCodeTable(doc: Document) -> AssemblyCodeTable
-
   
-
    Returns the AssemblyCodeTable for the specified document.
-
   
-
    doc: The document owns the AssemblyCodeTable.
-
    Returns: The AssemblyCodeTable for the document.
   """
   pass

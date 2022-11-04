@@ -1,9 +1,7 @@
 class SketchedStairsCurveData(object,IDisposable):
  """
  Sketched run/landing curves overrides with height and slope
-
  
-
  SketchedStairsCurveData(boundaryCurve: Curve,height: float,slopeType: SketchedCurveSlopeOption)
  """
  def Dispose(self):
@@ -12,11 +10,8 @@ class SketchedStairsCurveData(object,IDisposable):
  def GetCurve(self):
   """
   GetCurve(self: SketchedStairsCurveData) -> Curve
-
   
-
    Get a copy of the curve that is formed along this boundary.
-
    Returns: A copy of the curve.
   """
   pass
@@ -42,12 +37,7 @@ class SketchedStairsCurveData(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: SketchedStairsCurveData) -> bool
 
-
-
 """
-
 

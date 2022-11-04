@@ -4,35 +4,20 @@ class BRepBuilderSurfaceGeometry(object,IDisposable):
  def Create(surface,surfaceEnvelope):
   """
   Create(surface: Surface,surfaceEnvelope: BoundingBoxUV) -> BRepBuilderSurfaceGeometry
-
   
-
    Construct BRepBuilderSurfaceGeometry based on a permitted Revit Surface,
-
     including Plane and CylSurf.
-
   
-
   
-
    surface: The Revit surface defining the geometry.
-
      This BRepBuilderSurfaceGeometry 
-
     stores a copy of the input surface.
-
   
-
    surfaceEnvelope: Envelope of the surface in the uv parametric domain. Defines the domain of 
-
     interest for the created surface.
-
      This is typically used to identify the 
-
     domain of the face that references the surface in question.
-
      Expected to 
-
     either be null or define a valid domain.
   """
   pass
@@ -40,7 +25,6 @@ class BRepBuilderSurfaceGeometry(object,IDisposable):
  def CreateNURBSSurface(degreeU,degreeV,knotsU,knotsV,controlPoints,*__args):
   """
   CreateNURBSSurface(degreeU: int,degreeV: int,knotsU: IList[float],knotsV: IList[float],controlPoints: IList[XYZ],weights: IList[float],bReverseOrientation: bool,surfaceEnvelope: BoundingBoxUV) -> BRepBuilderSurfaceGeometry
-
   CreateNURBSSurface(degreeU: int,degreeV: int,knotsU: IList[float],knotsV: IList[float],controlPoints: IList[XYZ],bReverseOrientation: bool,surfaceEnvelope: BoundingBoxUV) -> BRepBuilderSurfaceGeometry
   """
   pass
@@ -65,12 +49,7 @@ class BRepBuilderSurfaceGeometry(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: BRepBuilderSurfaceGeometry) -> bool
 
-
-
 """
-
 

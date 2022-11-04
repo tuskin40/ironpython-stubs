@@ -3,9 +3,7 @@ class ParameterValue(object,IDisposable):
  def Copy(self):
   """
   Copy(self: ParameterValue) -> ParameterValue
-
   
-
    Makes an identical copy of the given parameter value.
   """
   pass
@@ -15,26 +13,18 @@ class ParameterValue(object,IDisposable):
  def IsEqual(self,other):
   """
   IsEqual(self: ParameterValue,other: ParameterValue) -> bool
-
   
-
    Tests equality with another instance of the same class.
-
   
-
    other: The instance to compare with
   """
   pass
  def IsSameType(self,other):
   """
   IsSameType(self: ParameterValue,other: ParameterValue) -> bool
-
   
-
    Tests another instance is of the same value type.
-
   
-
    other: The instance to compare with
   """
   pass
@@ -56,12 +46,7 @@ class ParameterValue(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ParameterValue) -> bool
 
-
-
 """
-
 

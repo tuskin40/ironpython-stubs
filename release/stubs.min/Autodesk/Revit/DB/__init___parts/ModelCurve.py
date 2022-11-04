@@ -3,7 +3,6 @@ class ModelCurve(CurveElement,IDisposable):
  def ChangeToReferenceLine(self):
   """
   ChangeToReferenceLine(self: ModelCurve)
-
    Changes this curve to a reference curve.
   """
   pass
@@ -16,11 +15,8 @@ class ModelCurve(CurveElement,IDisposable):
  def GetVisibility(self):
   """
   GetVisibility(self: ModelCurve) -> FamilyElementVisibility
-
   
-
    Gets the visibility for the model curve in a family document.
-
    Returns: A copy of visibility settings for the model curve in a family document.
   """
   pass
@@ -33,7 +29,6 @@ class ModelCurve(CurveElement,IDisposable):
  def SetVisibility(self,visibility):
   """
   SetVisibility(self: ModelCurve,visibility: FamilyElementVisibility)
-
    Sets the visibility for the model curve in a family document.
   """
   pass
@@ -49,38 +44,21 @@ class ModelCurve(CurveElement,IDisposable):
  IsReferenceLine=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates if this curve is a reference curve.
 
-
-
 Get: IsReferenceLine(self: ModelCurve) -> bool
 
-
-
 """
-
  Subcategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The subcategory.
 
-
-
 Get: Subcategory(self: ModelCurve) -> GraphicsStyle
 
-
-
 Set: Subcategory(self: ModelCurve)=value
-
 """
-
  TrussCurveType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The truss curve type of this model curve.
 
-
-
 Get: TrussCurveType(self: ModelCurve) -> TrussCurveType
 
-
-
 Set: TrussCurveType(self: ModelCurve)=value
-
 """
-
 

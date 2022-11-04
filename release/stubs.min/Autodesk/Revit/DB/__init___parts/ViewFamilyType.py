@@ -9,15 +9,10 @@ class ViewFamilyType(ElementType,IDisposable):
  def IsValidDefaultTemplate(self,templateId):
   """
   IsValidDefaultTemplate(self: ViewFamilyType,templateId: ElementId) -> bool
-
   
-
    Verifies that the input can be used as a default template for this view type.
-
   
-
    templateId: Id to be validated as default template.
-
    Returns: True if %templateId% is valid as default template,false otherwise.
   """
   pass
@@ -39,38 +34,21 @@ class ViewFamilyType(ElementType,IDisposable):
  DefaultTemplateId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The default template id assigned to this view type.
 
-
-
 Get: DefaultTemplateId(self: ViewFamilyType) -> ElementId
 
-
-
 Set: DefaultTemplateId(self: ViewFamilyType)=value
-
 """
-
  PlanViewDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The PlanViewDirection of this view.
 
-
-
 Get: PlanViewDirection(self: ViewFamilyType) -> PlanViewDirection
 
-
-
 Set: PlanViewDirection(self: ViewFamilyType)=value
-
 """
-
  ViewFamily=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The ViewFamily for this view type.
 
-
-
 Get: ViewFamily(self: ViewFamilyType) -> ViewFamily
 
-
-
 """
-
 

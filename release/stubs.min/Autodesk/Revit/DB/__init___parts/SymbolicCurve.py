@@ -9,11 +9,8 @@ class SymbolicCurve(CurveElement,IDisposable):
  def GetVisibility(self):
   """
   GetVisibility(self: SymbolicCurve) -> FamilyElementVisibility
-
   
-
    Gets the visibility for the symbolic curve.
-
    Returns: A copy of visibility settings for the symbolic curve.
   """
   pass
@@ -26,7 +23,6 @@ class SymbolicCurve(CurveElement,IDisposable):
  def SetVisibility(self,visibility):
   """
   SetVisibility(self: SymbolicCurve,visibility: FamilyElementVisibility)
-
    Sets the visibility for the symbolic curve.
   """
   pass
@@ -42,40 +38,22 @@ class SymbolicCurve(CurveElement,IDisposable):
  IsDrawnInForeground=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates if this curve will be drawn in the foreground of the family instance.
 
-
-
 Get: IsDrawnInForeground(self: SymbolicCurve) -> bool
 
-
-
 Set: IsDrawnInForeground(self: SymbolicCurve)=value
-
 """
-
  ReferenceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates the type of reference.
 
-
-
 Get: ReferenceType(self: SymbolicCurve) -> ReferenceType
 
-
-
 Set: ReferenceType(self: SymbolicCurve)=value
-
 """
-
  Subcategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The subcategory.
 
-
-
 Get: Subcategory(self: SymbolicCurve) -> GraphicsStyle
 
-
-
 Set: Subcategory(self: SymbolicCurve)=value
-
 """
-
 

@@ -1,7 +1,6 @@
 class LinkConversionData(object,IDisposable):
  """
  This class contains the information necessary to re-create a Revit document
-
     from an external source.
  """
  def Dispose(self):
@@ -10,11 +9,8 @@ class LinkConversionData(object,IDisposable):
  def GetOptions(self):
   """
   GetOptions(self: LinkConversionData) -> IDictionary[str,str]
-
   
-
    Extra information used during the creation of the Revit document.
-
    Returns: The extra information used during the creation of the Revit document.
   """
   pass
@@ -36,34 +32,19 @@ class LinkConversionData(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: LinkConversionData) -> bool
 
-
-
 """
-
  Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The path to the source data used to generate the model.
 
-
-
 Get: Path(self: LinkConversionData) -> str
 
-
-
 """
-
  ServerId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The service responsible for converting the data into a Revit file.
 
-
-
 Get: ServerId(self: LinkConversionData) -> Guid
 
-
-
 """
-
 

@@ -3,7 +3,6 @@ class AnnotationSymbol(FamilyInstance,IDisposable):
  def addLeader(self):
   """
   addLeader(self: AnnotationSymbol)
-
    add a leader to this annotation symbol.
   """
   pass
@@ -13,11 +12,8 @@ class AnnotationSymbol(FamilyInstance,IDisposable):
  def duplicate(self):
   """
   duplicate(self: AnnotationSymbol) -> AnnotationSymbol
-
   
-
    Duplicate this annotation symbol.
-
    Returns: Pointer to the new annotation symbol.
   """
   pass
@@ -27,9 +23,7 @@ class AnnotationSymbol(FamilyInstance,IDisposable):
  def GetLeaders(self):
   """
   GetLeaders(self: AnnotationSymbol) -> IList[Leader]
-
   
-
    Returns a collection of leaders currently attached to the annotation.
   """
   pass
@@ -39,7 +33,6 @@ class AnnotationSymbol(FamilyInstance,IDisposable):
  def removeLeader(self):
   """
   removeLeader(self: AnnotationSymbol)
-
    remove a leader of this annotation symbol.
   """
   pass
@@ -58,14 +51,8 @@ class AnnotationSymbol(FamilyInstance,IDisposable):
  AnnotationSymbolType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The AnnotationSymbol style of this AnnotationSymbol.
 
-
-
 Get: AnnotationSymbolType(self: AnnotationSymbol) -> AnnotationSymbolType
 
-
-
 Set: AnnotationSymbolType(self: AnnotationSymbol)=value
-
 """
-
 

@@ -1,9 +1,7 @@
 class UpdaterId(object,IDisposable):
  """
  A unique identifier of an Updater
-
  
-
  UpdaterId(addInId: AddInId,val: Guid)
  """
  def Dispose(self):
@@ -12,18 +10,14 @@ class UpdaterId(object,IDisposable):
  def GetAddInId(self):
   """
   GetAddInId(self: UpdaterId) -> AddInId
-
   
-
    AddInId of the UpdaterId
   """
   pass
  def GetGUID(self):
   """
   GetGUID(self: UpdaterId) -> Guid
-
   
-
    GUID value of the UpdaterId
   """
   pass
@@ -49,12 +43,7 @@ class UpdaterId(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: UpdaterId) -> bool
 
-
-
 """
-
 

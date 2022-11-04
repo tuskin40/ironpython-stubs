@@ -6,37 +6,26 @@ class GeometryElement(GeometryObject,IDisposable,IEnumerable[GeometryObject],IEn
  def GetBoundingBox(self):
   """
   GetBoundingBox(self: GeometryElement) -> BoundingBoxXYZ
-
   
-
    Retrieves a box that encloses the geometry element.
-
    Returns: The bounding box.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: GeometryElement) -> IEnumerator[GeometryObject]
-
   
-
    Returns an enumerator that iterates through the collection.
-
    Returns: An IEnumerator(GeometryObject) object that can be used to iterate through the 
-
     collection.
   """
   pass
  def GetTransformed(self,transform):
   """
   GetTransformed(self: GeometryElement,transform: Transform) -> GeometryElement
-
   
-
    Returns a transformed copy of the geometry in this element.
-
   
-
    transform: The transformation to apply to the geometry.
   """
   pass
@@ -64,12 +53,7 @@ class GeometryElement(GeometryObject,IDisposable,IEnumerable[GeometryObject],IEn
  MaterialElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Element describing the material from which this element is composed.
 
-
-
 Get: MaterialElement(self: GeometryElement) -> Material
 
-
-
 """
-
 

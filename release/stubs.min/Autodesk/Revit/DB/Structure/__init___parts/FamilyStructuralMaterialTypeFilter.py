@@ -1,11 +1,8 @@
 class FamilyStructuralMaterialTypeFilter(ElementSlowFilter,IDisposable):
  """
  A filter used to match families that have the given structural material type.
-
  
-
  FamilyStructuralMaterialTypeFilter(structuralMaterialType: StructuralMaterialType,inverted: bool)
-
  FamilyStructuralMaterialTypeFilter(structuralMaterialType: StructuralMaterialType)
  """
  def Dispose(self):
@@ -27,19 +24,13 @@ class FamilyStructuralMaterialTypeFilter(ElementSlowFilter,IDisposable):
  def __new__(self,structuralMaterialType,inverted=None):
   """
   __new__(cls: type,structuralMaterialType: StructuralMaterialType,inverted: bool)
-
   __new__(cls: type,structuralMaterialType: StructuralMaterialType)
   """
   pass
  StructuralMaterialType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The family structural material type.
 
-
-
 Get: StructuralMaterialType(self: FamilyStructuralMaterialTypeFilter) -> StructuralMaterialType
 
-
-
 """
-
 

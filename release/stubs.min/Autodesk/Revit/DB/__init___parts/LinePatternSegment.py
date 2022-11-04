@@ -1,11 +1,8 @@
 class LinePatternSegment(object,IDisposable):
  """
  Represents a segment in a line pattern.
-
  
-
  LinePatternSegment(type: LinePatternSegmentType,length: float)
-
  LinePatternSegment()
  """
  def Dispose(self):
@@ -27,7 +24,6 @@ class LinePatternSegment(object,IDisposable):
  def __new__(self,type=None,length=None):
   """
   __new__(cls: type,type: LinePatternSegmentType,length: float)
-
   __new__(cls: type)
   """
   pass
@@ -37,38 +33,21 @@ class LinePatternSegment(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: LinePatternSegment) -> bool
 
-
-
 """
-
  Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Gets and sets the length of the segment.
 
-
-
 Get: Length(self: LinePatternSegment) -> float
 
-
-
 Set: Length(self: LinePatternSegment)=value
-
 """
-
  Type=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Gets and sets the type of the segment.
 
-
-
 Get: Type(self: LinePatternSegment) -> LinePatternSegmentType
 
-
-
 Set: Type(self: LinePatternSegment)=value
-
 """
-
 

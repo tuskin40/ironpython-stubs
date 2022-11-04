@@ -1,11 +1,8 @@
 class DXFExportOptions(ACADExportOptions,IDisposable):
  """
  The export options used by exporting DXF format file.
-
  
-
  DXFExportOptions(option: DXFExportOptions)
-
  DXFExportOptions()
  """
  def Dispose(self):
@@ -15,21 +12,13 @@ class DXFExportOptions(ACADExportOptions,IDisposable):
  def GetPredefinedOptions(document,setup):
   """
   GetPredefinedOptions(document: Document,setup: str) -> DXFExportOptions
-
   
-
    Returns an instance DXFExportOptions containing settings from a predefined 
-
     export setup.
-
   
-
   
-
    document: A Revit project document to retrieve the setup from.
-
    setup: The name of a predefined export setup from the specified document.
-
    Returns: An instance of predefined DXFExportOptions,or ll if the name was not found.
   """
   pass
@@ -49,7 +38,6 @@ class DXFExportOptions(ACADExportOptions,IDisposable):
  def __new__(self,option=None):
   """
   __new__(cls: type,option: DXFExportOptions)
-
   __new__(cls: type)
   """
   pass

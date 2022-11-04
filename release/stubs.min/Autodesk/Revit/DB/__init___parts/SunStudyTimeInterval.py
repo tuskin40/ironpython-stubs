@@ -1,9 +1,7 @@
 class SunStudyTimeInterval(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum of sun study time interval.
-
  
-
  enum SunStudyTimeInterval,values: Day (4),Hour (3),Minutes15 (0),Minutes30 (1),Minutes45 (2),Month (6),Week (5)
  """
  def __eq__(self,*args):
@@ -37,4 +35,3 @@ class SunStudyTimeInterval(Enum,IComparable,IFormattable,IConvertible):
  Month=None
  value__=None
  Week=None
-

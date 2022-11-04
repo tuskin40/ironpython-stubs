@@ -1,9 +1,7 @@
 class FabricHostReference(Enum,IComparable,IFormattable,IConvertible):
  """
  Controls if Single Fabric Sheet should be cut by the Host Cover.
-
  
-
  enum FabricHostReference,values: CutByCover (1),NotCutByCover (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class FabricHostReference(Enum,IComparable,IFormattable,IConvertible):
  CutByCover=None
  NotCutByCover=None
  value__=None
-

@@ -4,15 +4,10 @@ class PathReinforcementType(ElementType,IDisposable):
  def CreateDefaultPathReinforcementType(ADoc):
   """
   CreateDefaultPathReinforcementType(ADoc: Document) -> ElementId
-
   
-
    Creates a new PathReinforcementType object with a default name.
-
   
-
    ADoc: The document.
-
    Returns: The newly created type id.
   """
   pass

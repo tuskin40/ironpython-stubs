@@ -4,15 +4,10 @@ class RebarContainerType(ElementType,IDisposable):
  def CreateDefaultRebarContainerType(aDoc):
   """
   CreateDefaultRebarContainerType(aDoc: Document) -> ElementId
-
   
-
    Creates a new RebarContainerType object with a default name.
-
   
-
    aDoc: The document.
-
    Returns: The newly created type id.
   """
   pass
@@ -26,17 +21,11 @@ class RebarContainerType(ElementType,IDisposable):
  def GetOrCreateRebarContainerType(aDoc,name):
   """
   GetOrCreateRebarContainerType(aDoc: Document,name: str) -> ElementId
-
   
-
    Creates or returns a RebarContainerType object with a given name.
-
   
-
    aDoc: The document.
-
    name: Name of the type.
-
    Returns: The type id.
   """
   pass

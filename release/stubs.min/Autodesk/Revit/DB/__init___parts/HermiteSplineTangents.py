@@ -1,9 +1,7 @@
 class HermiteSplineTangents(object,IDisposable):
  """
  This class indicates tangency at the start,the end,or both ends of the curve.
-
  
-
  HermiteSplineTangents()
  """
  def Dispose(self):
@@ -27,38 +25,21 @@ class HermiteSplineTangents(object,IDisposable):
  EndTangent=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The tangent vector at the end of the curve.
 
-
-
 Get: EndTangent(self: HermiteSplineTangents) -> XYZ
 
-
-
 Set: EndTangent(self: HermiteSplineTangents)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: HermiteSplineTangents) -> bool
 
-
-
 """
-
  StartTangent=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The tangent vector at the start of the curve.
 
-
-
 Get: StartTangent(self: HermiteSplineTangents) -> XYZ
 
-
-
 Set: StartTangent(self: HermiteSplineTangents)=value
-
 """
-
 

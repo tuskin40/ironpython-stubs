@@ -1,9 +1,7 @@
 class ResolutionTarget(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the resolution target(Screen or Printer) used for rendering settings.
-
  
-
  enum ResolutionTarget,values: Printer (1),Screen (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ResolutionTarget(Enum,IComparable,IFormattable,IConvertible):
  Printer=None
  Screen=None
  value__=None
-

@@ -1,9 +1,7 @@
 class FilterIntegerRule(FilterNumericValueRule,IDisposable):
  """
  A filter rule that operates on integer values in a Revit project.
-
  
-
  FilterIntegerRule(valueProvider: FilterableValueProvider,evaluator: FilterNumericRuleEvaluator,ruleValue: int)
  """
  def Dispose(self):
@@ -28,14 +26,8 @@ class FilterIntegerRule(FilterNumericValueRule,IDisposable):
  RuleValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The user-supplied value against which values from a Revit document will be tested.
 
-
-
 Get: RuleValue(self: FilterIntegerRule) -> int
 
-
-
 Set: RuleValue(self: FilterIntegerRule)=value
-
 """
-
 

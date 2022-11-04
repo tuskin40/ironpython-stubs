@@ -1,9 +1,7 @@
 class TranslationRotationValue(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies the type of condition applied to the translation or rotation parameter.
-
  
-
  enum TranslationRotationValue,values: Fixed (0),Release (1),Spring (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class TranslationRotationValue(Enum,IComparable,IFormattable,IConvertible):
  Release=None
  Spring=None
  value__=None
-

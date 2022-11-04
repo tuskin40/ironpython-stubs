@@ -1,9 +1,7 @@
 class RectangularGridSegmentOrientation(Enum,IComparable,IFormattable,IConvertible):
  """
  The orientation type of rectangular grid segment.
-
  
-
  enum RectangularGridSegmentOrientation,values: Horizontal (1),Vertical (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class RectangularGridSegmentOrientation(Enum,IComparable,IFormattable,IConvertib
  Horizontal=None
  value__=None
  Vertical=None
-

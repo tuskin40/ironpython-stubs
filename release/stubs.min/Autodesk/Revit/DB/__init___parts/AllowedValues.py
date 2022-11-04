@@ -1,9 +1,7 @@
 class AllowedValues(Enum,IComparable,IFormattable,IConvertible):
  """
  A range of allowed values.
-
  
-
  enum AllowedValues,values: All (1),NonNegative (0),Positive (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class AllowedValues(Enum,IComparable,IFormattable,IConvertible):
  NonNegative=None
  Positive=None
  value__=None
-

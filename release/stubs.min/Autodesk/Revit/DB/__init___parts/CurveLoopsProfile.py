@@ -21,14 +21,8 @@ class CurveLoopsProfile(SweepProfile,IDisposable):
  Profile=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the curve loops of the profile.
 
-
-
 Get: Profile(self: CurveLoopsProfile) -> CurveArrArray
 
-
-
 Set: Profile(self: CurveLoopsProfile)=value
-
 """
-
 

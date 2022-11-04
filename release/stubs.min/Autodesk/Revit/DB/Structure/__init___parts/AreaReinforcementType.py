@@ -4,15 +4,10 @@ class AreaReinforcementType(ElementType,IDisposable):
  def CreateDefaultAreaReinforcementType(aDoc):
   """
   CreateDefaultAreaReinforcementType(aDoc: Document) -> ElementId
-
   
-
    Creates a new AreaReinforcementType object with a default name.
-
   
-
    aDoc: The document.
-
    Returns: The newly created type id.
   """
   pass

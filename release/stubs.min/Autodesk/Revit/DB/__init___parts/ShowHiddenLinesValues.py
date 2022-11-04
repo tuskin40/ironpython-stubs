@@ -1,9 +1,7 @@
 class ShowHiddenLinesValues(Enum,IComparable,IFormattable,IConvertible):
  """
  Provides options for display of hidden lines in a given view.
-
  
-
  enum ShowHiddenLinesValues,values: All (2),ByDiscipline (1),None (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ShowHiddenLinesValues(Enum,IComparable,IFormattable,IConvertible):
  ByDiscipline=None
  None=None
  value__=None
-

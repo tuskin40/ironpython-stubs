@@ -24,82 +24,45 @@ class MEPCurve(HostObject,IDisposable):
  ConnectorManager=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The connector manager of this MEP curve.
 
-
-
 Get: ConnectorManager(self: MEPCurve) -> ConnectorManager
 
-
-
 """
-
  Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The diameter of the MEP curve.
 
-
-
 Get: Diameter(self: MEPCurve) -> float
 
-
-
 """
-
  Height=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The height of the MEP curve.
 
-
-
 Get: Height(self: MEPCurve) -> float
 
-
-
 """
-
  LevelOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The offset of the MEP curve.
 
-
-
 Get: LevelOffset(self: MEPCurve) -> float
 
-
-
 Set: LevelOffset(self: MEPCurve)=value
-
 """
-
  MEPSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The system of the MEP curve.
 
-
-
 Get: MEPSystem(self: MEPCurve) -> MEPSystem
 
-
-
 """
-
  ReferenceLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The reference level of the MEP curve.
 
-
-
 Get: ReferenceLevel(self: MEPCurve) -> Level
 
-
-
 Set: ReferenceLevel(self: MEPCurve)=value
-
 """
-
  Width=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The width of the MEP curve.
 
-
-
 Get: Width(self: MEPCurve) -> float
 
-
-
 """
-
 

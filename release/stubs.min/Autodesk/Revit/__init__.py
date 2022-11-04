@@ -4,8 +4,6 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # no classes
 # variables with complex values
-

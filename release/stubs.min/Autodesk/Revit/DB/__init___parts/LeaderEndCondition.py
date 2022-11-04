@@ -1,9 +1,7 @@
 class LeaderEndCondition(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing Leader end conditions that are supported for IndependentTags.
-
  
-
  enum LeaderEndCondition,values: Attached (0),Free (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class LeaderEndCondition(Enum,IComparable,IFormattable,IConvertible):
  Attached=None
  Free=None
  value__=None
-

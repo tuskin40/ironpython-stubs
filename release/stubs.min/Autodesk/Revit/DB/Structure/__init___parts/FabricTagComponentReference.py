@@ -1,9 +1,7 @@
 class FabricTagComponentReference(Enum,IComparable,IFormattable,IConvertible):
  """
  How FabricSheet tag text will be aligned to the FabricSheet symbol.
-
  
-
  enum FabricTagComponentReference,values: Diagonal (2),Intersection (3),MajorAxis (0),MinorAxis (1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class FabricTagComponentReference(Enum,IComparable,IFormattable,IConvertible):
  MajorAxis=None
  MinorAxis=None
  value__=None
-

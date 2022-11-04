@@ -1,9 +1,7 @@
 class ModifierType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing options to appear in the exported layer name.
-
  
-
  enum ModifierType,values: AnalyzesAs (17),Category (0),Custom1 (1),Custom2 (2),Custom3 (3),DomainType (19),FabricationService (20),FireRating (4),Function (5),Level (6),PhaseCreated (7),PhaseDemolished (8),PhaseStatus (9),StructuralMaterialType (10),StructuralUsage (11),SystemClassification (18),SystemName (12),SystemType (13),Underlay (14),UnknownType (-1),ViewType (15),Workset (16)
  """
  def __eq__(self,*args):
@@ -52,4 +50,3 @@ class ModifierType(Enum,IComparable,IFormattable,IConvertible):
  value__=None
  ViewType=None
  Workset=None
-

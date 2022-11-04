@@ -21,45 +21,25 @@ class FamilySizeTableColumn(object,IDisposable):
  DisplayUnitType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Display unit type of the column.
 
-
-
 Get: DisplayUnitType(self: FamilySizeTableColumn) -> DisplayUnitType
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: FamilySizeTableColumn) -> bool
 
-
-
 """
-
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The column name.
 
-
-
 Get: Name(self: FamilySizeTableColumn) -> str
 
-
-
 """
-
  UnitType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Unit type of the column.
 
-
-
 Get: UnitType(self: FamilySizeTableColumn) -> UnitType
 
-
-
 """
-
 

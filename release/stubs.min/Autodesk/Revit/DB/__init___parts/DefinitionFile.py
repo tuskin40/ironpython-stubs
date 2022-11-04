@@ -21,23 +21,13 @@ class DefinitionFile(APIObject,IDisposable):
  Filename=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property returns the physical filename of the shared parameters file on disk.
 
-
-
 Get: Filename(self: DefinitionFile) -> str
 
-
-
 """
-
  Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Return a map of shared parameter definition groups contained within the file.
 
-
-
 Get: Groups(self: DefinitionFile) -> DefinitionGroups
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class AddInId(object,IDisposable):
  """
  Identifies an AddIn registered with Revit
-
  
-
  AddInId(val: Guid)
  """
  def Dispose(self):
@@ -12,53 +10,34 @@ class AddInId(object,IDisposable):
  def GetAddInName(self):
   """
   GetAddInName(self: AddInId) -> str
-
   
-
    name of addin associated with this AddInId
-
      Attempts to obtain the name from 
-
     loaded Third Party AddIns
-
   
-
    Returns: name of addin
   """
   pass
  def GetAddInNameFromDocument(self,aDoc):
   """
   GetAddInNameFromDocument(self: AddInId,aDoc: Document) -> str
-
   
-
    name of application associated with this ApplicationId
-
      First attempts to 
-
     obtain the name from AddInIds stored in the document.
-
      If unsuccessful,
-
     attempts to obtain the name from loaded Third Party AddIns.
-
   
-
   
-
    aDoc: target document
-
    Returns: name of application
   """
   pass
  def GetGUID(self):
   """
   GetGUID(self: AddInId) -> Guid
-
   
-
    value of the AddInId as a GUID
-
    Returns: GUID value of the AddInId
   """
   pass
@@ -84,12 +63,7 @@ class AddInId(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: AddInId) -> bool
 
-
-
 """
-
 

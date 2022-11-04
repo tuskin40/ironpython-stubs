@@ -1,11 +1,8 @@
 class ParameterValueProvider(FilterableValueProvider,IDisposable):
  """
  Gets the value of a parameter from any element passed to getStringValue,
-
     getDoubleValue,getIntegerValue,or getElementIdValue.
-
  
-
  ParameterValueProvider(parameter: ElementId)
  """
  def Dispose(self):
@@ -29,17 +26,10 @@ class ParameterValueProvider(FilterableValueProvider,IDisposable):
   pass
  Parameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The parameter used to provide a string,integer,double-precision,or ElementId
-
    value on request for a given element.
-
-
 
 Get: Parameter(self: ParameterValueProvider) -> ElementId
 
-
-
 Set: Parameter(self: ParameterValueProvider)=value
-
 """
-
 

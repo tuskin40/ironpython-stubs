@@ -1,9 +1,7 @@
 class FilterStringGreater(FilterStringRuleEvaluator,IDisposable):
  """
  Tests whether string values from the document would sort after a certain string.
-
  
-
  FilterStringGreater()
  """
  def Dispose(self):

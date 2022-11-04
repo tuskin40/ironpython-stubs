@@ -1,9 +1,7 @@
 class PlanViewRange(object,IDisposable):
  """
  This class represents the view range of a plan view or a plan region.
-
     It records the element ids of the levels which a plane is relative to
-
     and the offset of each plane from that level.
  """
  def Dispose(self):
@@ -12,30 +10,20 @@ class PlanViewRange(object,IDisposable):
  def GetLevelId(self,planViewPlane):
   """
   GetLevelId(self: PlanViewRange,planViewPlane: PlanViewPlane) -> ElementId
-
   
-
    Get the element id of the level for a View Depth plane
-
   
-
    planViewPlane: The plane whose level will be returned
-
    Returns: Id of the level
   """
   pass
  def GetOffset(self,planViewPlane):
   """
   GetOffset(self: PlanViewRange,planViewPlane: PlanViewPlane) -> float
-
   
-
    Get the offset value associated with a View Depth plane
-
   
-
    planViewPlane: View Depth plane
-
    Returns: Offset value
   """
   pass
@@ -45,26 +33,18 @@ class PlanViewRange(object,IDisposable):
  def SetLevelId(self,planViewPlane,id):
   """
   SetLevelId(self: PlanViewRange,planViewPlane: PlanViewPlane,id: ElementId)
-
    Set the level for a  View Depth plane
-
   
-
    planViewPlane: The View Depth plane
-
    id: Id of the level
   """
   pass
  def SetOffset(self,planViewPlane,offset):
   """
   SetOffset(self: PlanViewRange,planViewPlane: PlanViewPlane,offset: float)
-
    Set the offset value associated with a View Depth plane
-
   
-
    planViewPlane: View Depth plane
-
    offset: Offset value
   """
   pass
@@ -83,17 +63,11 @@ class PlanViewRange(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: PlanViewRange) -> bool
 
-
-
 """
-
 
  Current=None
  LevelAbove=None
  LevelBelow=None
  Unlimited=None
-

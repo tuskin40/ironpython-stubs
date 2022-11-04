@@ -18,14 +18,8 @@ class ColorBackgroundSettings(BackgroundSettings,IDisposable):
  Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The color of the rendering background.
 
-
-
 Get: Color(self: ColorBackgroundSettings) -> Color
 
-
-
 Set: Color(self: ColorBackgroundSettings)=value
-
 """
-
 

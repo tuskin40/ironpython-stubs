@@ -1,13 +1,9 @@
 class ListType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type indicating the style of list item
-
     for paragraphs that are part of ordered or unordered lists
-
     in FormattedText.
-
  
-
  enum ListType,values: ArabicNumbers (3),Bullet (2),LowerCaseLetters (4),Mixed (0),None (1),UpperCaseLetters (5)
  """
  def __eq__(self,*args):
@@ -40,4 +36,3 @@ class ListType(Enum,IComparable,IFormattable,IConvertible):
  None=None
  UpperCaseLetters=None
  value__=None
-

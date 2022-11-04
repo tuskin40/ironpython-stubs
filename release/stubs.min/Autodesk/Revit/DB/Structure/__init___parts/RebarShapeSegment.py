@@ -1,7 +1,6 @@
 class RebarShapeSegment(object,IDisposable):
  """
  Part of a RebarShapeDefinitionBySegments,representing one segment
-
     of a shape definition.
  """
  def Dispose(self):
@@ -10,11 +9,8 @@ class RebarShapeSegment(object,IDisposable):
  def GetConstraints(self):
   """
   GetConstraints(self: RebarShapeSegment) -> IList[RebarShapeConstraint]
-
   
-
    Retrieve the list of constraints associated with this segment.
-
    Returns: The list of constraints.
   """
   pass
@@ -39,12 +35,7 @@ class RebarShapeSegment(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RebarShapeSegment) -> bool
 
-
-
 """
-
 

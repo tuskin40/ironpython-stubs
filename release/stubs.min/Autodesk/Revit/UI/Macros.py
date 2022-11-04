@@ -4,24 +4,18 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # classes
-
 class ApplicationEntryPoint(UIApplication,IDisposable,IEntryPoint):
  """
  For Revit Macros use only.
-
  
-
  ApplicationEntryPoint()
  """
  def CreateRibbonPanel(self,*__args):
   """
   CreateRibbonPanel(self: ApplicationEntryPoint,tabName: str,panelName: str) -> RibbonPanel
-
   CreateRibbonPanel(self: ApplicationEntryPoint,panelName: str) -> RibbonPanel
-
   CreateRibbonPanel(self: ApplicationEntryPoint,tab: Tab,panelName: str) -> RibbonPanel
   """
   pass
@@ -37,23 +31,19 @@ class ApplicationEntryPoint(UIApplication,IDisposable,IEntryPoint):
  def FinishInitializationEO(self):
   """
   FinishInitializationEO(self: ApplicationEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
  def GetRibbonPanels(self,*__args):
   """
   GetRibbonPanels(self: ApplicationEntryPoint) -> List[RibbonPanel]
-
   GetRibbonPanels(self: ApplicationEntryPoint,tab: Tab) -> List[RibbonPanel]
-
   GetRibbonPanels(self: ApplicationEntryPoint,tabName: str) -> List[RibbonPanel]
   """
   pass
  def Initialize(self,obj,addinFolder):
   """
   Initialize(self: ApplicationEntryPoint,obj: object,addinFolder: str)
-
    For Revit Macros internal use only.
   """
   pass
@@ -63,7 +53,6 @@ class ApplicationEntryPoint(UIApplication,IDisposable,IEntryPoint):
  def OnShutdownEO(self):
   """
   OnShutdownEO(self: ApplicationEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
@@ -84,25 +73,13 @@ class ApplicationEntryPoint(UIApplication,IDisposable,IEntryPoint):
   pass
  AddinFolder=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The full path to the Revit Macros module.
-
-
-
 Get: AddinFolder(self: ApplicationEntryPoint) -> str
-
-
-
 """
-
  PrimaryCookie=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
-
-
 class DocumentEntryPoint(UIDocument,IDisposable,IEntryPoint):
  """
  For Revit Macros use only.
-
  
-
  DocumentEntryPoint()
  """
  def Dispose(self):
@@ -114,14 +91,12 @@ class DocumentEntryPoint(UIDocument,IDisposable,IEntryPoint):
  def FinishInitializationEO(self):
   """
   FinishInitializationEO(self: DocumentEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
  def Initialize(self,obj,addinFolder):
   """
   Initialize(self: DocumentEntryPoint,obj: object,addinFolder: str)
-
    For Revit Macros internal use only.
   """
   pass
@@ -131,7 +106,6 @@ class DocumentEntryPoint(UIDocument,IDisposable,IEntryPoint):
  def OnShutdownEO(self):
   """
   OnShutdownEO(self: DocumentEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
@@ -152,16 +126,6 @@ class DocumentEntryPoint(UIDocument,IDisposable,IEntryPoint):
   pass
  AddinFolder=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The full path to the Revit Macros module.
-
-
-
 Get: AddinFolder(self: DocumentEntryPoint) -> str
-
-
-
 """
-
  PrimaryCookie=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
-
-

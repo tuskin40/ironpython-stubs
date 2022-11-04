@@ -6,9 +6,7 @@ class AssemblyInstance(Element,IDisposable):
  def AllowsAssemblyViewCreation(self):
   """
   AllowsAssemblyViewCreation(self: AssemblyInstance) -> bool
-
   
-
    Returns true if assembly views can be created for this Assembly Instance.
   """
   pass
@@ -24,21 +22,13 @@ class AssemblyInstance(Element,IDisposable):
  def CompareAssemblyInstances(instance1,instance2):
   """
   CompareAssemblyInstances(instance1: AssemblyInstance,instance2: AssemblyInstance) -> AssemblyDifference
-
   
-
    Compares two assembly instances and returns a result with details about the 
-
     differences
-
   
-
   
-
    instance1: The first assembly instance to compare
-
    instance2: the second assembly instance to compare
-
    Returns: An object describing the difference between the two instances
   """
   pass
@@ -49,11 +39,8 @@ class AssemblyInstance(Element,IDisposable):
  def Disassemble(self):
   """
   Disassemble(self: AssemblyInstance) -> ICollection[ElementId]
-
   
-
    Removes the assembly instance and releases the member elements.
-
    Returns: ids of elements previously under the assembly instance.
   """
   pass
@@ -66,39 +53,27 @@ class AssemblyInstance(Element,IDisposable):
  def GetCenter(self):
   """
   GetCenter(self: AssemblyInstance) -> XYZ
-
   
-
    Returns the center of the bounding box for the assembly instance.
-
      This is 
-
     the default position for placed assembly instances.
-
   
-
    Returns: The position for the center of the assembly instance.
   """
   pass
  def GetMemberIds(self):
   """
   GetMemberIds(self: AssemblyInstance) -> ICollection[ElementId]
-
   
-
    Gets member element ids for the assembly instance.
-
    Returns: Element ids for the members of the assembly instance.
   """
   pass
  def GetTransform(self):
   """
   GetTransform(self: AssemblyInstance) -> Transform
-
   
-
    Gets the origin of the assembly instance.
-
    Returns: The origin of the assembly instance.
   """
   pass
@@ -110,19 +85,12 @@ class AssemblyInstance(Element,IDisposable):
  def PlaceInstance(document,assemblyTypeId,location):
   """
   PlaceInstance(document: Document,assemblyTypeId: ElementId,location: XYZ) -> AssemblyInstance
-
   
-
    Places an assembly instance of a given assembly type at the specified location.
-
   
-
    document: The document for the new assembly instance.
-
    assemblyTypeId: The id of the assembly type to be used for the instance.
-
    location: The placement location for the instance in project coordinates.
-
    Returns: The newly created assembly instance.
   """
   pass
@@ -141,11 +109,8 @@ class AssemblyInstance(Element,IDisposable):
  def SetTransform(self,trf):
   """
   SetTransform(self: AssemblyInstance,trf: Transform)
-
    Sets the origin of the assembly instance.
-
   
-
    trf: Transform to be set.
   """
   pass
@@ -160,43 +125,24 @@ class AssemblyInstance(Element,IDisposable):
   pass
  AssemblyTypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The name for the assembly type.
-
    All matching assembly instances share this name.
-
    Unique assembly instances are named automatically based on their naming category.
-
-
 
 Get: AssemblyTypeName(self: AssemblyInstance) -> str
 
-
-
 Set: AssemblyTypeName(self: AssemblyInstance)=value
-
 """
-
  Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property is used to find the physical location of the assembly instance within project.
 
-
-
 Get: Location(self: AssemblyInstance) -> Location
 
-
-
 """
-
  NamingCategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the category that drives the default naming scheme for the assembly instance.
 
-
-
 Get: NamingCategoryId(self: AssemblyInstance) -> ElementId
 
-
-
 Set: NamingCategoryId(self: AssemblyInstance)=value
-
 """
-
 

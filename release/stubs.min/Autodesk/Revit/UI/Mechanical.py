@@ -4,10 +4,8 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # classes
-
 class DuctFittingAndAccessoryPressureDropUIData(object,IDisposable):
  """ The input and output data used by external UI servers for storing UI settings. """
  def Dispose(self):
@@ -16,22 +14,16 @@ class DuctFittingAndAccessoryPressureDropUIData(object,IDisposable):
  def GetUIDataItems(self):
   """
   GetUIDataItems(self: DuctFittingAndAccessoryPressureDropUIData) -> IList[DuctFittingAndAccessoryPressureDropUIDataItem]
-
   
-
    Gets all UI data items stored in the UI data.
-
    Returns: An array of UI data items.
   """
   pass
  def GetUnits(self):
   """
   GetUnits(self: DuctFittingAndAccessoryPressureDropUIData) -> Units
-
   
-
    Gets units.
-
    Returns: The Units object.
   """
   pass
@@ -52,17 +44,8 @@ class DuctFittingAndAccessoryPressureDropUIData(object,IDisposable):
   pass
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: DuctFittingAndAccessoryPressureDropUIData) -> bool
-
-
-
 """
-
-
-
 class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
  """ Each duct fitting or duct accessory FamilyInstance has one DuctFittingAndAccessoryPressureDropUIDataItem. """
  def Dispose(self):
@@ -71,24 +54,17 @@ class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
  def GetDuctFittingAndAccessoryData(self):
   """
   GetDuctFittingAndAccessoryData(self: DuctFittingAndAccessoryPressureDropUIDataItem) -> DuctFittingAndAccessoryData
-
   
-
    Gets the fitting data stored in the UI data item.
-
    Returns: The fitting data stored in the UI data item.
   """
   pass
  def GetEntity(self):
   """
   GetEntity(self: DuctFittingAndAccessoryPressureDropUIDataItem) -> Entity
-
   
-
    Returns the entity set by UI server.
-
      or an invalid entity otherwise.
-
    Returns: The returned Entity.
   """
   pass
@@ -98,11 +74,8 @@ class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
  def SetEntity(self,entity):
   """
   SetEntity(self: DuctFittingAndAccessoryPressureDropUIDataItem,entity: Entity)
-
    Stores the entity in the UI data item.
-
   
-
    entity: The Entity to be stored.
   """
   pass
@@ -120,50 +93,30 @@ class DuctFittingAndAccessoryPressureDropUIDataItem(object,IDisposable):
   pass
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: DuctFittingAndAccessoryPressureDropUIDataItem) -> bool
-
-
-
 """
-
-
-
 class IDuctFittingAndAccessoryPressureDropUIServer(IExternalServer):
  """ Interface for external servers providing optional UI for duct fitting and duct accessory coefficient calculation. """
  def GetDBServerId(self):
   """
   GetDBServerId(self: IDuctFittingAndAccessoryPressureDropUIServer) -> Guid
-
   
-
    Returns the Id of the corresponding DB server for which this server provides an 
-
     optional UI.
-
   
-
    Returns: The Id of the DB server.
   """
   pass
  def ShowSettings(self,data):
   """
   ShowSettings(self: IDuctFittingAndAccessoryPressureDropUIServer,data: DuctFittingAndAccessoryPressureDropUIData) -> bool
-
   
-
    Shows the settings UI.
-
   
-
    data: The input data of the calculation.
-
    Returns: True if the user makes any changes in the UI,false otherwise.
   """
   pass
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-

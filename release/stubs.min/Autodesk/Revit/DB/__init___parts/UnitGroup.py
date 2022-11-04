@@ -1,9 +1,7 @@
 class UnitGroup(Enum,IComparable,IFormattable,IConvertible):
  """
  A group of related unit types,primarily classified by discipline.
-
  
-
  enum UnitGroup,values: Common (0),Electrical (3),Energy (5),HVAC (2),Piping (4),Structural (1)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class UnitGroup(Enum,IComparable,IFormattable,IConvertible):
  Piping=None
  Structural=None
  value__=None
-

@@ -1,13 +1,9 @@
 class PartMaker(Element,IDisposable):
  """
  PartMaker is an element which takes some source elements (e.g.,a wall
-
     with all its layers) and creates one or more Parts out of it. The logic
-
     according to which these Parts are created is non-trivial and PartMaker
-
     uses various PartMakerMethods which represents these logics.
-
     This element manages the strategy to make Part elements for one or more original elements.
  """
  def Dispose(self):
@@ -19,22 +15,16 @@ class PartMaker(Element,IDisposable):
  def GetSourceElementIds(self):
   """
   GetSourceElementIds(self: PartMaker) -> ICollection[LinkElementId]
-
   
-
    Get the source elements for the PartMaker.
-
    Returns: Elements that are the sources for this PartMaker.
   """
   pass
  def IsSourceElement(self,elemId):
   """
   IsSourceElement(self: PartMaker,elemId: ElementId) -> bool
-
   
-
    Is the element a source for this PartMaker
-
    Returns: Returns true if elemId is among the source elements of this PartMaker
   """
   pass

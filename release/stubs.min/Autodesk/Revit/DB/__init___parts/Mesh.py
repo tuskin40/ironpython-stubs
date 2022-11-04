@@ -21,34 +21,19 @@ class Mesh(GeometryObject,IDisposable):
  MaterialElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Element ID of the material from which this mesh is composed.
 
-
-
 Get: MaterialElementId(self: Mesh) -> ElementId
 
-
-
 """
-
  NumTriangles=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number of triangles that the mesh contains.
 
-
-
 Get: NumTriangles(self: Mesh) -> int
 
-
-
 """
-
  Vertices=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves all vertices used to define this mesh. Intended for indexed access.
 
-
-
 Get: Vertices(self: Mesh) -> IList[XYZ]
 
-
-
 """
-
 

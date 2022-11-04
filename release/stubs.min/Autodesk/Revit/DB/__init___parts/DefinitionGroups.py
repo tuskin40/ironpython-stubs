@@ -3,30 +3,20 @@ class DefinitionGroups(object,IEnumerable[DefinitionGroup],IEnumerable,IDisposab
  def Contains(self,definitionGroup):
   """
   Contains(self: DefinitionGroups,definitionGroup: DefinitionGroup) -> bool
-
   
-
    Tests for the existence of a definition group within the collection.
-
   
-
    definitionGroup: The definition group to look for.
-
    Returns: True if the definition group was found,false otherwise.
   """
   pass
  def Create(self,name):
   """
   Create(self: DefinitionGroups,name: str) -> DefinitionGroup
-
   
-
    Create a new parameter definition group using the name provided.
-
   
-
    name: The name of the group to be created.
-
    Returns: If successful a reference to the new parameter group is returned,otherwise ll.
   """
   pass
@@ -36,11 +26,8 @@ class DefinitionGroups(object,IEnumerable[DefinitionGroup],IEnumerable,IDisposab
  def GetEnumerator(self):
   """
   GetEnumerator(self: DefinitionGroups) -> IEnumerator[DefinitionGroup]
-
   
-
    Retrieves an enumerator to the collection.
-
    Returns: The enumerator.
   """
   pass
@@ -68,23 +55,13 @@ class DefinitionGroups(object,IEnumerable[DefinitionGroup],IEnumerable,IDisposab
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies if the definition groups collection is empty.
 
-
-
 Get: IsEmpty(self: DefinitionGroups) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number of definition groups in the collection.
 
-
-
 Get: Size(self: DefinitionGroups) -> int
 
-
-
 """
-
 

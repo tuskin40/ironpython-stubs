@@ -1,9 +1,7 @@
 class ElectricalPhase(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type to specify whether the electrical system is single phase or three phase.
-
  
-
  enum ElectricalPhase,values: SinglePhase (0),ThreePhase (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ElectricalPhase(Enum,IComparable,IFormattable,IConvertible):
  SinglePhase=None
  ThreePhase=None
  value__=None
-

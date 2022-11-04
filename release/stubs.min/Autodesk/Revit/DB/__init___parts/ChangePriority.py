@@ -1,9 +1,7 @@
 class ChangePriority(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum used to specify the priority of an Updater during execution.
-
  
-
  enum ChangePriority,values: Annotations (16),Connections (10),DetailComponents (15),DoorsOpeningsWindows (5),FloorsRoofsStructuralWalls (2),FreeStandingComponents (9),GridsLevelsReferencePlanes (0),InteriorWalls (4),Masses (1),MEPAccessoriesFittingsSegmentsWires (12),MEPCalculations (8),MEPFixtures (6),MEPSystems (13),Rebar (11),RoomsSpacesZones (7),Structure (3),Views (14)
  """
  def __eq__(self,*args):
@@ -47,4 +45,3 @@ class ChangePriority(Enum,IComparable,IFormattable,IConvertible):
  Structure=None
  value__=None
  Views=None
-

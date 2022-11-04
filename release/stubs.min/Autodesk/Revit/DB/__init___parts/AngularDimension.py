@@ -19,9 +19,7 @@ class AngularDimension(Dimension,IDisposable):
  def SetRadius(self,radius):
   """
   SetRadius(self: AngularDimension,radius: float)
-
    Set radius of an Angular Dimension arc.
-
      The new radius of the arc.
   """
   pass

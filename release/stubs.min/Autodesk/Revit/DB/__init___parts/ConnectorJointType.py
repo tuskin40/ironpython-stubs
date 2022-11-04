@@ -1,9 +1,7 @@
 class ConnectorJointType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum of connector joint type
-
  
-
  enum ConnectorJointType,values: Flanged (1),Glued (5),Grooved (4),Soldered (6),Threaded (3),Undefined (0),Welded (2)
  """
  def __eq__(self,*args):
@@ -37,4 +35,3 @@ class ConnectorJointType(Enum,IComparable,IFormattable,IConvertible):
  Undefined=None
  value__=None
  Welded=None
-

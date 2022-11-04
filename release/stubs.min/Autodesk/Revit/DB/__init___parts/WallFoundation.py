@@ -4,19 +4,12 @@ class WallFoundation(HostObject,IDisposable):
  def Create(document,typeId,wallId):
   """
   Create(document: Document,typeId: ElementId,wallId: ElementId) -> WallFoundation
-
   
-
    Creates a new wall foundation within the project.
-
   
-
    document: The document.
-
    typeId: The id of the wall foundation type of the newly created wall foundation.
-
    wallId: The id of the host wall of the newly created wall foundation.
-
    Returns: If successful,returns the newly created wall foundation,ll otherwise.
   """
   pass
@@ -29,9 +22,7 @@ class WallFoundation(HostObject,IDisposable):
  def GetFoundationType(self):
   """
   GetFoundationType(self: WallFoundation) -> WallFoundationType
-
   
-
    Gets an object that represents the type of the foundation.
   """
   pass
@@ -44,7 +35,6 @@ class WallFoundation(HostObject,IDisposable):
  def SetFoundationType(self,type):
   """
   SetFoundationType(self: WallFoundation,type: WallFoundationType)
-
    Sets an object that represents the type of the foundation.
   """
   pass
@@ -60,12 +50,7 @@ class WallFoundation(HostObject,IDisposable):
  WallId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the id of the host wall.
 
-
-
 Get: WallId(self: WallFoundation) -> ElementId
 
-
-
 """
-
 

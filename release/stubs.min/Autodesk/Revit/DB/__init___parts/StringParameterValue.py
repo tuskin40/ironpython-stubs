@@ -1,11 +1,8 @@
 class StringParameterValue(ParameterValue,IDisposable):
  """
  A class that holds a String value of a parameter element.
-
  
-
  StringParameterValue(value: str)
-
  StringParameterValue()
  """
  def Dispose(self):
@@ -27,21 +24,14 @@ class StringParameterValue(ParameterValue,IDisposable):
  def __new__(self,value=None):
   """
   __new__(cls: type,value: str)
-
   __new__(cls: type)
   """
   pass
  Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The stored value
 
-
-
 Get: Value(self: StringParameterValue) -> str
 
-
-
 Set: Value(self: StringParameterValue)=value
-
 """
-
 

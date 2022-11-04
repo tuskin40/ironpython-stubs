@@ -4,4 +4,3 @@ class ExternalResourceTypes(object):
  __all__=[
   'BuiltInExternalResourceTypes',
  ]
-

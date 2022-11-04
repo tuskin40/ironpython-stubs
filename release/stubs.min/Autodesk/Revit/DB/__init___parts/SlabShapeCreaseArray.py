@@ -1,26 +1,20 @@
 class SlabShapeCreaseArray(APIObject,IDisposable,IEnumerable):
  """
  An array that can contain any number of creases used in Slab Shape Editing.
-
  
-
  SlabShapeCreaseArray()
  """
  def Append(self,item):
   """
   Append(self: SlabShapeCreaseArray,item: SlabShapeCrease)
-
    Add the item to the end of the array.
-
   
-
    item: The item to be added.
   """
   pass
  def Clear(self):
   """
   Clear(self: SlabShapeCreaseArray)
-
    Removes every item from the array,rendering it empty.
   """
   pass
@@ -30,37 +24,26 @@ class SlabShapeCreaseArray(APIObject,IDisposable,IEnumerable):
  def ForwardIterator(self):
   """
   ForwardIterator(self: SlabShapeCreaseArray) -> SlabShapeCreaseArrayIterator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: SlabShapeCreaseArray) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def Insert(self,item,index):
   """
   Insert(self: SlabShapeCreaseArray,item: SlabShapeCrease,index: int)
-
    Insert the specified item into the array.
-
   
-
    item: The item to be inserted into the array.
-
    index: The item will be inserted before this index.
-
    Returns: Returns whether the item was inserted into the array.
   """
   pass
@@ -73,11 +56,8 @@ class SlabShapeCreaseArray(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: SlabShapeCreaseArray) -> SlabShapeCreaseArrayIterator
-
   
-
    Retrieve a backward moving iterator to the array.
-
    Returns: Returns a backward moving iterator to the array.
   """
   pass
@@ -102,23 +82,13 @@ class SlabShapeCreaseArray(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the array is empty.
 
-
-
 Get: IsEmpty(self: SlabShapeCreaseArray) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of objects that are in the array.
 
-
-
 Get: Size(self: SlabShapeCreaseArray) -> int
 
-
-
 """
-
 

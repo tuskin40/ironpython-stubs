@@ -4,15 +4,10 @@ class FabricAreaType(ElementType,IDisposable):
  def CreateDefaultFabricAreaType(aDoc):
   """
   CreateDefaultFabricAreaType(aDoc: Document) -> ElementId
-
   
-
    Creates a new FabricAreaType object with a default name.
-
   
-
    aDoc: The document.
-
    Returns: The newly created type id.
   """
   pass

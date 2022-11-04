@@ -1,9 +1,7 @@
 class VertexIndexPairArray(APIObject,IDisposable,IEnumerable):
  """
  An array that contains VertexIndex pairs.
-
  
-
  VertexIndexPairArray()
  """
  def Append(self,item):
@@ -12,7 +10,6 @@ class VertexIndexPairArray(APIObject,IDisposable,IEnumerable):
  def Clear(self):
   """
   Clear(self: VertexIndexPairArray)
-
    Removes every VertexIndex pair from the array,rendering it empty.
   """
   pass
@@ -22,22 +19,16 @@ class VertexIndexPairArray(APIObject,IDisposable,IEnumerable):
  def ForwardIterator(self):
   """
   ForwardIterator(self: VertexIndexPairArray) -> VertexIndexPairArrayIterator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: VertexIndexPairArray) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
@@ -53,11 +44,8 @@ class VertexIndexPairArray(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: VertexIndexPairArray) -> VertexIndexPairArrayIterator
-
   
-
    Retrieve a backward moving iterator to the array.
-
    Returns: Returns a backward moving iterator to the array.
   """
   pass
@@ -82,23 +70,13 @@ class VertexIndexPairArray(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the array is empty.
 
-
-
 Get: IsEmpty(self: VertexIndexPairArray) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of VertexIndex pairs that are in the array.
 
-
-
 Get: Size(self: VertexIndexPairArray) -> int
 
-
-
 """
-
 

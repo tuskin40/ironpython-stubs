@@ -47,16 +47,7 @@ class ExternalApplicationArray(APIObject,IDisposable,IEnumerable):
   pass
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get: IsEmpty(self: ExternalApplicationArray) -> bool
-
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get: Size(self: ExternalApplicationArray) -> int
-
-
-
 """
-
-

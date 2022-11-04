@@ -6,20 +6,15 @@ class ContentNode(RenderNode,IDisposable):
  def GetAsset(self):
   """
   GetAsset(self: ContentNode) -> Asset
-
   
-
    Returns an an instance of an Asset object,which contains definitions of the 
-
     content node.
   """
   pass
  def GetTransform(self):
   """
   GetTransform(self: ContentNode) -> Transform
-
   
-
    A transformation matrix associated with the node.
   """
   pass

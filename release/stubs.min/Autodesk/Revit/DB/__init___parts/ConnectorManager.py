@@ -6,17 +6,11 @@ class ConnectorManager(object,IDisposable):
  def Lookup(self,index):
   """
   Lookup(self: ConnectorManager,index: int) -> Connector
-
   
-
    Lookup the connector using the unique index value that identify this connector.
-
   
-
    index: The unique index value.
-
    Returns: Returns the connector or null if a connector for the provided unique index 
-
     value doesn't exist.
   """
   pass
@@ -38,45 +32,25 @@ class ConnectorManager(object,IDisposable):
  Connectors=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Return all the Connectors of the Connector Manager.
 
-
-
 Get: Connectors(self: ConnectorManager) -> ConnectorSet
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ConnectorManager) -> bool
 
-
-
 """
-
  Owner=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property is used to retrieve the owner of the Connector Manager.
 
-
-
 Get: Owner(self: ConnectorManager) -> Element
 
-
-
 """
-
  UnusedConnectors=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Return all the unused Connectors of the Connector Manager.
 
-
-
 Get: UnusedConnectors(self: ConnectorManager) -> ConnectorSet
 
-
-
 """
-
 

@@ -6,9 +6,7 @@ class PlanCircuit(APIObject,IDisposable):
  def GetPointInside(self):
   """
   GetPointInside(self: PlanCircuit) -> UV
-
   
-
    Returns a point inside the circuit.
   """
   pass
@@ -30,34 +28,19 @@ class PlanCircuit(APIObject,IDisposable):
  Area=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The enclosed area of the circuit.
 
-
-
 Get: Area(self: PlanCircuit) -> float
 
-
-
 """
-
  IsRoomLocated=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Reports whether there is a room located in this circuit.
 
-
-
 Get: IsRoomLocated(self: PlanCircuit) -> bool
 
-
-
 """
-
  SideNum=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number of sides in the circuit.
 
-
-
 Get: SideNum(self: PlanCircuit) -> int
 
-
-
 """
-
 

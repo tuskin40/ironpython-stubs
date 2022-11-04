@@ -1,9 +1,7 @@
 class FilterStringLessOrEqual(FilterStringRuleEvaluator,IDisposable):
  """
  Tests whether string values from the document would sort before or match a certain string.
-
  
-
  FilterStringLessOrEqual()
  """
  def Dispose(self):

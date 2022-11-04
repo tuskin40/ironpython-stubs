@@ -1,9 +1,7 @@
 class ResourceVersionStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  An enum indicating whether a resource is current or out of date.
-
  
-
  enum ResourceVersionStatus,values: Current (0),OutOfDate (1),Unknown (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ResourceVersionStatus(Enum,IComparable,IFormattable,IConvertible):
  OutOfDate=None
  Unknown=None
  value__=None
-

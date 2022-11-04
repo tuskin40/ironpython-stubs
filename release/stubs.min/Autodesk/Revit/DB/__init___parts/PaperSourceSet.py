@@ -1,30 +1,22 @@
 class PaperSourceSet(APIObject,IDisposable,IEnumerable):
  """
  A set that can contain any number of paper source objects.
-
  
-
  PaperSourceSet()
  """
  def Clear(self):
   """
   Clear(self: PaperSourceSet)
-
    Removes every item from the set,rendering it empty.
   """
   pass
  def Contains(self,item):
   """
   Contains(self: PaperSourceSet,item: PaperSource) -> bool
-
   
-
    Tests for the existence of an item within the set.
-
   
-
    item: The item to be searched for.
-
    Returns: The Contains method returns True if the item is within the set,otherwise False.
   """
   pass
@@ -34,37 +26,26 @@ class PaperSourceSet(APIObject,IDisposable,IEnumerable):
  def Erase(self,item):
   """
   Erase(self: PaperSourceSet,item: PaperSource) -> int
-
   
-
    Removes a specified object from the set.
-
   
-
    item: The item to be erased.
-
    Returns: The number of items that were erased from the set.
   """
   pass
  def ForwardIterator(self):
   """
   ForwardIterator(self: PaperSourceSet) -> PaperSourceSetIterator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: PaperSourceSet) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
@@ -80,11 +61,8 @@ class PaperSourceSet(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: PaperSourceSet) -> PaperSourceSetIterator
-
   
-
    Retrieve a backward moving iterator to the set.
-
    Returns: Returns a backward moving iterator to the set.
   """
   pass
@@ -103,23 +81,13 @@ class PaperSourceSet(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the set is empty.
 
-
-
 Get: IsEmpty(self: PaperSourceSet) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of objects that are in the set.
 
-
-
 Get: Size(self: PaperSourceSet) -> int
 
-
-
 """
-
 

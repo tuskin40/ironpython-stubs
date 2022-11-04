@@ -1,9 +1,7 @@
 class DataExchangeMessageSeverity(Enum,IComparable,IFormattable,IConvertible):
  """
  Error levels for DataExchangeLog
-
  
-
  enum DataExchangeMessageSeverity,values: Error (2),FatalError (3),Info (0),Warning (1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class DataExchangeMessageSeverity(Enum,IComparable,IFormattable,IConvertible):
  Info=None
  value__=None
  Warning=None
-

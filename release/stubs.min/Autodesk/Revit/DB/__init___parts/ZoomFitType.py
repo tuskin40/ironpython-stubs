@@ -1,9 +1,7 @@
 class ZoomFitType(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum is used to define type of zoom.
-
  
-
  enum ZoomFitType,values: FitToPage (0),Zoom (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ZoomFitType(Enum,IComparable,IFormattable,IConvertible):
  FitToPage=None
  value__=None
  Zoom=None
-

@@ -1,7 +1,6 @@
 class RevitLinkOperations(object,IDisposable):
  """
  This class is used to extend the IExternalResourceServer interface with methods to support operations
-
     specifically related to Revit links.
  """
  def Dispose(self):
@@ -13,44 +12,27 @@ class RevitLinkOperations(object,IDisposable):
  def SetGetLocalPathForOpenCallback(self,makeLocalCopyForOpen):
   """
   SetGetLocalPathForOpenCallback(self: RevitLinkOperations,makeLocalCopyForOpen: IGetLocalPathForOpenCallback)
-
    Sets the IGetLocalPathForOpenCallback that will support the "Open (and Unload)" 
-
     command for Revit links
-
      obtained from an IExternalResourceServer.
-
   
-
   
-
    makeLocalCopyForOpen: The IGetLocalPathForOpenCallback that will support the "Open (and Unload)" 
-
     command.
   """
   pass
  def SetOnLocalLinkSharedCoordinatesSavedCallback(self,onLocalLinkSharedCoordinatesSaved):
   """
   SetOnLocalLinkSharedCoordinatesSavedCallback(self: RevitLinkOperations,onLocalLinkSharedCoordinatesSaved: IOnLocalLinkSharedCoordinatesSavedCallback)
-
    Sets the callback that will be called when the Revit user saves new shared 
-
     coordinate
-
      settings to a linked document obtained from an 
-
     IExternalResourceServer.
-
   
-
   
-
    onLocalLinkSharedCoordinatesSaved: An IOnLocalLinkSharedCoordinatesSavedCallback object that can respond when the 
-
     user
-
      saves new shared coordinates to a Revit link document obtained from 
-
     IExternalResourceServer.
   """
   pass
@@ -69,12 +51,7 @@ class RevitLinkOperations(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RevitLinkOperations) -> bool
 
-
-
 """
-
 

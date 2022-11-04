@@ -1,13 +1,9 @@
 class MultiplanarOption(Enum,IComparable,IFormattable,IConvertible):
  """
  Input argument type for Rebar.GetCenterlineCurves method.
-
     Controls whether all curves of a multi-planar Rebar element are returned by
-
     GetCenterlineCurves,or only the curves in the primary plane.
-
  
-
  enum MultiplanarOption,values: IncludeAllMultiplanarCurves (0),IncludeOnlyPlanarCurves (1)
  """
  def __eq__(self,*args):
@@ -36,4 +32,3 @@ class MultiplanarOption(Enum,IComparable,IFormattable,IConvertible):
  IncludeAllMultiplanarCurves=None
  IncludeOnlyPlanarCurves=None
  value__=None
-

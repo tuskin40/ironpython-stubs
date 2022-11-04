@@ -1,9 +1,7 @@
 class TextAlignFlags(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all the Text align flags.
-
  
-
  enum TextAlignFlags,values: TEF_ALIGN_BOTTOM (2048),TEF_ALIGN_CENTER (128),TEF_ALIGN_LEFT (64),TEF_ALIGN_MIDDLE (1024),TEF_ALIGN_RIGHT (256),TEF_ALIGN_TOP (512)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class TextAlignFlags(Enum,IComparable,IFormattable,IConvertible):
  TEF_ALIGN_RIGHT=None
  TEF_ALIGN_TOP=None
  value__=None
-

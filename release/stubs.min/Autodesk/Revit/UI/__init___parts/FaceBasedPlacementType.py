@@ -1,9 +1,7 @@
 class FaceBasedPlacementType(Enum,IComparable,IFormattable,IConvertible):
  """
  This enumerated type specifies options available for placement of a face-based family instance.
-
  
-
  enum FaceBasedPlacementType,values: Default (0),PlaceOnFace (2),PlaceOnVerticalFace (1),PlaceOnWorkPlane (3)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class FaceBasedPlacementType(Enum,IComparable,IFormattable,IConvertible):
  PlaceOnVerticalFace=None
  PlaceOnWorkPlane=None
  value__=None
-

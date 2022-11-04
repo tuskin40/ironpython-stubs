@@ -6,15 +6,10 @@ class RebarShapeConstraint(object,IDisposable):
  def GetParamId(self):
   """
   GetParamId(self: RebarShapeConstraint) -> ElementId
-
   
-
    Return the Id of the parameter associated with this constraint.
-
    Returns: The Id of the parameter,or InvalidElementId if the constraint
-
      does not 
-
     have one.
   """
   pass
@@ -36,12 +31,7 @@ class RebarShapeConstraint(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RebarShapeConstraint) -> bool
 
-
-
 """
-
 

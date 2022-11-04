@@ -1,9 +1,7 @@
 class ConnectorType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all connector types for a connection
-
  
-
  enum ConnectorType,values: AllModes (16777215),AnyEnd (129),BlankEnd (128),Curve (2),End (1),EndSurface (17),Family (49),Invalid (0),Logical (4),MasterSurface (32),NodeReference (64),NonEnd (30),Physical (19),Reference (8),Surface (16)
  """
  def __eq__(self,*args):
@@ -45,4 +43,3 @@ class ConnectorType(Enum,IComparable,IFormattable,IConvertible):
  Reference=None
  Surface=None
  value__=None
-

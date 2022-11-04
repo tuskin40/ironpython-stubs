@@ -3,9 +3,7 @@ class RebarCoupler(Element,IDisposable):
  def CouplerLinkTwoBars(self):
   """
   CouplerLinkTwoBars(self: RebarCoupler) -> bool
-
   
-
    returns true if the coupler sits on two rebar and false otherwise
   """
   pass
@@ -13,25 +11,15 @@ class RebarCoupler(Element,IDisposable):
  def Create(doc,typeId,pFirstData,pSecondData,error):
   """
   Create(doc: Document,typeId: ElementId,pFirstData: ReinforcementData,pSecondData: ReinforcementData) -> (RebarCoupler,RebarCouplerError)
-
   
-
    Creates a new instance of a Rebar Coupler element within the project.
-
   
-
    doc: A document.
-
    typeId: type id for coupler
-
    pFirstData: information about the first reinforcement to be coupled
-
    pSecondData: information about the second reinforcement to be coupled; for the default 
-
     value,coupler is placed on one reinforcement
-
   
-
    Returns: The newly created Rebar Coupler instance,or ll if the operation fails.
   """
   pass
@@ -44,50 +32,35 @@ class RebarCoupler(Element,IDisposable):
  def GetCoupledReinforcementData(self):
   """
   GetCoupledReinforcementData(self: RebarCoupler) -> IList[ReinforcementData]
-
   
-
    gets the reinforcement data. If coupler stays on one bar the list will have 
-
     size=1. If coupler connects two bars the size will be 2.
   """
   pass
  def GetCouplerPositionTransform(self,couplerPositionIndex):
   """
   GetCouplerPositionTransform(self: RebarCoupler,couplerPositionIndex: int) -> Transform
-
   
-
    Return a transform representing the relative position of the coupler at index 
-
     couplerPositionIndex in the set.
-
   
-
   
-
    couplerPositionIndex: An index between 0 and (CouplerQuantity-1).
-
    Returns: The position of a coupler in the set relative (0,0,0).
   """
   pass
  def GetCouplerQuantity(self):
   """
   GetCouplerQuantity(self: RebarCoupler) -> int
-
   
-
    Identifies the number of couplers in a set.
-
    Returns: Returns the number of couplers in a set.
   """
   pass
  def GetPointsForPlacement(self):
   """
   GetPointsForPlacement(self: RebarCoupler) -> IList[XYZ]
-
   
-
    gets the point (or points in case of rebar set) where the coupler is placed
   """
   pass
@@ -109,14 +82,8 @@ class RebarCoupler(Element,IDisposable):
  CouplerMark=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """gets and sets the coupler mark
 
-
-
 Get: CouplerMark(self: RebarCoupler) -> str
 
-
-
 Set: CouplerMark(self: RebarCoupler)=value
-
 """
-
 

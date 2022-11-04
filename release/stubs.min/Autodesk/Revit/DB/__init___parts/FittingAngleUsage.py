@@ -1,9 +1,7 @@
 class FittingAngleUsage(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type representing the options for how to limit the angle values applicable to fitting content.
-
  
-
  enum FittingAngleUsage,values: UseAnAngleIncrement (1),UseAnyAngle (0),UseSpecificAngles (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class FittingAngleUsage(Enum,IComparable,IFormattable,IConvertible):
  UseAnyAngle=None
  UseSpecificAngles=None
  value__=None
-

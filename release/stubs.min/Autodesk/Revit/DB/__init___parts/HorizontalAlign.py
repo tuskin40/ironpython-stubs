@@ -1,9 +1,7 @@
 class HorizontalAlign(Enum,IComparable,IFormattable,IConvertible):
  """
  Horizontal alignment of model text.
-
  
-
  enum HorizontalAlign,values: Center (128),Left (64),Right (256)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class HorizontalAlign(Enum,IComparable,IFormattable,IConvertible):
  Left=None
  Right=None
  value__=None
-

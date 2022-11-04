@@ -1,9 +1,7 @@
 class LineProperties(object,IDisposable):
  """
  A structure that has access to the pen properties of lines/curves
-
     that are currently being drawn/exported via an export context
-
     during a custom export process.
  """
  def Dispose(self):
@@ -27,56 +25,31 @@ class LineProperties(object,IDisposable):
  Color=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current color used when drawing lines/curves.
 
-
-
 Get: Color(self: LineProperties) -> Color
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: LineProperties) -> bool
 
-
-
 """
-
  LineWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current width (thickness) of the pen stroke when drawing lines/curves.
 
-
-
 Get: LineWidth(self: LineProperties) -> float
 
-
-
 """
-
  PatternId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the current Line pattern element used when drawing lines/curves.
 
-
-
 Get: PatternId(self: LineProperties) -> ElementId
 
-
-
 """
-
  Transparency=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current transparency level to be applied to the current color.
 
-
-
 Get: Transparency(self: LineProperties) -> int
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class FabricSheetAlignment(Enum,IComparable,IFormattable,IConvertible):
  """
  Fabric Sheet alignment in the fabric distribution
-
  
-
  enum FabricSheetAlignment,values: BothEdges (3),EndingEdge (2),Null (0),StartingEdge (1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class FabricSheetAlignment(Enum,IComparable,IFormattable,IConvertible):
  Null=None
  StartingEdge=None
  value__=None
-

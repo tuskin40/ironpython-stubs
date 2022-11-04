@@ -1,9 +1,7 @@
 class RebarShapeConstraintCircumference(RebarShapeConstraint,IDisposable):
  """
  A circumference constraint associated with an arc in a RebarShapeDefinition.
-
  
-
  RebarShapeConstraintCircumference(paramId: ElementId,refType: RebarShapeArcReferenceType)
  """
  def Dispose(self):
@@ -28,12 +26,7 @@ class RebarShapeConstraintCircumference(RebarShapeConstraint,IDisposable):
  ArcReferenceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The choice of rule for measuring the diameter.
 
-
-
 Get: ArcReferenceType(self: RebarShapeConstraintCircumference) -> RebarShapeArcReferenceType
 
-
-
 """
-
 

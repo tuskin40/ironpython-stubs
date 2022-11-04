@@ -6,11 +6,8 @@ class PolylineNode(ModelCurveNode,IDisposable):
  def GetPolyline(self):
   """
   GetPolyline(self: PolylineNode) -> PolyLine
-
   
-
    Returns the polyline object corresponding to the node.
-
    Returns: The polyline instance.
   """
   pass

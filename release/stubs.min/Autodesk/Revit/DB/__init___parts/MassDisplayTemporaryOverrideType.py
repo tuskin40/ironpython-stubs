@@ -1,9 +1,7 @@
 class MassDisplayTemporaryOverrideType(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum identifies the mass display overrides.
-
  
-
  enum MassDisplayTemporaryOverrideType,values: ShowMassByViewSettings (0),ShowMassFormAndFloors (1),ShowMassSurfaceTypes (2),ShowMassZonesAndShades (3)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class MassDisplayTemporaryOverrideType(Enum,IComparable,IFormattable,IConvertibl
  ShowMassSurfaceTypes=None
  ShowMassZonesAndShades=None
  value__=None
-

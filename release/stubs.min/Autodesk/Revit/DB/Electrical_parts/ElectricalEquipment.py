@@ -21,14 +21,8 @@ class ElectricalEquipment(MEPModel,IDisposable):
  DistributionSystem=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """get or set the Distribution System for the Electrical Equipment.
 
-
-
 Get: DistributionSystem(self: ElectricalEquipment) -> DistributionSysType
 
-
-
 Set: DistributionSystem(self: ElectricalEquipment)=value
-
 """
-
 

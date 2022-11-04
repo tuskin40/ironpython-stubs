@@ -1,9 +1,7 @@
 class FillPatternHostOrientation(Enum,IComparable,IFormattable,IConvertible):
  """
  The types of orientations for fill patterns.
-
  
-
  enum FillPatternHostOrientation,values: AsText (1),ToHost (2),ToView (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class FillPatternHostOrientation(Enum,IComparable,IFormattable,IConvertible):
  ToHost=None
  ToView=None
  value__=None
-

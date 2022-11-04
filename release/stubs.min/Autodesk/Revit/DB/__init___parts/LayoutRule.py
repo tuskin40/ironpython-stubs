@@ -1,7 +1,6 @@
 class LayoutRule(APIObject,IDisposable):
  """
  The LayoutRule object is a base object for all type of layout rules for 
-
  Beam System within the Autodesk Revit API.
  """
  def Dispose(self):

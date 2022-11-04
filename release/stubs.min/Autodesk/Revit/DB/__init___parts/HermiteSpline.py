@@ -4,7 +4,6 @@ class HermiteSpline(Curve,IDisposable):
  def Create(controlPoints,periodic,tangents=None):
   """
   Create(controlPoints: IList[XYZ],periodic: bool) -> HermiteSpline
-
   Create(controlPoints: IList[XYZ],periodic: bool,tangents: HermiteSplineTangents) -> HermiteSpline
   """
   pass
@@ -29,47 +28,26 @@ class HermiteSpline(Curve,IDisposable):
  ControlPoints=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The control points of the Hermite spline.
 
-
-
 Get: ControlPoints(self: HermiteSpline) -> IList[XYZ]
 
-
-
 Set: ControlPoints(self: HermiteSpline)=value
-
 """
-
  IsPeriodic=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns whether the Hermite spline is periodic or not.
 
-
-
 Get: IsPeriodic(self: HermiteSpline) -> bool
 
-
-
 """
-
  Parameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the params of the Hermite spline.
 
-
-
 Get: Parameters(self: HermiteSpline) -> DoubleArray
 
-
-
 """
-
  Tangents=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the tangents of the Hermite spline.
 
-
-
 Get: Tangents(self: HermiteSpline) -> IList[XYZ]
 
-
-
 """
-
 

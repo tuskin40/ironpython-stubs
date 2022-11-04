@@ -18,23 +18,13 @@ class AssemblyDifferenceMemberCount(AssemblyDifference,IDisposable):
  Count1=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Number of members in the first assembly
 
-
-
 Get: Count1(self: AssemblyDifferenceMemberCount) -> int
 
-
-
 """
-
  Count2=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Number of members in the second assembly
 
-
-
 Get: Count2(self: AssemblyDifferenceMemberCount) -> int
 
-
-
 """
-
 

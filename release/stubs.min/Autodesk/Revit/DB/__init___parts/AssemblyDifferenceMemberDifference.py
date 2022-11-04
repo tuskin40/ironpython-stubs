@@ -18,34 +18,19 @@ class AssemblyDifferenceMemberDifference(AssemblyDifference,IDisposable):
  MemberDifference=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Difference between the assembly members
 
-
-
 Get: MemberDifference(self: AssemblyDifferenceMemberDifference) -> AssemblyMemberDifference
 
-
-
 """
-
  MemberId1=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the member in the first assembly
 
-
-
 Get: MemberId1(self: AssemblyDifferenceMemberDifference) -> ElementId
 
-
-
 """
-
  MemberId2=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the member in the second assembly
 
-
-
 Get: MemberId2(self: AssemblyDifferenceMemberDifference) -> ElementId
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class BRepBuilderState(Enum,IComparable,IFormattable,IConvertible):
  """
  This enumerative type corresponds to the possible states of a BRepBuilder object.
-
  
-
  enum BRepBuilderState,values: AcceptingData (1),Completed (2),InvalidState (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class BRepBuilderState(Enum,IComparable,IFormattable,IConvertible):
  Completed=None
  InvalidState=None
  value__=None
-

@@ -1,9 +1,7 @@
 class DatumEnds(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type representing ends of a datum plane.
-
  
-
  enum DatumEnds,values: End0 (0),End1 (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DatumEnds(Enum,IComparable,IFormattable,IConvertible):
  End0=None
  End1=None
  value__=None
-

@@ -3,7 +3,6 @@ class HostedSweep(HostObject,IDisposable):
  def AddSegment(self,targetRef):
   """
   AddSegment(self: HostedSweep,targetRef: Reference)
-
    Add segments to the hosted sweep object.
   """
   pass
@@ -16,24 +15,17 @@ class HostedSweep(HostObject,IDisposable):
  def GetEndPointParameter(self,targetRef,endIdx):
   """
   GetEndPointParameter(self: HostedSweep,targetRef: Reference,endIdx: int) -> float
-
   
-
    Retrieve segment's start point or end point parameter.
-
   
-
    targetRef: Segment's reference whose parameter want to be get.
-
    endIdx: Start point (=0) or end point (=1).
-
    Returns: Start point or end point parameter.
   """
   pass
  def HorizontalFlip(self):
   """
   HorizontalFlip(self: HostedSweep)
-
    Flip the hosted sweep object along horizontal line.
   """
   pass
@@ -43,11 +35,8 @@ class HostedSweep(HostObject,IDisposable):
  def RemoveSegment(self,targetRef):
   """
   RemoveSegment(self: HostedSweep,targetRef: Reference)
-
    Remove segments from the  hosted sweep object.
-
   
-
    targetRef: Segment's reference which want to be removed.
   """
   pass
@@ -57,26 +46,18 @@ class HostedSweep(HostObject,IDisposable):
  def SetEndPointParameter(self,targetRef,endIdx,param):
   """
   SetEndPointParameter(self: HostedSweep,targetRef: Reference,endIdx: int,param: float) -> bool
-
   
-
    Set segment's start point or end point parameter.
-
   
-
    targetRef: Segment's reference whose parameter want to be set.
-
    endIdx: Start point (=0) or end point (=1).
-
    param: Value of parameter.
-
    Returns: true if operation success.
   """
   pass
  def VerticalFlip(self):
   """
   VerticalFlip(self: HostedSweep)
-
    Flip the hosted sweep object along vertical line.
   """
   pass
@@ -92,73 +73,40 @@ class HostedSweep(HostObject,IDisposable):
  Angle=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve/set the angle of the  hosted sweep object relative its references (Unit : Radian).
 
-
-
 Get: Angle(self: HostedSweep) -> float
 
-
-
 Set: Angle(self: HostedSweep)=value
-
 """
-
  HorizontalFlipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve the horizontal flip status of the hosted sweep object.
 
-
-
 Get: HorizontalFlipped(self: HostedSweep) -> bool
 
-
-
 """
-
  HorizontalOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve/set the horizontal offset of the hosted sweep object.
 
-
-
 Get: HorizontalOffset(self: HostedSweep) -> float
 
-
-
 Set: HorizontalOffset(self: HostedSweep)=value
-
 """
-
  Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve the length of the hosted sweep object.
 
-
-
 Get: Length(self: HostedSweep) -> float
 
-
-
 """
-
  VerticalFlipped=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve the vertical flip status of the hosted sweep object.
 
-
-
 Get: VerticalFlipped(self: HostedSweep) -> bool
 
-
-
 """
-
  VerticalOffset=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve/set the vertical offset of the hosted sweep object.
 
-
-
 Get: VerticalOffset(self: HostedSweep) -> float
 
-
-
 Set: VerticalOffset(self: HostedSweep)=value
-
 """
-
 

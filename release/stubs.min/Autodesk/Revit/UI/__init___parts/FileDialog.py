@@ -6,13 +6,9 @@ class FileDialog(object,IDisposable):
  def GetSelectedModelPath(self):
   """
   GetSelectedModelPath(self: FileDialog) -> ModelPath
-
   
-
    Returns the selected file path chosen by the user.
-
    Returns: The selected file path,or ll if the dialog has not been shown or selection was 
-
     cancelled.
   """
   pass
@@ -20,21 +16,13 @@ class FileDialog(object,IDisposable):
  def IsValidFilterString(filterString):
   """
   IsValidFilterString(filterString: str) -> bool
-
   
-
    Determines if the input string is acceptable as input for a FileDialog filter 
-
     string.
-
   
-
   
-
    filterString: The filter string.
-
    Returns: True of the filter string meets the minimal requirements to be a valid filter 
-
     string.
   """
   pass
@@ -44,13 +32,9 @@ class FileDialog(object,IDisposable):
  def Show(self):
   """
   Show(self: FileDialog) -> ItemSelectionDialogResult
-
   
-
    Shows the dialog using the stored settings.
-
    Returns: A status indicating whether the user selected a file name or cancelled the 
-
     dialog without making a selection.
   """
   pass
@@ -68,52 +52,20 @@ class FileDialog(object,IDisposable):
   pass
  DefaultFilterEntry=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The default entry (from the filter) to be selected in the dialog.
-
-
-
 Get: DefaultFilterEntry(self: FileDialog) -> str
-
-
-
 Set: DefaultFilterEntry(self: FileDialog)=value
-
 """
-
  Filter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The filter string representing a collection of extensions allowed by the dialog.
-
-
-
 Get: Filter(self: FileDialog) -> str
-
-
-
 Set: Filter(self: FileDialog)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: FileDialog) -> bool
-
-
-
 """
-
  Title=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The title to show on the dialog.
-
-
-
 Get: Title(self: FileDialog) -> str
-
-
-
 Set: Title(self: FileDialog)=value
-
 """
-
-

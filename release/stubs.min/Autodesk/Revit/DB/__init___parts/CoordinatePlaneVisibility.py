@@ -1,9 +1,7 @@
 class CoordinatePlaneVisibility(Enum,IComparable,IFormattable,IConvertible):
  """
  Visibility settings for ReferencePoint element's coordinate reference planes.
-
  
-
  enum CoordinatePlaneVisibility,values: Always (2),Never (0),WhenSelected (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class CoordinatePlaneVisibility(Enum,IComparable,IFormattable,IConvertible):
  Never=None
  value__=None
  WhenSelected=None
-

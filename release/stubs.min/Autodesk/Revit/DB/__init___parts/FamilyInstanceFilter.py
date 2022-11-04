@@ -1,9 +1,7 @@
 class FamilyInstanceFilter(ElementSlowFilter,IDisposable):
  """
  A filter used to find elements that are family instances of the given family symbol.
-
  
-
  FamilyInstanceFilter(document: Document,familySymbolId: ElementId)
  """
  def Dispose(self):
@@ -28,12 +26,7 @@ class FamilyInstanceFilter(ElementSlowFilter,IDisposable):
  FamilySymbolId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The family symbol id.
 
-
-
 Get: FamilySymbolId(self: FamilyInstanceFilter) -> ElementId
 
-
-
 """
-
 

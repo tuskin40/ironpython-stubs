@@ -6,11 +6,8 @@ class RepeatingReferenceSource(object,IDisposable):
  def GetBounds(self):
   """
   GetBounds(self: RepeatingReferenceSource) -> RepeaterBounds
-
   
-
    Returns information about the boundaries of the repeating reference array.
-
    Returns: The bounds of the repeating reference source.
   """
   pass
@@ -18,38 +15,24 @@ class RepeatingReferenceSource(object,IDisposable):
  def GetDefaultRepeatingReferenceSource(document,elementId):
   """
   GetDefaultRepeatingReferenceSource(document: Document,elementId: ElementId) -> RepeatingReferenceSource
-
   
-
    Returns the default repeating reference source for a given element.
-
   
-
    document: The document that contains the element.
-
    elementId: The id of the element.
-
    Returns: The default repeating reference source of the given element.
   """
   pass
  def GetReference(self,coordinates):
   """
   GetReference(self: RepeatingReferenceSource,coordinates: RepeaterCoordinates) -> Reference
-
   
-
    Returns an individual repeating reference given by coordinates in the array,or 
-
     ll if there is no reference at the coordinates (for example if there is a hole 
-
     in a divided surface.)
-
   
-
   
-
    coordinates: The coordinates in the array of repeating references.
-
    Returns: The repeating reference.
   """
   pass
@@ -57,21 +40,13 @@ class RepeatingReferenceSource(object,IDisposable):
  def HasRepeatingReferenceSource(document,elementId):
   """
   HasRepeatingReferenceSource(document: Document,elementId: ElementId) -> bool
-
   
-
    Determines whether an element has any repeating reference sources that can be 
-
     used when creating component repeaters.
-
   
-
   
-
    document: The document that contains the element.
-
    elementId: The id of the element.
-
    Returns: True if the element has any repeating reference sources.
   """
   pass
@@ -93,23 +68,13 @@ class RepeatingReferenceSource(object,IDisposable):
  DimensionCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The dimension count of the repeating reference array.
 
-
-
 Get: DimensionCount(self: RepeatingReferenceSource) -> int
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RepeatingReferenceSource) -> bool
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class ScheduleSortOrder(Enum,IComparable,IFormattable,IConvertible):
  """
  Options for sort order of rows in a schedule.
-
  
-
  enum ScheduleSortOrder,values: Ascending (0),Descending (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ScheduleSortOrder(Enum,IComparable,IFormattable,IConvertible):
  Ascending=None
  Descending=None
  value__=None
-

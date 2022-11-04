@@ -21,56 +21,31 @@ class UpdaterInfo(object,IDisposable):
  AdditionalInformation=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Additional information about the updater.
 
-
-
 Get: AdditionalInformation(self: UpdaterInfo) -> str
 
-
-
 """
-
  ApplicationName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Name of the application that owns the updater.
 
-
-
 Get: ApplicationName(self: UpdaterInfo) -> str
 
-
-
 """
-
  IsOptional=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Whether the updater is optional or not.
 
-
-
 Get: IsOptional(self: UpdaterInfo) -> bool
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: UpdaterInfo) -> bool
 
-
-
 """
-
  UpdaterName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Name of the updater.
 
-
-
 Get: UpdaterName(self: UpdaterInfo) -> str
 
-
-
 """
-
 

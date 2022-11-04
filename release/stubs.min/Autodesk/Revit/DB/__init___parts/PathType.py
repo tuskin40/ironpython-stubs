@@ -1,15 +1,10 @@
 class PathType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum determining what kind of path a given external file
-
     reference path is.
-
     Paths are valid for all types of external file references
-
     unless otherwise specified.
-
  
-
  enum PathType,values: Absolute (1),Content (3),Relative (0),Server (2)
  """
  def __eq__(self,*args):
@@ -40,4 +35,3 @@ class PathType(Enum,IComparable,IFormattable,IConvertible):
  Relative=None
  Server=None
  value__=None
-

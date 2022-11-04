@@ -1,9 +1,7 @@
 class ViewDetailLevel(Enum,IComparable,IFormattable,IConvertible):
  """
  Detail level of the view
-
  
-
  enum ViewDetailLevel,values: Coarse (1),Fine (3),Medium (2),Undefined (0)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ViewDetailLevel(Enum,IComparable,IFormattable,IConvertible):
  Medium=None
  Undefined=None
  value__=None
-

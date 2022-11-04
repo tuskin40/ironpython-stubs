@@ -1,9 +1,7 @@
 class StructuralSectionsServiceData(object,IDisposable):
  """
  The data needed by section type server to perform type definition.
-
  
-
  StructuralSectionsServiceData(document: Document,currentElementIds: IList[ElementId])
  """
  def Dispose(self):
@@ -12,13 +10,9 @@ class StructuralSectionsServiceData(object,IDisposable):
  def GetCurrentElements(self):
   """
   GetCurrentElements(self: StructuralSectionsServiceData) -> IList[ElementId]
-
   
-
    Returns the list of Ids of the current elements.
-
    Returns: Ids of the current elements. Contains the family base element to which the 
-
     section shape type parameter belongs.
   """
   pass
@@ -44,23 +38,13 @@ class StructuralSectionsServiceData(object,IDisposable):
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current document.
 
-
-
 Get: Document(self: StructuralSectionsServiceData) -> Document
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: StructuralSectionsServiceData) -> bool
 
-
-
 """
-
 

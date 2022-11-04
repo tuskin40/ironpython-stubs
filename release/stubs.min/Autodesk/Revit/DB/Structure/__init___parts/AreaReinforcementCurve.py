@@ -24,12 +24,7 @@ class AreaReinforcementCurve(CurveElement,IDisposable):
  Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the 3D curve forming part of the boundary of an Area Reinforcement element.
 
-
-
 Get: Curve(self: AreaReinforcementCurve) -> Curve
 
-
-
 """
-
 

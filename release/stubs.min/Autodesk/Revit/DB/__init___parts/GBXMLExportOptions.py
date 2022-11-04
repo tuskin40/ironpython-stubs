@@ -1,9 +1,7 @@
 class GBXMLExportOptions(object,IDisposable):
  """
  Green-Building XML Export options. Not used currently. Reserved for future use.
-
  
-
  GBXMLExportOptions()
  """
  def Dispose(self):
@@ -27,25 +25,14 @@ class GBXMLExportOptions(object,IDisposable):
  ExportEnergyModelType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The energy model type from which gbXML will be exported.
 
-
-
 Get: ExportEnergyModelType(self: GBXMLExportOptions) -> ExportEnergyModelType
 
-
-
 Set: ExportEnergyModelType(self: GBXMLExportOptions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: GBXMLExportOptions) -> bool
 
-
-
 """
-
 

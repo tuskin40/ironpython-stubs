@@ -1,11 +1,8 @@
 class ComponentRotation(Enum,IComparable,IFormattable,IConvertible):
  """
  ComponentRotation property of DividedSurface.
-
  See Autodesk.Revit.DB.DividedSurface.
-
  
-
  enum ComponentRotation,values: Angle0 (0),Angle180 (180),Angle270 (270),Angle90 (90)
  """
  def __eq__(self,*args):
@@ -36,4 +33,3 @@ class ComponentRotation(Enum,IComparable,IFormattable,IConvertible):
  Angle270=None
  Angle90=None
  value__=None
-

@@ -18,12 +18,7 @@ class ModelCurveNode(RenderNode,IDisposable):
  LineProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Access to the line (pen) properties of the curve being drawn
 
-
-
 Get: LineProperties(self: ModelCurveNode) -> LineProperties
 
-
-
 """
-
 

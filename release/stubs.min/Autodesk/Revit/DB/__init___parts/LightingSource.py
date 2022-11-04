@@ -1,9 +1,7 @@
 class LightingSource(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the lighting scheme type in rendering settings.
-
  
-
  enum LightingSource,values: ExteriorArtificial (23),ExteriorSun (21),ExteriorSunAndArtificial (22),InteriorArtificial (26),InteriorSun (24),InteriorSunAndArtificial (25)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class LightingSource(Enum,IComparable,IFormattable,IConvertible):
  InteriorSun=None
  InteriorSunAndArtificial=None
  value__=None
-

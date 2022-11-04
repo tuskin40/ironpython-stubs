@@ -1,13 +1,9 @@
 class TessellatedFace(object,IDisposable):
  """
  Defines a planar face bounded by a polyline in 3d space. A face
-
     consists of a single connected component and can have holes.
-
  
-
  TessellatedFace(allLoopVertices: IList[IList[XYZ]],materialId: ElementId)
-
  TessellatedFace(outerLoopVertices: IList[XYZ],materialId: ElementId)
  """
  def Dispose(self):
@@ -16,9 +12,7 @@ class TessellatedFace(object,IDisposable):
  def GetBoundaryLoops(self):
   """
   GetBoundaryLoops(self: TessellatedFace) -> IList[IList[XYZ]]
-
   
-
    Get loops bounding the face.
   """
   pass
@@ -38,7 +32,6 @@ class TessellatedFace(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,allLoopVertices: IList[IList[XYZ]],materialId: ElementId)
-
   __new__(cls: type,outerLoopVertices: IList[XYZ],materialId: ElementId)
   """
   pass
@@ -48,25 +41,14 @@ class TessellatedFace(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: TessellatedFace) -> bool
 
-
-
 """
-
  MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Material of the face.
 
-
-
 Get: MaterialId(self: TessellatedFace) -> ElementId
 
-
-
 Set: MaterialId(self: TessellatedFace)=value
-
 """
-
 

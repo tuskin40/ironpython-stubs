@@ -1,9 +1,7 @@
 class AreaElemType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type to store type of AreaElement.
-
  
-
  enum AreaElemType,values: BOMAArea (1),GrossArea (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class AreaElemType(Enum,IComparable,IFormattable,IConvertible):
  BOMAArea=None
  GrossArea=None
  value__=None
-

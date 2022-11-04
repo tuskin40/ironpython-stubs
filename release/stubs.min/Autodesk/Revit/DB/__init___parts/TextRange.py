@@ -1,15 +1,10 @@
 class TextRange(object,IDisposable):
  """
  An object that is used to identify a range of characters in a
-
     Autodesk.Revit.DB.FormattedText.
-
  
-
  TextRange(start: int,length: int)
-
  TextRange()
-
  TextRange(other: TextRange)
  """
  def Dispose(self):
@@ -31,9 +26,7 @@ class TextRange(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,start: int,length: int)
-
   __new__(cls: type)
-
   __new__(cls: type,other: TextRange)
   """
   pass
@@ -43,49 +36,27 @@ class TextRange(object,IDisposable):
  End=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The index of the first character after the end of the range
 
-
-
 Get: End(self: TextRange) -> int
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: TextRange) -> bool
 
-
-
 """
-
  Length=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The length of the range.
 
-
-
 Get: Length(self: TextRange) -> int
 
-
-
 Set: Length(self: TextRange)=value
-
 """
-
  Start=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The start index of a range within the Autodesk.Revit.DB.FormattedText.
 
-
-
 Get: Start(self: TextRange) -> int
 
-
-
 Set: Start(self: TextRange)=value
-
 """
-
 

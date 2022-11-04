@@ -1,9 +1,7 @@
 class AnalyticalCurveSelector(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies which portion of an Analytical Curve is of interest.
-
  
-
  enum AnalyticalCurveSelector,values: EndPoint (1),StartPoint (0),WholeCurve (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class AnalyticalCurveSelector(Enum,IComparable,IFormattable,IConvertible):
  StartPoint=None
  value__=None
  WholeCurve=None
-

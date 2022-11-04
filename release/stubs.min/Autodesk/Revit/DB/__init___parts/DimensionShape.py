@@ -1,9 +1,7 @@
 class DimensionShape(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type to list dimension type.
-
  
-
  enum DimensionShape,values: Angular (1),ArcLength (3),Diameter (5),Linear (0),Radial (2),Spot (4),Unknown (6)
  """
  def __eq__(self,*args):
@@ -37,4 +35,3 @@ class DimensionShape(Enum,IComparable,IFormattable,IConvertible):
  Spot=None
  Unknown=None
  value__=None
-

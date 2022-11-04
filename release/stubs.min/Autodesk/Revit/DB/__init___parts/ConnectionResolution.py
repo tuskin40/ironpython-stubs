@@ -1,9 +1,7 @@
 class ConnectionResolution(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all the possible resolutions for connectivity validation.
-
  
-
  enum ConnectionResolution,values: Disconnected (0)
  """
  def __eq__(self,*args):
@@ -31,4 +29,3 @@ class ConnectionResolution(Enum,IComparable,IFormattable,IConvertible):
   pass
  Disconnected=None
  value__=None
-

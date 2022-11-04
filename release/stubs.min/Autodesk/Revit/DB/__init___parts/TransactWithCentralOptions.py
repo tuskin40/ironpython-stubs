@@ -1,9 +1,7 @@
 class TransactWithCentralOptions(object,IDisposable):
  """
  Options to customize Revit behavior when accessing the central model.
-
  
-
  TransactWithCentralOptions()
  """
  def Dispose(self):
@@ -12,11 +10,8 @@ class TransactWithCentralOptions(object,IDisposable):
  def GetLockCallback(self):
   """
   GetLockCallback(self: TransactWithCentralOptions) -> ICentralLockedCallback
-
   
-
    Gets the callback object that changes Revit's default behavior of endlessly 
-
     waiting and repeatedly trying to lock a central model.
   """
   pass
@@ -26,11 +21,8 @@ class TransactWithCentralOptions(object,IDisposable):
  def SetLockCallback(self,lockCallback):
   """
   SetLockCallback(self: TransactWithCentralOptions,lockCallback: ICentralLockedCallback)
-
    Sets or resets a callback object that would allow an external application to 
-
     change Revit's default behavior of endlessly waiting and repeatedly trying to 
-
     lock a central model.
   """
   pass
@@ -49,12 +41,7 @@ class TransactWithCentralOptions(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: TransactWithCentralOptions) -> bool
 
-
-
 """
-
 

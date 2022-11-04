@@ -1,9 +1,7 @@
 class StructuralWallUsage(Enum,IComparable,IFormattable,IConvertible):
  """
  Represents the structural usage of a wall.
-
  
-
  enum StructuralWallUsage,values: Bearing (1),Combined (3),NonBearing (0),Shear (2)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class StructuralWallUsage(Enum,IComparable,IFormattable,IConvertible):
  NonBearing=None
  Shear=None
  value__=None
-

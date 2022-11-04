@@ -1,9 +1,7 @@
 class BoundaryConditionsOrientTo(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies boundary condition orientation.
-
  
-
  enum BoundaryConditionsOrientTo,values: HostLocalCoordinateSystem (1),Project (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class BoundaryConditionsOrientTo(Enum,IComparable,IFormattable,IConvertible):
  HostLocalCoordinateSystem=None
  Project=None
  value__=None
-

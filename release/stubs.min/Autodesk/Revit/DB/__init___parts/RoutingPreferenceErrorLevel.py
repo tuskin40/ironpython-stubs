@@ -1,9 +1,7 @@
 class RoutingPreferenceErrorLevel(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing the options for posting errors or warnings when routing preferences are not satisfied.
-
  
-
  enum RoutingPreferenceErrorLevel,values: Error (2),None (0),Warning (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class RoutingPreferenceErrorLevel(Enum,IComparable,IFormattable,IConvertible):
  None=None
  value__=None
  Warning=None
-

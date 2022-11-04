@@ -1,11 +1,8 @@
 class TessellatedShapeBuilderFallback(Enum,IComparable,IFormattable,IConvertible):
  """
  Describes what  TessellatedShapeBuilder function
-
     should do,if it cannot build a requested Autodesk.Revit.DB.TessellatedShapeBuilderTarget.
-
  
-
  enum TessellatedShapeBuilderFallback,values: Abort (0),Mesh (2),Salvage (1)
  """
  def __eq__(self,*args):
@@ -35,4 +32,3 @@ class TessellatedShapeBuilderFallback(Enum,IComparable,IFormattable,IConvertible
  Mesh=None
  Salvage=None
  value__=None
-

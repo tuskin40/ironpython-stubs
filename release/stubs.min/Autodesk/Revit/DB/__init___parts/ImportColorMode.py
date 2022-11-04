@@ -1,9 +1,7 @@
 class ImportColorMode(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing how colors are handled in an import process.
-
  
-
  enum ImportColorMode,values: BlackAndWhite (2),Inverted (1),Preserved (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ImportColorMode(Enum,IComparable,IFormattable,IConvertible):
  Inverted=None
  Preserved=None
  value__=None
-

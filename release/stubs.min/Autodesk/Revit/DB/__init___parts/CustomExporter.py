@@ -1,9 +1,7 @@
 class CustomExporter(object,IDisposable):
  """
  A class that allows exporting 3D views via an export context.
-
  
-
  CustomExporter(document: Document,context: IExportContext)
  """
  def Dispose(self):
@@ -12,13 +10,9 @@ class CustomExporter(object,IDisposable):
  def Export(self,*__args):
   """
   Export(self: CustomExporter,view: View3D)
-
    Exports one 3-D view
-
   
-
    view: An instance of the 3-D view to export
-
   Export(self: CustomExporter,viewIds: IList[ElementId])
   """
   pass
@@ -26,15 +20,10 @@ class CustomExporter(object,IDisposable):
  def IsRenderingSupported():
   """
   IsRenderingSupported() -> bool
-
   
-
    Checks if 3D view rendering is currently supported in the running instance of 
-
     Revit.
-
   
-
    Returns: Returns True if rendering is currently supported,False otherwise.
   """
   pass
@@ -59,45 +48,25 @@ class CustomExporter(object,IDisposable):
   pass
  IncludeGeometricObjects=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This flag sets the exporter to either include or exclude
-
    output of geometric objects such as faces and curves
-
    when the model is being processed by the export context.
-
-
 
 Get: IncludeGeometricObjects(self: CustomExporter) -> bool
 
-
-
 Set: IncludeGeometricObjects(self: CustomExporter)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: CustomExporter) -> bool
 
-
-
 """
-
  ShouldStopOnError=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This flag instructs the exporting process to either stop or continue
-
    in case an error occurs during any of the exporting methods.
-
-
 
 Get: ShouldStopOnError(self: CustomExporter) -> bool
 
-
-
 Set: ShouldStopOnError(self: CustomExporter)=value
-
 """
-
 

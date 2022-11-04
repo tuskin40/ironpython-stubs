@@ -1,9 +1,7 @@
 class TaskDialogCommonButtons(Enum,IComparable,IFormattable,IConvertible):
  """
  A enumerated type containing the standard buttons available for Task Dialogs.
-
  
-
  enum (flags) TaskDialogCommonButtons,values: Cancel (8),Close (32),No (4),None (0),Ok (1),Retry (16),Yes (2)
  """
  def __eq__(self,*args):
@@ -37,4 +35,3 @@ class TaskDialogCommonButtons(Enum,IComparable,IFormattable,IConvertible):
  Retry=None
  value__=None
  Yes=None
-

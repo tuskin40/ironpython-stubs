@@ -24,21 +24,12 @@ class InsulationType(ElementType,IDisposable):
  IsInUse=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicate whether the insulation type is in use.
 
-
-
 Get: IsInUse(self: InsulationType) -> bool
 
-
-
 """
-
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get name of Insulation type.
 
-
-
 Set: Name(self: InsulationType)=value
-
 """
-
 

@@ -1,11 +1,8 @@
 class FileOpenDialog(FileDialog,IDisposable):
  """
  This class allows an add-in to prompt the user with the Revit dialog used to navigate to and select an existing
-
     file path.  This dialog is typically used to select a file for opening or importing.
-
  
-
  FileOpenDialog(filter: str)
  """
  def Dispose(self):
@@ -29,15 +26,6 @@ class FileOpenDialog(FileDialog,IDisposable):
   pass
  ShowPreview=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies if the dialog should include a region showing a preview of the selected file.
-
-
-
 Get: ShowPreview(self: FileOpenDialog) -> bool
-
-
-
 Set: ShowPreview(self: FileOpenDialog)=value
-
 """
-
-

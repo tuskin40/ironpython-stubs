@@ -1,9 +1,7 @@
 class ConnectorGenderType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enum of connector gender type
-
  
-
  enum ConnectorGenderType,values: Female (2),Male (1),Undefined (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ConnectorGenderType(Enum,IComparable,IFormattable,IConvertible):
  Male=None
  Undefined=None
  value__=None
-

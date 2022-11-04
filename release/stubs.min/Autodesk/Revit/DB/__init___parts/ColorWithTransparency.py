@@ -1,11 +1,8 @@
 class ColorWithTransparency(object,IDisposable):
  """
  Color with transparency
-
  
-
  ColorWithTransparency(red: UInt32,green: UInt32,blue: UInt32,transparency: UInt32)
-
  ColorWithTransparency()
  """
  def Dispose(self):
@@ -14,55 +11,40 @@ class ColorWithTransparency(object,IDisposable):
  def GetBlue(self):
   """
   GetBlue(self: ColorWithTransparency) -> UInt32
-
   
-
    get blue
-
    Returns: blue
   """
   pass
  def GetColor(self):
   """
   GetColor(self: ColorWithTransparency) -> Color
-
   
-
    get color
-
    Returns: color
   """
   pass
  def GetGreen(self):
   """
   GetGreen(self: ColorWithTransparency) -> UInt32
-
   
-
    get green
-
    Returns: green
   """
   pass
  def GetRed(self):
   """
   GetRed(self: ColorWithTransparency) -> UInt32
-
   
-
    get red
-
    Returns: red
   """
   pass
  def GetTransparency(self):
   """
   GetTransparency(self: ColorWithTransparency) -> UInt32
-
   
-
    get transparency
-
    Returns: transparency
   """
   pass
@@ -72,55 +54,40 @@ class ColorWithTransparency(object,IDisposable):
  def SetBlue(self,blue):
   """
   SetBlue(self: ColorWithTransparency,blue: UInt32)
-
    set blue
-
   
-
    blue: blue
   """
   pass
  def SetColor(self,color):
   """
   SetColor(self: ColorWithTransparency,color: Color)
-
    set color
-
   
-
    color: color
   """
   pass
  def SetGreen(self,green):
   """
   SetGreen(self: ColorWithTransparency,green: UInt32)
-
    set green
-
   
-
    green: green
   """
   pass
  def SetRed(self,red):
   """
   SetRed(self: ColorWithTransparency,red: UInt32)
-
    set red
-
   
-
    red: red
   """
   pass
  def SetTransparency(self,transparency):
   """
   SetTransparency(self: ColorWithTransparency,transparency: UInt32)
-
    set transparency
-
   
-
    transparency: transparency
   """
   pass
@@ -137,7 +104,6 @@ class ColorWithTransparency(object,IDisposable):
  def __new__(self,red=None,green=None,blue=None,transparency=None):
   """
   __new__(cls: type,red: UInt32,green: UInt32,blue: UInt32,transparency: UInt32)
-
   __new__(cls: type)
   """
   pass
@@ -147,12 +113,7 @@ class ColorWithTransparency(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ColorWithTransparency) -> bool
 
-
-
 """
-
 

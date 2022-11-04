@@ -1,15 +1,10 @@
 class RevitLinkOptions(object,IDisposable):
  """
  This class contains the options in use when creating
-
     or loading a Revit link.
-
  
-
  RevitLinkOptions(relative: bool)
-
  RevitLinkOptions(relative: bool,config: WorksetConfiguration)
-
  RevitLinkOptions(other: RevitLinkOptions)
  """
  def Dispose(self):
@@ -18,9 +13,7 @@ class RevitLinkOptions(object,IDisposable):
  def GetWorksetConfiguration(self):
   """
   GetWorksetConfiguration(self: RevitLinkOptions) -> WorksetConfiguration
-
   
-
    Gets the set of worksets to open when creating the link.
   """
   pass
@@ -30,7 +23,6 @@ class RevitLinkOptions(object,IDisposable):
  def SetWorksetConfiguration(self,config):
   """
   SetWorksetConfiguration(self: RevitLinkOptions,config: WorksetConfiguration)
-
    Sets the set of worksets to open when creating the link.
   """
   pass
@@ -47,9 +39,7 @@ class RevitLinkOptions(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,relative: bool)
-
   __new__(cls: type,relative: bool,config: WorksetConfiguration)
-
   __new__(cls: type,other: RevitLinkOptions)
   """
   pass
@@ -58,34 +48,19 @@ class RevitLinkOptions(object,IDisposable):
   pass
  IsRelative=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The type of path to use when creating the link. If true,Revit will
-
    store a relative path for the link. If false,Revit will store an absolute
-
    path.
-
-
 
    If the link is to a Revit Server location,isRelative must be false.
 
-
-
 Get: IsRelative(self: RevitLinkOptions) -> bool
 
-
-
 Set: IsRelative(self: RevitLinkOptions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RevitLinkOptions) -> bool
 
-
-
 """
-
 

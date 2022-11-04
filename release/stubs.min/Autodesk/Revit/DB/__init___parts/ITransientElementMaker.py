@@ -3,7 +3,6 @@ class ITransientElementMaker:
  def Execute(self):
   """
   Execute(self: ITransientElementMaker)
-
    Implement this method to create transient elements.
   """
   pass

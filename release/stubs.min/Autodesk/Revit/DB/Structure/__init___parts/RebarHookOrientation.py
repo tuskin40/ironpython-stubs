@@ -1,9 +1,7 @@
 class RebarHookOrientation(Enum,IComparable,IFormattable,IConvertible):
  """
  Orientation of a rebar hook relative to the path of the Rebar Shape.
-
  
-
  enum RebarHookOrientation,values: Left (1),Right (-1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class RebarHookOrientation(Enum,IComparable,IFormattable,IConvertible):
  Left=None
  Right=None
  value__=None
-

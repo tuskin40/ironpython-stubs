@@ -1,15 +1,10 @@
 class BoundingBoxIsInsideFilter(ElementQuickFilter,IDisposable):
  """
  A filter used to match elements with a bounding box that is contained by the given Outline.
-
  
-
  BoundingBoxIsInsideFilter(outline: Outline,tolerance: float,inverted: bool)
-
  BoundingBoxIsInsideFilter(outline: Outline,tolerance: float)
-
  BoundingBoxIsInsideFilter(outline: Outline,inverted: bool)
-
  BoundingBoxIsInsideFilter(outline: Outline)
  """
  def Dispose(self):
@@ -18,11 +13,8 @@ class BoundingBoxIsInsideFilter(ElementQuickFilter,IDisposable):
  def GetBoundingBox(self):
   """
   GetBoundingBox(self: BoundingBoxIsInsideFilter) -> Outline
-
   
-
    Gets the outline being used for this filter.
-
    Returns: The outline being used for this filter.
   """
   pass
@@ -42,25 +34,16 @@ class BoundingBoxIsInsideFilter(ElementQuickFilter,IDisposable):
  def __new__(self,outline,*__args):
   """
   __new__(cls: type,outline: Outline,tolerance: float,inverted: bool)
-
   __new__(cls: type,outline: Outline,tolerance: float)
-
   __new__(cls: type,outline: Outline,inverted: bool)
-
   __new__(cls: type,outline: Outline)
   """
   pass
  Tolerance=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Allows control over the match criteria by using a tolerance in the geometry comparison. It is suggested to use this in cases where trivial differences should be considered when matching elements.
 
-
-
 Get: Tolerance(self: BoundingBoxIsInsideFilter) -> float
 
-
-
 Set: Tolerance(self: BoundingBoxIsInsideFilter)=value
-
 """
-
 

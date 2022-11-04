@@ -1,9 +1,7 @@
 class BackgroundStyle(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the background style in rendering settings.
-
  
-
  enum BackgroundStyle,values: Color (5),Image (6),SkyCloudy (3),SkyFewClouds (2),SkyNoClouds (0),SkyVeryCloudy (4),SkyVeryFewClouds (1),Transparent (7)
  """
  def __eq__(self,*args):
@@ -38,4 +36,3 @@ class BackgroundStyle(Enum,IComparable,IFormattable,IConvertible):
  SkyVeryFewClouds=None
  Transparent=None
  value__=None
-

@@ -1,9 +1,7 @@
 class WorksharingSaveAsOptions(object,IDisposable):
  """
  This class contains options specific to worksharing SaveAs.
-
  
-
  WorksharingSaveAsOptions()
  """
  def Dispose(self):
@@ -26,60 +24,33 @@ class WorksharingSaveAsOptions(object,IDisposable):
   pass
  ClearTransmitted=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """For a transmitted model opened with DetachAndPreserveWorksets,
-
    clear its transmitted flag in the Save/SaveAs operation.
-
-
 
 Get: ClearTransmitted(self: WorksharingSaveAsOptions) -> bool
 
-
-
 Set: ClearTransmitted(self: WorksharingSaveAsOptions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: WorksharingSaveAsOptions) -> bool
 
-
-
 """
-
  OpenWorksetsDefault=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The default set of user-worksets to open when opening the model in the UI.
-
    Default is AskUserToSpecify.
-
-
 
 Get: OpenWorksetsDefault(self: WorksharingSaveAsOptions) -> SimpleWorksetConfiguration
 
-
-
 Set: OpenWorksetsDefault(self: WorksharingSaveAsOptions)=value
-
 """
-
  SaveAsCentral=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Whether to save the new model as a central instead of local model.
-
    True: save as a central model.
-
    Default is false: save as a local model.
-
-
 
 Get: SaveAsCentral(self: WorksharingSaveAsOptions) -> bool
 
-
-
 Set: SaveAsCentral(self: WorksharingSaveAsOptions)=value
-
 """
-
 

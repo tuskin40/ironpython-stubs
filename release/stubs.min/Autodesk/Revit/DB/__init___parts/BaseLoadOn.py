@@ -1,9 +1,7 @@
 class BaseLoadOn(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all the possible power load use types for a space object.
-
  
-
  enum BaseLoadOn,values: kNoOfBaseLoadOnMethods (3),kUseActualLoad (2),kUseCalculatedLoad (1),kUseDefaultLoad (-1),kUseEnteredLoad (0)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class BaseLoadOn(Enum,IComparable,IFormattable,IConvertible):
  kUseDefaultLoad=None
  kUseEnteredLoad=None
  value__=None
-

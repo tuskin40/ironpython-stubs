@@ -1,9 +1,7 @@
 class ConnectorDomainType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enumeration of connector domain types
-
  
-
  enum ConnectorDomainType,values: CableTrayConduit (4),Electrical (2),Hvac (1),Piping (3),StructuralAnalytical (5),Undefined (0)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class ConnectorDomainType(Enum,IComparable,IFormattable,IConvertible):
  StructuralAnalytical=None
  Undefined=None
  value__=None
-

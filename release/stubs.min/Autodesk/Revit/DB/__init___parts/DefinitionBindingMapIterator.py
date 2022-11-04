@@ -1,9 +1,7 @@
 class DefinitionBindingMapIterator(APIObject,IDisposable,IEnumerator):
  """
  An iterator to a parameter definition to parameter bindings map.
-
  
-
  DefinitionBindingMapIterator()
  """
  def Dispose(self):
@@ -12,19 +10,12 @@ class DefinitionBindingMapIterator(APIObject,IDisposable,IEnumerator):
  def MoveNext(self):
   """
   MoveNext(self: DefinitionBindingMapIterator) -> bool
-
   
-
    Move the iterator one item forward.
-
    Returns: Returns True if the iterator was successfully moved forward one item and the 
-
     Current
-
      property will return a valid item. False will be returned 
-
     it the iterator has reached the end of
-
      the map.
   """
   pass
@@ -40,7 +31,6 @@ class DefinitionBindingMapIterator(APIObject,IDisposable,IEnumerator):
  def Reset(self):
   """
   Reset(self: DefinitionBindingMapIterator)
-
    Bring the iterator back to the start of the map.
   """
   pass
@@ -59,23 +49,13 @@ class DefinitionBindingMapIterator(APIObject,IDisposable,IEnumerator):
  Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves the binding that is the current focus of the iterator.
 
-
-
 Get: Current(self: DefinitionBindingMapIterator) -> object
 
-
-
 """
-
  Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves the definition that is the current focus of the iterator.
 
-
-
 Get: Key(self: DefinitionBindingMapIterator) -> Definition
 
-
-
 """
-
 

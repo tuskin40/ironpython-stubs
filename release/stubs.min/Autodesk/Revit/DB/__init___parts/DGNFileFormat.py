@@ -1,9 +1,7 @@
 class DGNFileFormat(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing available Microstation versions into which a file may be exported.
-
  
-
  enum DGNFileFormat,values: Default (20),DGNVersion7 (19),DGNVersion8 (20)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class DGNFileFormat(Enum,IComparable,IFormattable,IConvertible):
  DGNVersion7=None
  DGNVersion8=None
  value__=None
-

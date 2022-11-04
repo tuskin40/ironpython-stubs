@@ -1,9 +1,7 @@
 class ExternalResourceLoadStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  A flag to indicate the status of an ExternalResource load request.
-
  
-
  enum ExternalResourceLoadStatus,values: CannotFindServer (4),Failure (1),ResourceAlreadyCurrent (3),ServerThrewException (5),Success (0),Uninitialized (2)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class ExternalResourceLoadStatus(Enum,IComparable,IFormattable,IConvertible):
  Success=None
  Uninitialized=None
  value__=None
-

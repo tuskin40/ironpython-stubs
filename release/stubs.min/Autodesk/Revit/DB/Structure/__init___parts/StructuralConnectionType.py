@@ -4,37 +4,21 @@ class StructuralConnectionType(ElementType,IDisposable):
  def Create(doc,applyTo,name,familySymbolId):
   """
   Create(doc: Document,applyTo: StructuralConnectionApplyTo,name: str,familySymbolId: ElementId) -> StructuralConnectionType
-
   
-
    Create a new StructuralConnectionType,allowing the specified
-
      annotation 
-
     FamilySymbol to be applied to structural members.
-
   
-
   
-
    applyTo: Specify which type of member this connection type can be applied to.
-
    name: A name for the connection type. It must be unique within the document.
-
    familySymbolId: The id of an annotation FamilySymbol. InvalidElementId is
-
      allowed. 
-
     Otherwise,the FamilySymbol must
-
      be in the category "Connection Symbols"
-
     
-
      (OST_StructConnectionSymbols) and have its "Apply
-
      To" parameter set to 
-
     match the applyTo argument.
   """
   pass
@@ -51,9 +35,7 @@ class StructuralConnectionType(ElementType,IDisposable):
  def GetFamilySymbolId(self):
   """
   GetFamilySymbolId(self: StructuralConnectionType) -> ElementId
-
   
-
    FamilySymbol of the annotation to use for this connection type.
   """
   pass
@@ -66,7 +48,6 @@ class StructuralConnectionType(ElementType,IDisposable):
  def SetFamilySymbolId(self,familySymbolId):
   """
   SetFamilySymbolId(self: StructuralConnectionType,familySymbolId: ElementId)
-
    FamilySymbol of the annotation to use for this connection type.
   """
   pass
@@ -74,33 +55,19 @@ class StructuralConnectionType(ElementType,IDisposable):
  def ValidFamilySymbolId(doc,applyTo,familySymbolId):
   """
   ValidFamilySymbolId(doc: Document,applyTo: StructuralConnectionApplyTo,familySymbolId: ElementId) -> bool
-
   
-
    Checks whether the family symbol id is allowed for
-
      
-
     StructuralConnectionTypes with the given value for the applyTo
-
      property.
-
   
-
    Returns: True if %familySymbolId% is invalidElementId; or if it is
-
      the id of a 
-
     FamilySymbol of category "Connection
-
      Symbols" (OST_StructConnectionSymbols) 
-
     with its "Apply
-
      To" parameter set to match the applyTo property.
-
      
-
     Returns false otherwise.
   """
   pass
@@ -115,15 +82,9 @@ class StructuralConnectionType(ElementType,IDisposable):
   pass
  ApplyTo=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Choose whether this connection type applies to beams and
-
    braces,to tops of columns,or to bases of columns.
-
-
 
 Get: ApplyTo(self: StructuralConnectionType) -> StructuralConnectionApplyTo
 
-
-
 """
-
 

@@ -20,15 +20,6 @@ class ThinLinesOptions(object,IDisposable):
   pass
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: ThinLinesOptions) -> bool
-
-
-
 """
-
-
  AreThinLinesEnabled=False
-

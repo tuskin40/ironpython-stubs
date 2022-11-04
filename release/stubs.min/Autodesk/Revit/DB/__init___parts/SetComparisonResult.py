@@ -1,9 +1,7 @@
 class SetComparisonResult(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all the relationship types between two sets of arbitrary nature.
-
  
-
  enum SetComparisonResult,values: BothEmpty (3),Disjoint (4),Equal (64),LeftEmpty (1),Overlap (8),RightEmpty (2),Subset (16),Superset (32)
  """
  def __eq__(self,*args):
@@ -38,4 +36,3 @@ class SetComparisonResult(Enum,IComparable,IFormattable,IConvertible):
  Subset=None
  Superset=None
  value__=None
-

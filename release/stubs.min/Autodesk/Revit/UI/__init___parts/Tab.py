@@ -1,9 +1,7 @@
 class Tab(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing static tabs which support addition of panels via the API.
-
  
-
  enum Tab,values: AddIns (0),Analyze (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class Tab(Enum,IComparable,IFormattable,IConvertible):
  AddIns=None
  Analyze=None
  value__=None
-

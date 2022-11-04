@@ -1,9 +1,7 @@
 class SpacingRuleJustification(Enum,IComparable,IFormattable,IConvertible):
  """
  Justification property of spacing rule
-
  
-
  enum SpacingRuleJustification,values: Beginning (4),Center (2),End (5)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class SpacingRuleJustification(Enum,IComparable,IFormattable,IConvertible):
  Center=None
  End=None
  value__=None
-

@@ -18,53 +18,29 @@ class ImageBackgroundSettings(BackgroundSettings,IDisposable):
  BackgroundImageFit=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The background image fit type.
 
-
-
 Get: BackgroundImageFit(self: ImageBackgroundSettings) -> BackgroundImageFit
 
-
-
 Set: BackgroundImageFit(self: ImageBackgroundSettings)=value
-
 """
-
  FilePath=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """File path of the image for the rendering background.
 
-
-
 Get: FilePath(self: ImageBackgroundSettings) -> str
 
-
-
 Set: FilePath(self: ImageBackgroundSettings)=value
-
 """
-
  OffsetHeight=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The vertical offset of the rendering image to the rendering region.
 
-
-
 Get: OffsetHeight(self: ImageBackgroundSettings) -> float
 
-
-
 Set: OffsetHeight(self: ImageBackgroundSettings)=value
-
 """
-
  OffsetWidth=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The horizontal offset of the rendering image to the rendering region.
 
-
-
 Get: OffsetWidth(self: ImageBackgroundSettings) -> float
 
-
-
 Set: OffsetWidth(self: ImageBackgroundSettings)=value
-
 """
-
 

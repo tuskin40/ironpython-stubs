@@ -21,45 +21,25 @@ class MEPConnectorInfo(object,IDisposable):
  IsPrimary=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """True if this is the primary connector.
 
-
-
 Get: IsPrimary(self: MEPConnectorInfo) -> bool
 
-
-
 """
-
  IsSecondary=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """True if this is the secondary connector.
 
-
-
 Get: IsSecondary(self: MEPConnectorInfo) -> bool
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: MEPConnectorInfo) -> bool
 
-
-
 """
-
  LinkedConnector=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The linked connector or ll if there is no linked connector
 
-
-
 Get: LinkedConnector(self: MEPConnectorInfo) -> Connector
 
-
-
 """
-
 

@@ -18,23 +18,13 @@ class AssemblyMemberDifferentCategory(AssemblyMemberDifference,IDisposable):
  CategoryId1=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Category id of the first assembly member
 
-
-
 Get: CategoryId1(self: AssemblyMemberDifferentCategory) -> ElementId
 
-
-
 """
-
  CategoryId2=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Category id of the second assembly member
 
-
-
 Get: CategoryId2(self: AssemblyMemberDifferentCategory) -> ElementId
 
-
-
 """
-
 

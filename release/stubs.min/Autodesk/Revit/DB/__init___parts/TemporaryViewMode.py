@@ -1,9 +1,7 @@
 class TemporaryViewMode(Enum,IComparable,IFormattable,IConvertible):
  """
  Enumeration to represent the various temporary view modes a view can be in.
-
  
-
  enum TemporaryViewMode,values: ExplodedView (6),PreviewFamilyVisibility (8),Raytrace (5),RevealConstraints (7),RevealHiddenElements (1),TemporaryHideIsolate (2),TemporaryViewProperties (4),WorksharingDisplay (3)
  """
  def __eq__(self,*args):
@@ -38,4 +36,3 @@ class TemporaryViewMode(Enum,IComparable,IFormattable,IConvertible):
  TemporaryViewProperties=None
  value__=None
  WorksharingDisplay=None
-

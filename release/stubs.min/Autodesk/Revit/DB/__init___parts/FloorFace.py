@@ -1,9 +1,7 @@
 class FloorFace(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing floor face types (top or bottom)
-
  
-
  enum FloorFace,values: Bottom (1),Top (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class FloorFace(Enum,IComparable,IFormattable,IConvertible):
  Bottom=None
  Top=None
  value__=None
-

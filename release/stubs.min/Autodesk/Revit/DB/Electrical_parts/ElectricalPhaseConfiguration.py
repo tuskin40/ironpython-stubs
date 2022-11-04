@@ -1,9 +1,7 @@
 class ElectricalPhaseConfiguration(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type to specify the electrical phase configuration.
-
  
-
  enum ElectricalPhaseConfiguration,values: Delta (2),Undefined (0),Wye (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ElectricalPhaseConfiguration(Enum,IComparable,IFormattable,IConvertible):
  Undefined=None
  value__=None
  Wye=None
-

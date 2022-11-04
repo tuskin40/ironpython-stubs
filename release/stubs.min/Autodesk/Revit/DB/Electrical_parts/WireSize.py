@@ -21,47 +21,26 @@ class WireSize(APIObject,IDisposable):
  Ampacity=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get ampacity which be used for specifying size,the unit is ampere.
 
-
-
 Get: Ampacity(self: WireSize) -> Int64
 
-
-
 """
-
  Diameter=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get diameter of wire.
 
-
-
 Get: Diameter(self: WireSize) -> float
 
-
-
 """
-
  InUse=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get or set whether the size can be used in sizing.
 
-
-
 Get: InUse(self: WireSize) -> bool
 
-
-
 Set: InUse(self: WireSize)=value
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get size symbol of wire.
 
-
-
 Get: Size(self: WireSize) -> str
 
-
-
 """
-
 

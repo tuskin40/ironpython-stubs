@@ -24,12 +24,7 @@ class GeomCombination(CombinableElement,IDisposable):
  AllMembers=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """All elements that are joined in this geometry combination.
 
-
-
 Get: AllMembers(self: GeomCombination) -> CombinableElementArray
 
-
-
 """
-
 

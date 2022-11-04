@@ -32,9 +32,4 @@ class ExternalApplicationArrayIterator(APIObject,IDisposable,IEnumerator):
   pass
  Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get: Current(self: ExternalApplicationArrayIterator) -> object
-
-
-
 """
-
-

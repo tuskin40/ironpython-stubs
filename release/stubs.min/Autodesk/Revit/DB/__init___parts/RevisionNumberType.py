@@ -1,9 +1,7 @@
 class RevisionNumberType(Enum,IComparable,IFormattable,IConvertible):
  """
  Determines how a particular revision will be numbered.
-
  
-
  enum RevisionNumberType,values: Alphanumeric (3),None (2),Numeric (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class RevisionNumberType(Enum,IComparable,IFormattable,IConvertible):
  None=None
  Numeric=None
  value__=None
-

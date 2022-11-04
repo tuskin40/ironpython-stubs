@@ -1,9 +1,7 @@
 class FlowDirectionType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing direction types for a connector.
-
  
-
  enum FlowDirectionType,values: Bidirectional (0),In (1),Out (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class FlowDirectionType(Enum,IComparable,IFormattable,IConvertible):
  In=None
  Out=None
  value__=None
-

@@ -1,9 +1,7 @@
 class ExportTextQualifier(Enum,IComparable,IFormattable,IConvertible):
  """
  Options for the text qualifier character in schedule view export.
-
  
-
  enum ExportTextQualifier,values: DoubleQuote (2),None (0),Quote (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ExportTextQualifier(Enum,IComparable,IFormattable,IConvertible):
  None=None
  Quote=None
  value__=None
-

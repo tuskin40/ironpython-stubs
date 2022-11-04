@@ -1,9 +1,7 @@
 class StairsEditScope(EditScope,IDisposable):
  """
  StairsEditScope allows user to maintain a stairs-editing session.
-
  
-
  StairsEditScope(document: Document,transactionName: str)
  """
  def Dispose(self):
@@ -15,35 +13,20 @@ class StairsEditScope(EditScope,IDisposable):
  def Start(self,*__args):
   """
   Start(self: StairsEditScope,baseLevelId: ElementId,topLevelId: ElementId) -> ElementId
-
   
-
    Creates a new empty stairs element with a default stairs type in the specified 
-
     levels
-
      and then starts stairs edit mode and editing the new stairs.
-
   
-
   
-
    baseLevelId: The base level on which the stairs is to be placed.
-
    topLevelId: The top level where the stairs is to reach.
-
    Returns: ElementId of the new stairs.
-
   Start(self: StairsEditScope,stairsId: ElementId) -> ElementId
-
   
-
    Starts an stairs edit mode for an existing Stairs element
-
   
-
    stairsId: The stairs element to be edited.
-
    Returns: ElementId of the editing stairs. It should be the same as the input stairsId
   """
   pass
@@ -63,12 +46,7 @@ class StairsEditScope(EditScope,IDisposable):
  IsPermitted=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Tells if the StairsEditScope is permitted to start.
 
-
-
 Get: IsPermitted(self: StairsEditScope) -> bool
 
-
-
 """
-
 

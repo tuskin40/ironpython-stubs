@@ -1,9 +1,7 @@
 class DataExchangeMessageVerbosity(Enum,IComparable,IFormattable,IConvertible):
  """
  Predefined verbosity levels for DataExchangeLog
-
  
-
  enum DataExchangeMessageVerbosity,values: Default (1),Minimal (0),Verbose (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class DataExchangeMessageVerbosity(Enum,IComparable,IFormattable,IConvertible):
  Minimal=None
  value__=None
  Verbose=None
-

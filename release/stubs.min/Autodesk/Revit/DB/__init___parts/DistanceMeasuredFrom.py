@@ -1,9 +1,7 @@
 class DistanceMeasuredFrom(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates if the distance is measured from the top or bottom of the wall.
-
  
-
  enum DistanceMeasuredFrom,values: Base (0),Top (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DistanceMeasuredFrom(Enum,IComparable,IFormattable,IConvertible):
  Base=None
  Top=None
  value__=None
-

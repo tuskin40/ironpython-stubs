@@ -1,9 +1,7 @@
 class SetupEnergySimulationDialogResult(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies identifiers to indicate the return value of the SetupEnergySimulationDialog
-
  
-
  enum SetupEnergySimulationDialogResult,values: Cancel (2),Continue (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class SetupEnergySimulationDialogResult(Enum,IComparable,IFormattable,IConvertib
  Cancel=None
  Continue=None
  value__=None
-

@@ -1,9 +1,7 @@
 class RenderingQuality(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the rendering quality in rendering settings.
-
  
-
  enum RenderingQuality,values: Custom (16),Draft (11),High (14),Medium (13),VeryHigh (15)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class RenderingQuality(Enum,IComparable,IFormattable,IConvertible):
  Medium=None
  value__=None
  VeryHigh=None
-

@@ -1,9 +1,7 @@
 class OpeningWrappingCondition(Enum,IComparable,IFormattable,IConvertible):
  """
  Used by CompoundStructure to describe which shell layers participate in wrapping at openings.
-
  
-
  enum OpeningWrappingCondition,values: Exterior (1),ExteriorAndInterior (3),Interior (2),None (0)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class OpeningWrappingCondition(Enum,IComparable,IFormattable,IConvertible):
  Interior=None
  None=None
  value__=None
-

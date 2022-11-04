@@ -1,9 +1,7 @@
 class ViewDiscipline(Enum,IComparable,IFormattable,IConvertible):
  """
  Discipline of the view
-
  
-
  enum ViewDiscipline,values: Architectural (1),Coordination (4095),Electrical (8),Mechanical (4),Plumbing (16),Structural (2)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class ViewDiscipline(Enum,IComparable,IFormattable,IConvertible):
  Plumbing=None
  Structural=None
  value__=None
-

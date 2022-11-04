@@ -1,9 +1,7 @@
 class SpatialElementType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing types of spaces.
-
  
-
  enum SpatialElementType,values: Area (2),Room (1),Space (3)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class SpatialElementType(Enum,IComparable,IFormattable,IConvertible):
  Room=None
  Space=None
  value__=None
-

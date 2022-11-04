@@ -1,9 +1,7 @@
 class SortingOrder(Enum,IComparable,IFormattable,IConvertible):
  """
  Enumerated type representing the sorting order of a collection of objects.
-
  
-
  enum SortingOrder,values: Ascending (1),Descending (2)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class SortingOrder(Enum,IComparable,IFormattable,IConvertible):
  Ascending=None
  Descending=None
  value__=None
-

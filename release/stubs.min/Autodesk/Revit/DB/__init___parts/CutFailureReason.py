@@ -1,9 +1,7 @@
 class CutFailureReason(Enum,IComparable,IFormattable,IConvertible):
  """
  The reason why a solid-solid cut cannot be created.
-
  
-
  enum CutFailureReason,values: CutAllowed (0),CutAlreadyExists (1),CutNotAppropriateForElements (3),OppositeCutExists (2)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class CutFailureReason(Enum,IComparable,IFormattable,IConvertible):
  CutNotAppropriateForElements=None
  OppositeCutExists=None
  value__=None
-

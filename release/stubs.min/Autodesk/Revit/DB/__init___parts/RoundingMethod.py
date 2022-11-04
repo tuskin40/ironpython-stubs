@@ -1,9 +1,7 @@
 class RoundingMethod(Enum,IComparable,IFormattable,IConvertible):
  """
  Rounding methods
-
  
-
  enum RoundingMethod,values: Down (2),Nearest (0),Up (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class RoundingMethod(Enum,IComparable,IFormattable,IConvertible):
  Nearest=None
  Up=None
  value__=None
-

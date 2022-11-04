@@ -6,21 +6,13 @@ class FilterRule(object,IDisposable):
  def ElementPasses(self,element):
   """
   ElementPasses(self: FilterRule,element: Element) -> bool
-
   
-
    Derived classes override this method to implement the test that determines
-
      
-
     whether the given element passes this rule or not.
-
   
-
   
-
    element: The element to test against the rule.
-
    Returns: True if the element satisfies the rule,false otherwise.
   """
   pass
@@ -42,12 +34,7 @@ class FilterRule(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: FilterRule) -> bool
 
-
-
 """
-
 

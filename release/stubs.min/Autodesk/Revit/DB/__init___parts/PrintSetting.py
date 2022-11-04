@@ -24,25 +24,14 @@ class PrintSetting(Element,IDisposable,IPrintSetting):
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the Name of Print Setup.
 
-
-
 Get: Name(self: PrintSetting) -> str
 
-
-
 Set: Name(self: PrintSetting)=value
-
 """
-
  PrintParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the Parameters of Print Setup.
 
-
-
 Get: PrintParameters(self: PrintSetting) -> PrintParameters
 
-
-
 """
-
 

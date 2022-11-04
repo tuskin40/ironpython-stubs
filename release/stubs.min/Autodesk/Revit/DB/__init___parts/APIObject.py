@@ -3,7 +3,6 @@ class APIObject(object,IDisposable):
  def Dispose(self):
   """
   Dispose(self: APIObject)
-
    Causes the object to release immediately any resources it may be utilizing.
   """
   pass
@@ -28,12 +27,7 @@ class APIObject(object,IDisposable):
  IsReadOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies if the object is read-only or modifiable.
 
-
-
 Get: IsReadOnly(self: APIObject) -> bool
 
-
-
 """
-
 

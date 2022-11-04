@@ -4,7 +4,6 @@ class HermiteSurface(Surface,IDisposable):
  def Create(nU,nV,points,periodicU=None,periodicV=None):
   """
   Create(nU: int,nV: int,points: IList[XYZ]) -> HermiteSurface
-
   Create(nU: int,nV: int,points: IList[XYZ],periodicU: bool,periodicV: bool) -> HermiteSurface
   """
   pass
@@ -14,11 +13,8 @@ class HermiteSurface(Surface,IDisposable):
  def IsValid(self):
   """
   IsValid(self: HermiteSurface) -> bool
-
   
-
    Checks whether this HermiteSurface object is valid.
-
    Returns: True if this is a valid Hermite Surface,false otherwise.
   """
   pass

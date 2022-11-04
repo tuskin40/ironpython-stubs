@@ -1,7 +1,6 @@
 class Settings(APIObject,IDisposable):
  """
  The settings object provides access to general components of the Autodesk Revit
-
  application,such as Categories.
  """
  def Dispose(self):
@@ -24,41 +23,23 @@ class Settings(APIObject,IDisposable):
   pass
  Categories=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves an object that provides access to all the categories contained in the Autodesk
-
 Revit application and project.
-
-
 
 Get: Categories(self: Settings) -> Categories
 
-
-
 """
-
  ElectricalSetting=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves an object that provides access to all the electrical settings include voltage type,distribution system type,
-
 demand factor,wire type in the Autodesk Revit application and project.
-
-
 
 Get: ElectricalSetting(self: Settings) -> ElectricalSetting
 
-
-
 """
-
  TilePatterns=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves an object that provides access to the TilePattern objects in
-
 the document.
-
-
 
 Get: TilePatterns(self: Settings) -> TilePatterns
 
-
-
 """
-
 

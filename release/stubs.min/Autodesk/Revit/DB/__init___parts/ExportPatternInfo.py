@@ -1,13 +1,9 @@
 class ExportPatternInfo(object,IDisposable):
  """
  A value used to represent the info stored in the Autodesk.Revit.DB.ExportPatternTable.
-
  
-
  ExportPatternInfo(destinationPatternName: str)
-
  ExportPatternInfo()
-
  ExportPatternInfo(other: ExportPatternInfo)
  """
  def Dispose(self):
@@ -29,9 +25,7 @@ class ExportPatternInfo(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,destinationPatternName: str)
-
   __new__(cls: type)
-
   __new__(cls: type,other: ExportPatternInfo)
   """
   pass
@@ -41,25 +35,14 @@ class ExportPatternInfo(object,IDisposable):
  DestinationPatternName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The destination pattern name (the name of the pattern in the exported format).
 
-
-
 Get: DestinationPatternName(self: ExportPatternInfo) -> str
 
-
-
 Set: DestinationPatternName(self: ExportPatternInfo)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ExportPatternInfo) -> bool
 
-
-
 """
-
 

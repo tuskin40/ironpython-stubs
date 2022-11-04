@@ -6,9 +6,7 @@ class DuplicateTypeNamesHandlerArgs(object,IDisposable):
  def GetTypeIds(self):
   """
   GetTypeIds(self: DuplicateTypeNamesHandlerArgs) -> ICollection[ElementId]
-
   
-
    Returns ids of the types with duplicate names.
   """
   pass
@@ -30,23 +28,13 @@ class DuplicateTypeNamesHandlerArgs(object,IDisposable):
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The document that contains the types with duplicate names.
 
-
-
 Get: Document(self: DuplicateTypeNamesHandlerArgs) -> Document
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: DuplicateTypeNamesHandlerArgs) -> bool
 
-
-
 """
-
 

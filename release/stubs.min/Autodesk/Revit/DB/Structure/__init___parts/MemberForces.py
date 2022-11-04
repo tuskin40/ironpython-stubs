@@ -1,9 +1,7 @@
 class MemberForces(object,IDisposable):
  """
  An object that represents a member forces on analytical model element.
-
  
-
  MemberForces(start: bool,force: XYZ,moment: XYZ)
  """
  def Dispose(self):
@@ -31,51 +29,28 @@ class MemberForces(object,IDisposable):
  Force=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The translational forces at relative point position of the element.
 
-
-
 Get: Force(self: MemberForces) -> XYZ
 
-
-
 Set: Force(self: MemberForces)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: MemberForces) -> bool
 
-
-
 """
-
  Moment=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The rotational forces at relative point position of the element.
 
-
-
 Get: Moment(self: MemberForces) -> XYZ
 
-
-
 Set: Moment(self: MemberForces)=value
-
 """
-
  Start=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Member Forces position on analytical model stick element. True for start,false for end.
 
-
-
 Get: Start(self: MemberForces) -> bool
 
-
-
 Set: Start(self: MemberForces)=value
-
 """
-
 

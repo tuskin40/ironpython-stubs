@@ -1,26 +1,20 @@
 class RoutingConditions(object,IDisposable):
  """
  RoutingConditions contain routing information that is used as input when determining if a routing criterion,
-
     such as minimum or maximum diameter,is met.
-
  
-
  RoutingConditions(errorLevel: RoutingPreferenceErrorLevel)
  """
  def AppendCondition(self,condition):
   """
   AppendCondition(self: RoutingConditions,condition: RoutingCondition)
-
    Appends a routing condition to the end of existing routing conditions. Note 
-
     that the first item (indexed at 0) is the condition for the primary connector.
   """
   pass
  def Clear(self):
   """
   Clear(self: RoutingConditions)
-
    Clear all existing conditions
   """
   pass
@@ -30,28 +24,19 @@ class RoutingConditions(object,IDisposable):
  def GetConditionAt(self,index):
   """
   GetConditionAt(self: RoutingConditions,index: int) -> RoutingCondition
-
   
-
    Gets the routing condition at the specified index position.
-
   
-
    index: The 0-based index to access the collection of available conditions. The method 
-
     throws the exception ArgumentOutOfRangeException if the index is out of range.
-
   
-
    Returns: The found routing condition.
   """
   pass
  def GetNumberOfConditions(self):
   """
   GetNumberOfConditions(self: RoutingConditions) -> int
-
   
-
    Gets the number of included routing conditions.
   """
   pass
@@ -77,38 +62,21 @@ class RoutingConditions(object,IDisposable):
  ErrorLevel=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The error level that the routing preference manager should post errors if the routing conditions do not meet any routing preference rule,could be None,Warning,or Error
 
-
-
 Get: ErrorLevel(self: RoutingConditions) -> RoutingPreferenceErrorLevel
 
-
-
 Set: ErrorLevel(self: RoutingConditions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RoutingConditions) -> bool
 
-
-
 """
-
  PreferredJunctionType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The junction type (Tee or Tap) to select if defined fittings of both junction types meet all routing conditions.
 
-
-
 Get: PreferredJunctionType(self: RoutingConditions) -> PreferredJunctionType
 
-
-
 Set: PreferredJunctionType(self: RoutingConditions)=value
-
 """
-
 

@@ -1,9 +1,7 @@
 class SplitButtonData(PulldownButtonData):
  """
  This class contains information necessary to construct a split button in the Ribbon.
-
  
-
  SplitButtonData(name: str,text: str)
  """
  @staticmethod

@@ -10,30 +10,20 @@ class WorksetDefaultVisibilitySettings(Element,IDisposable):
  def GetWorksetDefaultVisibilitySettings(aDoc):
   """
   GetWorksetDefaultVisibilitySettings(aDoc: Document) -> WorksetDefaultVisibilitySettings
-
   
-
    Get the WorksetDefaultVisibilitySettings of the document.
-
   
-
    aDoc: The document.
-
    Returns: The WorksetDefaultVisibilitySettings of the document.
   """
   pass
  def IsWorksetVisible(self,worksetId):
   """
   IsWorksetVisible(self: WorksetDefaultVisibilitySettings,worksetId: WorksetId) -> bool
-
   
-
    Indicates whether the workset is visible by default.
-
   
-
    worksetId: Id of the workset.
-
    Returns: Whether the workset is visible by default.
   """
   pass
@@ -46,13 +36,9 @@ class WorksetDefaultVisibilitySettings(Element,IDisposable):
  def SetWorksetVisibility(self,worksetId,visible):
   """
   SetWorksetVisibility(self: WorksetDefaultVisibilitySettings,worksetId: WorksetId,visible: bool)
-
    Set the default visibility of a workset.
-
   
-
    worksetId: Id of the workset.
-
    visible: Whether the workset should be visible by default or not.
   """
   pass

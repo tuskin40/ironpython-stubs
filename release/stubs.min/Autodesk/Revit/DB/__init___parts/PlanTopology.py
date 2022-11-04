@@ -6,11 +6,8 @@ class PlanTopology(APIObject,IDisposable):
  def GetRoomIds(self):
   """
   GetRoomIds(self: PlanTopology) -> ICollection[ElementId]
-
   
-
    Retrieves room ElementIds of the PlanTopology in the last phase.
-
    Returns: The PlanTopology Room ElementIds of the last phase.
   """
   pass
@@ -32,34 +29,19 @@ class PlanTopology(APIObject,IDisposable):
  Circuits=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Circuits of the PlanTopology.
 
-
-
 Get: Circuits(self: PlanTopology) -> PlanCircuitSet
 
-
-
 """
-
  Level=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Level of the PlanTopology.
 
-
-
 Get: Level(self: PlanTopology) -> Level
 
-
-
 """
-
  Phase=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The phase of the PlanTopology.
 
-
-
 Get: Phase(self: PlanTopology) -> Phase
 
-
-
 """
-
 

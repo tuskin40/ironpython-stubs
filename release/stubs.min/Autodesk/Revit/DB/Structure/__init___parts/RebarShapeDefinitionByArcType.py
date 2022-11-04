@@ -1,9 +1,7 @@
 class RebarShapeDefinitionByArcType(Enum,IComparable,IFormattable,IConvertible):
  """
  A RebarShapeDefinitionByArc takes one of three forms.
-
  
-
  enum RebarShapeDefinitionByArcType,values: Arc (0),LappedCircle (1),Spiral (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class RebarShapeDefinitionByArcType(Enum,IComparable,IFormattable,IConvertible):
  LappedCircle=None
  Spiral=None
  value__=None
-

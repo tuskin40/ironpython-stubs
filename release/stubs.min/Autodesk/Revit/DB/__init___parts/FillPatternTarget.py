@@ -1,9 +1,7 @@
 class FillPatternTarget(Enum,IComparable,IFormattable,IConvertible):
  """
  The type of the fill pattern.
-
  
-
  enum FillPatternTarget,values: Drafting (0),Model (1),None (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class FillPatternTarget(Enum,IComparable,IFormattable,IConvertible):
  Model=None
  None=None
  value__=None
-

@@ -4,17 +4,11 @@ class PhaseFilter(Element,IDisposable):
  def Create(document,name):
   """
   Create(document: Document,name: str) -> PhaseFilter
-
   
-
    Creates a new phase filter with default status presentation.
-
   
-
    document: The document.
-
    name: The name.
-
    Returns: The newly created phase filter.
   """
   pass
@@ -27,15 +21,10 @@ class PhaseFilter(Element,IDisposable):
  def GetPhaseStatusPresentation(self,status):
   """
   GetPhaseStatusPresentation(self: PhaseFilter,status: ElementOnPhaseStatus) -> PhaseStatusPresentation
-
   
-
    Gets the phase status presentation.
-
   
-
    status: The element phase status.
-
    Returns: The phase status presentation.
   """
   pass
@@ -48,13 +37,9 @@ class PhaseFilter(Element,IDisposable):
  def SetPhaseStatusPresentation(self,status,presentation):
   """
   SetPhaseStatusPresentation(self: PhaseFilter,status: ElementOnPhaseStatus,presentation: PhaseStatusPresentation)
-
    Sets the phase status presentation.
-
   
-
    status: The element phase status.
-
    presentation: The phase status presentation.
   """
   pass
@@ -70,12 +55,7 @@ class PhaseFilter(Element,IDisposable):
  IsDefault=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether this filter is the default one.
 
-
-
 Get: IsDefault(self: PhaseFilter) -> bool
 
-
-
 """
-
 

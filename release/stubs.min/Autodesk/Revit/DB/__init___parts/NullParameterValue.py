@@ -1,9 +1,7 @@
 class NullParameterValue(ParameterValue,IDisposable):
  """
  A class that represent an empty (null) value of a parameter element.
-
  
-
  NullParameterValue()
  """
  def Dispose(self):

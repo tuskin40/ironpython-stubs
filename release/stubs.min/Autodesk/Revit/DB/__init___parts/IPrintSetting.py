@@ -6,12 +6,7 @@ class IPrintSetting:
  PrintParameters=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the Parameters of Print Setup.
 
-
-
 Get: PrintParameters(self: IPrintSetting) -> PrintParameters
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class MaterialAspect(Enum,IComparable,IFormattable,IConvertible):
  """
  A list of all material aspects that a material can store PropertySetElements for.
-
  
-
  enum MaterialAspect,values: Structural (0),Thermal (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class MaterialAspect(Enum,IComparable,IFormattable,IConvertible):
  Structural=None
  Thermal=None
  value__=None
-

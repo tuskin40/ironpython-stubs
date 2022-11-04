@@ -1,9 +1,7 @@
 class PointCloudFoundStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  Enumerated type representing the possible states related to searching for a point cloud file.
-
  
-
  enum PointCloudFoundStatus,values: FoundOK (2),NotFound (1),Unknown (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class PointCloudFoundStatus(Enum,IComparable,IFormattable,IConvertible):
  NotFound=None
  Unknown=None
  value__=None
-

@@ -1,9 +1,7 @@
 class ElectricalSystemType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all the possible electrical system types for a connector object.
-
  
-
  enum ElectricalSystemType,values: Communication (14),Controls (13),Data (5),FireAlarm (11),NurseCall (12),PowerBalanced (30),PowerCircuit (6),PowerUnBalanced (31),Security (10),Telephone (9),UndefinedSystemType (0)
  """
  def __eq__(self,*args):
@@ -41,4 +39,3 @@ class ElectricalSystemType(Enum,IComparable,IFormattable,IConvertible):
  Telephone=None
  UndefinedSystemType=None
  value__=None
-

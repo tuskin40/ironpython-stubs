@@ -1,13 +1,9 @@
 class ExportLineweightKey(object,IDisposable):
  """
  A key used to represent an item stored in an Autodesk.Revit.DB.ExportLineweightTable.
-
  
-
  ExportLineweightKey(originalLineweight: int)
-
  ExportLineweightKey()
-
  ExportLineweightKey(other: ExportLineweightKey)
  """
  def Dispose(self):
@@ -29,9 +25,7 @@ class ExportLineweightKey(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,originalLineweight: int)
-
   __new__(cls: type)
-
   __new__(cls: type,other: ExportLineweightKey)
   """
   pass
@@ -41,25 +35,14 @@ class ExportLineweightKey(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ExportLineweightKey) -> bool
 
-
-
 """
-
  OriginalLineweight=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The original line weight.
 
-
-
 Get: OriginalLineweight(self: ExportLineweightKey) -> int
 
-
-
 Set: OriginalLineweight(self: ExportLineweightKey)=value
-
 """
-
 

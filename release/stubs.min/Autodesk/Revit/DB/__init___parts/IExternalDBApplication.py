@@ -3,30 +3,20 @@ class IExternalDBApplication:
  def OnShutdown(self,application):
   """
   OnShutdown(self: IExternalDBApplication,application: ControlledApplication) -> ExternalDBApplicationResult
-
   
-
    Implement this method to execute some tasks when Autodesk Revit shuts down.
-
   
-
    application: Handle to the Revit Application object.
-
    Returns: Indicates if the external db application completes its work successfully.
   """
   pass
  def OnStartup(self,application):
   """
   OnStartup(self: IExternalDBApplication,application: ControlledApplication) -> ExternalDBApplicationResult
-
   
-
    Implement this method to execute some tasks when Autodesk Revit starts.
-
   
-
    application: Handle to the Revit Application object.
-
    Returns: Indicates if the external db application completes its work successfully.
   """
   pass

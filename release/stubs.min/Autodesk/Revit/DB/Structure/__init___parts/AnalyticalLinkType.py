@@ -10,19 +10,12 @@ class AnalyticalLinkType(ElementType,IDisposable):
  def IsValidAnalyticalFixityState(fixityState):
   """
   IsValidAnalyticalFixityState(fixityState: AnalyticalFixityState) -> bool
-
   
-
    Returns whether the input fixity state is valid for Analytical Link Type 
-
     parameters.
-
   
-
   
-
    fixityState: The fixity state value to check.
-
    Returns: True if valid.
   """
   pass
@@ -44,79 +37,43 @@ class AnalyticalLinkType(ElementType,IDisposable):
  RotationX=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Fixity of rotation around X.
 
-
-
 Get: RotationX(self: AnalyticalLinkType) -> AnalyticalFixityState
 
-
-
 Set: RotationX(self: AnalyticalLinkType)=value
-
 """
-
  RotationY=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Fixity of rotation around Y.
 
-
-
 Get: RotationY(self: AnalyticalLinkType) -> AnalyticalFixityState
 
-
-
 Set: RotationY(self: AnalyticalLinkType)=value
-
 """
-
  RotationZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Fixity of rotation around Z.
 
-
-
 Get: RotationZ(self: AnalyticalLinkType) -> AnalyticalFixityState
 
-
-
 Set: RotationZ(self: AnalyticalLinkType)=value
-
 """
-
  TranslationX=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Fixity of translation along X.
 
-
-
 Get: TranslationX(self: AnalyticalLinkType) -> AnalyticalFixityState
 
-
-
 Set: TranslationX(self: AnalyticalLinkType)=value
-
 """
-
  TranslationY=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Fixity of translation along Y.
 
-
-
 Get: TranslationY(self: AnalyticalLinkType) -> AnalyticalFixityState
 
-
-
 Set: TranslationY(self: AnalyticalLinkType)=value
-
 """
-
  TranslationZ=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Fixity of translation along Z.
 
-
-
 Get: TranslationZ(self: AnalyticalLinkType) -> AnalyticalFixityState
 
-
-
 Set: TranslationZ(self: AnalyticalLinkType)=value
-
 """
-
 

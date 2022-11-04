@@ -4,4 +4,3 @@ class DockablePanes(object):
  __all__=[
   'BuiltInDockablePanes',
  ]
-

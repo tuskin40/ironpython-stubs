@@ -1,9 +1,7 @@
 class SpatialElementTagOrientation(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing tag orientation options that are supported by SpatialElementTags.
-
  
-
  enum SpatialElementTagOrientation,values: Horizontal (0),Model (2),Vertical (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class SpatialElementTagOrientation(Enum,IComparable,IFormattable,IConvertible):
  Model=None
  value__=None
  Vertical=None
-

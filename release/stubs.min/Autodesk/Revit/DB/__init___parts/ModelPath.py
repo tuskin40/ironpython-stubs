@@ -3,23 +3,14 @@ class ModelPath(object,IDisposable):
  def Compare(self,otherPath):
   """
   Compare(self: ModelPath,otherPath: ModelPath) -> int
-
   
-
    Compares this ModelPath with another
-
   
-
    otherPath: The path to compare against.
-
    Returns: A signed integer indicating the lexical relationship between
-
      two 
-
     ModelPaths. Value is less than zero if this path is less than
-
      the given 
-
     path; zero if the two are the same; and more than zero otherwise
   """
   pass
@@ -29,18 +20,14 @@ class ModelPath(object,IDisposable):
  def GetModelGUID(self):
   """
   GetModelGUID(self: ModelPath) -> Guid
-
   
-
    A GUID identifying the A360 model.
   """
   pass
  def GetProjectGUID(self):
   """
   GetProjectGUID(self: ModelPath) -> Guid
-
   
-
    A GUID identifying the A360 project to which the model is associated.
   """
   pass
@@ -65,45 +52,25 @@ class ModelPath(object,IDisposable):
  CentralServerPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """A path to the location of the central Revit server.
 
-
-
 Get: CentralServerPath(self: ModelPath) -> str
 
-
-
 """
-
  Empty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Whether this path is empty
 
-
-
 Get: Empty(self: ModelPath) -> bool
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ModelPath) -> bool
 
-
-
 """
-
  ServerPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Whether this path is a server path (as opposed to a file path or cloud path)
 
-
-
 Get: ServerPath(self: ModelPath) -> bool
 
-
-
 """
-
 

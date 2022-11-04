@@ -1,9 +1,7 @@
 class BoxPlacement(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing possible placement of a box (an object of rectangular shape).
-
  
-
  enum BoxPlacement,values: BottomLeft (4),BottomRight (3),Center (0),TopLeft (1),TopRight (2)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class BoxPlacement(Enum,IComparable,IFormattable,IConvertible):
  TopLeft=None
  TopRight=None
  value__=None
-

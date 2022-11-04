@@ -1,9 +1,7 @@
 class YZJustificationOption(Enum,IComparable,IFormattable,IConvertible):
  """
  The option for whether a framing element has independent or uniform justification on its ends.
-
  
-
  enum YZJustificationOption,values: Independent (1),Uniform (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class YZJustificationOption(Enum,IComparable,IFormattable,IConvertible):
  Independent=None
  Uniform=None
  value__=None
-

@@ -1,9 +1,7 @@
 class CurveByPointsArray(APIObject,IDisposable,IEnumerable):
  """
  An array that can contain CurveByPoints elements.
-
  
-
  CurveByPointsArray()
  """
  def Append(self,item):
@@ -12,7 +10,6 @@ class CurveByPointsArray(APIObject,IDisposable,IEnumerable):
  def Clear(self):
   """
   Clear(self: CurveByPointsArray)
-
    Removes every curve from the array,rendering it empty.
   """
   pass
@@ -22,22 +19,16 @@ class CurveByPointsArray(APIObject,IDisposable,IEnumerable):
  def ForwardIterator(self):
   """
   ForwardIterator(self: CurveByPointsArray) -> CurveByPointsArrayIterator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: CurveByPointsArray) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the array.
-
    Returns: Returns a forward moving iterator to the array.
   """
   pass
@@ -53,11 +44,8 @@ class CurveByPointsArray(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: CurveByPointsArray) -> CurveByPointsArrayIterator
-
   
-
    Retrieve a backward moving iterator to the array.
-
    Returns: Returns a backward moving iterator to the array.
   """
   pass
@@ -82,23 +70,13 @@ class CurveByPointsArray(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the array is empty.
 
-
-
 Get: IsEmpty(self: CurveByPointsArray) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of curves that are in the array.
 
-
-
 Get: Size(self: CurveByPointsArray) -> int
 
-
-
 """
-
 

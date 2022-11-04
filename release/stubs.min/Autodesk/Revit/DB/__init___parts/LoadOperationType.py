@@ -1,11 +1,8 @@
 class LoadOperationType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enum indicating whether a resource load operation was triggered by
-
     a user action or an automatic process.
-
  
-
  enum LoadOperationType,values: Automatic (0),Explicit (1)
  """
  def __eq__(self,*args):
@@ -34,4 +31,3 @@ class LoadOperationType(Enum,IComparable,IFormattable,IConvertible):
  Automatic=None
  Explicit=None
  value__=None
-

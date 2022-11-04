@@ -20,26 +20,15 @@ class DefinitionGroup(APIObject,IDisposable):
   pass
  Definitions=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Definitions property returns an object that contains all the shared parameter
-
 definitions within the group.
-
-
 
 Get: Definitions(self: DefinitionGroup) -> Definitions
 
-
-
 """
-
  Name=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the name of the parameter group.
 
-
-
 Get: Name(self: DefinitionGroup) -> str
 
-
-
 """
-
 

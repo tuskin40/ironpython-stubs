@@ -21,34 +21,19 @@ class RevolvedFace(Face,IDisposable):
  Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Axis of the surface.
 
-
-
 Get: Axis(self: RevolvedFace) -> XYZ
 
-
-
 """
-
  Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Profile curve of the surface.
 
-
-
 Get: Curve(self: RevolvedFace) -> Curve
 
-
-
 """
-
  Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Origin of the surface.
 
-
-
 Get: Origin(self: RevolvedFace) -> XYZ
 
-
-
 """
-
 

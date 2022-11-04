@@ -21,23 +21,13 @@ class CylindricalFace(Face,IDisposable):
  Axis=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Axis of the surface.
 
-
-
 Get: Axis(self: CylindricalFace) -> XYZ
 
-
-
 """
-
  Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Origin of the surface.
 
-
-
 Get: Origin(self: CylindricalFace) -> XYZ
 
-
-
 """
-
 

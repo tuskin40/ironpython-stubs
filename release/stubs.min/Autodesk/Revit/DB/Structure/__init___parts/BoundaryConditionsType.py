@@ -1,9 +1,7 @@
 class BoundaryConditionsType(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum declares type of BoundaryConditions.
-
  
-
  enum BoundaryConditionsType,values: Area (2),Line (1),Point (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class BoundaryConditionsType(Enum,IComparable,IFormattable,IConvertible):
  Line=None
  Point=None
  value__=None
-

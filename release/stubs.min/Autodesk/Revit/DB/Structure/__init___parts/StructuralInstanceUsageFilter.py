@@ -1,11 +1,8 @@
 class StructuralInstanceUsageFilter(ElementSlowFilter,IDisposable):
  """
  A filter used to find elements that are structural family instances (typically columns,beams or braces) of the given structural usage.
-
  
-
  StructuralInstanceUsageFilter(structuralUsage: StructuralInstanceUsage,inverted: bool)
-
  StructuralInstanceUsageFilter(structuralUsage: StructuralInstanceUsage)
  """
  def Dispose(self):
@@ -27,19 +24,13 @@ class StructuralInstanceUsageFilter(ElementSlowFilter,IDisposable):
  def __new__(self,structuralUsage,inverted=None):
   """
   __new__(cls: type,structuralUsage: StructuralInstanceUsage,inverted: bool)
-
   __new__(cls: type,structuralUsage: StructuralInstanceUsage)
   """
   pass
  StructuralUsage=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The family instance structural usage.
 
-
-
 Get: StructuralUsage(self: StructuralInstanceUsageFilter) -> StructuralInstanceUsage
 
-
-
 """
-
 

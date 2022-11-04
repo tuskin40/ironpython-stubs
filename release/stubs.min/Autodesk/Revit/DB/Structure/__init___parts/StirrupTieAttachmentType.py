@@ -1,9 +1,7 @@
 class StirrupTieAttachmentType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated tye that represents how the Stirrup/Tie rebar is attached to the cover reference.
-
  
-
  enum StirrupTieAttachmentType,values: ExteriorFace (1),InteriorFace (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class StirrupTieAttachmentType(Enum,IComparable,IFormattable,IConvertible):
  ExteriorFace=None
  InteriorFace=None
  value__=None
-

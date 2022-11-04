@@ -1,9 +1,7 @@
 class PointOnCurveMeasureFrom(Enum,IComparable,IFormattable,IConvertible):
  """
  Point on curve MeasureFrom - It tells from which end of the host curve the point location is measured.
-
  
-
  enum PointOnCurveMeasureFrom,values: Beginning (1),End (2)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class PointOnCurveMeasureFrom(Enum,IComparable,IFormattable,IConvertible):
  Beginning=None
  End=None
  value__=None
-

@@ -1,9 +1,7 @@
 class UITheme(Enum,IComparable,IFormattable,IConvertible):
  """
  The application frame theme.
-
  
-
  enum UITheme,values: Dark (0),Light (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class UITheme(Enum,IComparable,IFormattable,IConvertible):
  Dark=None
  Light=None
  value__=None
-

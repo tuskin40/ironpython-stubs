@@ -1,32 +1,23 @@
 class ProjectLocationSet(APIObject,IDisposable,IEnumerable):
  """
  An set that contains project locations.
-
  
-
  ProjectLocationSet()
  """
  def Clear(self):
   """
   Clear(self: ProjectLocationSet)
-
    Removes every project location from the set,rendering it empty.
   """
   pass
  def Contains(self,item):
   """
   Contains(self: ProjectLocationSet,item: ProjectLocation) -> bool
-
   
-
    Tests for the existence of a project location within the set.
-
   
-
    item: The project location to be searched for.
-
    Returns: The Contains method returns True if the project location is within the set,
-
     otherwise False.
   """
   pass
@@ -36,52 +27,36 @@ class ProjectLocationSet(APIObject,IDisposable,IEnumerable):
  def Erase(self,item):
   """
   Erase(self: ProjectLocationSet,item: ProjectLocation) -> int
-
   
-
    Removes a specified project location from the set.
-
   
-
    item: The project location to be erased.
-
    Returns: The number of project locations that were erased from the set.
   """
   pass
  def ForwardIterator(self):
   """
   ForwardIterator(self: ProjectLocationSet) -> ProjectLocationSetIterator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: ProjectLocationSet) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def Insert(self,item):
   """
   Insert(self: ProjectLocationSet,item: ProjectLocation) -> bool
-
   
-
    Insert the specified project location into the set.
-
   
-
    item: The project location to be inserted into the set.
-
    Returns: Returns whether the project location was inserted into the set.
   """
   pass
@@ -94,11 +69,8 @@ class ProjectLocationSet(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: ProjectLocationSet) -> ProjectLocationSetIterator
-
   
-
    Retrieve a backward moving iterator to the set.
-
    Returns: Returns a backward moving iterator to the set.
   """
   pass
@@ -117,23 +89,13 @@ class ProjectLocationSet(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the set is empty.
 
-
-
 Get: IsEmpty(self: ProjectLocationSet) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of project locations that are in the set.
 
-
-
 Get: Size(self: ProjectLocationSet) -> int
 
-
-
 """
-
 

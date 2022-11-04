@@ -1,32 +1,21 @@
 class MultiSegmentGrid(Element,IDisposable):
  """
  This element acts as a multi-segmented Grid. The individual grids associated to
-
     the MultiSegmentGrid behave as a single unit and all share the same text. They inherit
-
     their type (GridType) from the MultiSegmentGrid.
  """
  @staticmethod
  def AreGridsInSameMultiSegmentGrid(grid1,grid2):
   """
   AreGridsInSameMultiSegmentGrid(grid1: Grid,grid2: Grid) -> bool
-
   
-
    Determine whether two Grids are members of the same GridChain.
-
   
-
    grid1: A Grid.
-
    grid2: A Grid.
-
    Returns: Returns true if both of the specified Grids are associated to the same 
-
     MultiSegmentGrid,
-
      i.e. getMultiSegementGridId returns the same valid 
-
     element id for both Grids.
   """
   pass
@@ -34,25 +23,15 @@ class MultiSegmentGrid(Element,IDisposable):
  def Create(document,typeId,curveLoop,sketchPlaneId):
   """
   Create(document: Document,typeId: ElementId,curveLoop: CurveLoop,sketchPlaneId: ElementId) -> ElementId
-
   
-
    Create a MultiSegmentGrid element from the specified curve loop.
-
   
-
    document: The document in which to create the MultiSegmentGrid.
-
    typeId: Element id of a GridType element.
-
    curveLoop: An open curve loop consisting of lines and arcs.
-
    sketchPlaneId: Element id of a SketchPlane for the curves elements that will be created from 
-
     the curveLoop.
-
   
-
    Returns: The element id of the new MultiSegmentGrid element.
   """
   pass
@@ -65,11 +44,8 @@ class MultiSegmentGrid(Element,IDisposable):
  def GetGridIds(self):
   """
   GetGridIds(self: MultiSegmentGrid) -> ICollection[ElementId]
-
   
-
    Get the element ids of the Grids that make up this MultiSegmentGrid.
-
    Returns: Element ids of Grids that make up this MultiSegmentGrid.
   """
   pass
@@ -77,23 +53,14 @@ class MultiSegmentGrid(Element,IDisposable):
  def GetMultiSegementGridId(grid):
   """
   GetMultiSegementGridId(grid: Grid) -> ElementId
-
   
-
    Retrieve the element id of the MultiSegmentGrid of which the specified Grid is 
-
     a member.
-
   
-
   
-
    grid: A Grid.
-
    Returns: The element id of the associated GridChain. If the Grid is not associated to a 
-
     GridChain,
-
      this will return invalidElementId.
   """
   pass
@@ -101,21 +68,13 @@ class MultiSegmentGrid(Element,IDisposable):
  def IsValidCurveLoop(curveLoop):
   """
   IsValidCurveLoop(curveLoop: CurveLoop) -> bool
-
   
-
    Identifies whether the specified curve loop is valid for creation of a 
-
     MultiSegmentGrid.
-
   
-
   
-
    curveLoop: The curve loop.
-
    Returns: True if the curve loop is an open curve loop consisting of lines and arcs,and 
-
     false otherwise.
   """
   pass
@@ -123,21 +82,13 @@ class MultiSegmentGrid(Element,IDisposable):
  def IsValidSketchPlaneId(document,elemId):
   """
   IsValidSketchPlaneId(document: Document,elemId: ElementId) -> bool
-
   
-
    Identifies whether provided element id corresponds to a SketchPlane that is 
-
     valid for GridChain creation.
-
   
-
   
-
    document: The document.
-
    elemId: Element id.
-
    Returns: True if elemId is the element id of a horizontal SketchPlane.
   """
   pass
@@ -159,14 +110,8 @@ class MultiSegmentGrid(Element,IDisposable):
  Text=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """name shared by grids in this MultiSegmentGrid
 
-
-
 Get: Text(self: MultiSegmentGrid) -> str
 
-
-
 Set: Text(self: MultiSegmentGrid)=value
-
 """
-
 

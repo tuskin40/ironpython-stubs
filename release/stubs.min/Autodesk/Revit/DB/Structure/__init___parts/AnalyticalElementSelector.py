@@ -1,9 +1,7 @@
 class AnalyticalElementSelector(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies a portion of an Analytical Element or the whole element.
-
  
-
  enum AnalyticalElementSelector,values: EndOrTop (1),StartOrBase (0),Whole (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class AnalyticalElementSelector(Enum,IComparable,IFormattable,IConvertible):
  StartOrBase=None
  value__=None
  Whole=None
-

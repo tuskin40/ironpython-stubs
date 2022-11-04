@@ -1,9 +1,7 @@
 class UISaveAsOptions(object,IDisposable):
  """
  This class contains UI options available for saving a document to disk with a new filename.
-
  
-
  UISaveAsOptions()
  """
  def Dispose(self):
@@ -26,26 +24,10 @@ class UISaveAsOptions(object,IDisposable):
   pass
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: UISaveAsOptions) -> bool
-
-
-
 """
-
  ShowOverwriteWarning=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies if UI should show an overwrite warning dialog.
-
-
-
 Get: ShowOverwriteWarning(self: UISaveAsOptions) -> bool
-
-
-
 Set: ShowOverwriteWarning(self: UISaveAsOptions)=value
-
 """
-
-

@@ -1,13 +1,9 @@
 class ElectricalLoadClassificationData(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum is used by the ElectricalLoadClassification class as additional data whenever
-
     data members changed.  It is used as the additional data when the atom corresponding to each
-
     data member is touched.
-
  
-
  enum ElectricalLoadClassificationData,values: ActualElecLoadNameLabel (8),DemandFactor (2),LoadSummaryDemandFactorLabel (3),Name (0),PanelConnectedCurrentLabel (6),PanelConnectedLabel (4),PanelEstimatedCurrentLabel (7),PanelEstimatedLabel (5),SpaceLoadClass (1)
  """
  def __eq__(self,*args):
@@ -43,4 +39,3 @@ class ElectricalLoadClassificationData(Enum,IComparable,IFormattable,IConvertibl
  PanelEstimatedLabel=None
  SpaceLoadClass=None
  value__=None
-

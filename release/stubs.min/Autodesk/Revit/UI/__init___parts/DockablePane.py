@@ -1,11 +1,8 @@
 class DockablePane(object,IDisposable):
  """
  A user interface pane that participates in Revit's docking window system.
-
  
-
  DockablePane(other: DockablePane)
-
  DockablePane(id: DockablePaneId)
  """
  def Dispose(self):
@@ -14,27 +11,21 @@ class DockablePane(object,IDisposable):
  def GetTitle(self):
   """
   GetTitle(self: DockablePane) -> str
-
   
-
    Returns the current title (a.k.a. window caption) of the dockable pane.
   """
   pass
  def Hide(self):
   """
   Hide(self: DockablePane)
-
    If the pane is on screen,hide it.  Has no effect on built-in Revit dockable 
-
     panes.
   """
   pass
  def IsShown(self):
   """
   IsShown(self: DockablePane) -> bool
-
   
-
    Identify the pane is currently visible or in a tab.
   """
   pass
@@ -42,11 +33,8 @@ class DockablePane(object,IDisposable):
  def PaneExists(id):
   """
   PaneExists(id: DockablePaneId) -> bool
-
   
-
    Returns true if %id% refers to a dockable pane window that currently exists in 
-
     the Revit user interface,whether it's hidden or shown.
   """
   pass
@@ -54,11 +42,8 @@ class DockablePane(object,IDisposable):
  def PaneIsBuiltIn(id):
   """
   PaneIsBuiltIn(id: DockablePaneId) -> bool
-
   
-
    Returns true if %id% refers to a built-in Revit dockable pane,rather than one 
-
     created by an add-in.
   """
   pass
@@ -66,13 +51,9 @@ class DockablePane(object,IDisposable):
  def PaneIsRegistered(id):
   """
   PaneIsRegistered(id: DockablePaneId) -> bool
-
   
-
    Returns true if %id% refers to a built-in Revit dockable pane,or an add-in 
-
     pane that has been properly registered with 
-
     %Autodesk.Revit.UI.UIApplication.RegisterDockablePane%.
   """
   pass
@@ -82,9 +63,7 @@ class DockablePane(object,IDisposable):
  def Show(self):
   """
   Show(self: DockablePane)
-
    If the pane is not currently visible or in a tab,display the pane in the Revit 
-
     user interface at its last docked location.
   """
   pass
@@ -101,7 +80,6 @@ class DockablePane(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,other: DockablePane)
-
   __new__(cls: type,id: DockablePaneId)
   """
   pass
@@ -111,23 +89,13 @@ class DockablePane(object,IDisposable):
  Id=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The unique identifier for this dockable pane.
 
-
-
 Get: Id(self: DockablePane) -> DockablePaneId
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: DockablePane) -> bool
 
-
-
 """
-
 

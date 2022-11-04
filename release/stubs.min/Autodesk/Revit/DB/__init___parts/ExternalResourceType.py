@@ -1,9 +1,7 @@
 class ExternalResourceType(GuidEnum):
  """
  A type class used to distinguish between different kinds of external resource.
-
  
-
  ExternalResourceType(guid: Guid)
  """
  @staticmethod

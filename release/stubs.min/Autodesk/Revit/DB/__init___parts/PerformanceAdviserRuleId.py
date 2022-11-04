@@ -1,9 +1,7 @@
 class PerformanceAdviserRuleId(GuidEnum):
  """
  The unique identifier of a PerformanceAdviserRule
-
  
-
  PerformanceAdviserRuleId(guid: Guid)
  """
  @staticmethod

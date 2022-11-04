@@ -21,38 +21,21 @@ class WorksetFilter(object,IDisposable):
  IncludeStandaloneWorksetsOnly=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """True if the results of the filter only match stand-alone worksets; worksets that are not stand-alone will be rejected.
 
-
-
 Get: IncludeStandaloneWorksetsOnly(self: WorksetFilter) -> bool
 
-
-
 Set: IncludeStandaloneWorksetsOnly(self: WorksetFilter)=value
-
 """
-
  Inverted=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """True if the results of the filter are inverted; worksets that would normally be accepted by this filter will be rejected,
-
    and worksets that would normally be rejected will be accepted.
-
-
 
 Get: Inverted(self: WorksetFilter) -> bool
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: WorksetFilter) -> bool
 
-
-
 """
-
 

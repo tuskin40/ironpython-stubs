@@ -1,9 +1,7 @@
 class PartsVisibility(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the visibility of parts for the view.
-
  
-
  enum PartsVisibility,values: ShowOriginalOnly (1),ShowPartsAndOriginal (2),ShowPartsOnly (0),Unset (-1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class PartsVisibility(Enum,IComparable,IFormattable,IConvertible):
  ShowPartsOnly=None
  Unset=None
  value__=None
-

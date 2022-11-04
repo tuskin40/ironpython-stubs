@@ -1,9 +1,7 @@
 class WiringType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type to list all wiring types.
-
  
-
  enum WiringType,values: Arc (0),Chamfer (1)
  """
  def __eq__(self,*args):
@@ -32,5 +30,4 @@ class WiringType(Enum,IComparable,IFormattable,IConvertible):
  Arc=None
  Chamfer=None
  value__=None
-
 

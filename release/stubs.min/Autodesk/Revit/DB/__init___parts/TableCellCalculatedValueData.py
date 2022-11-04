@@ -6,9 +6,7 @@ class TableCellCalculatedValueData(object,IDisposable):
  def GetName(self):
   """
   GetName(self: TableCellCalculatedValueData) -> str
-
   
-
    Gets the name of the calculated value.
   """
   pass
@@ -30,12 +28,7 @@ class TableCellCalculatedValueData(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: TableCellCalculatedValueData) -> bool
 
-
-
 """
-
 

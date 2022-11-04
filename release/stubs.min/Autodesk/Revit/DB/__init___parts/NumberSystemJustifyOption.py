@@ -1,9 +1,7 @@
 class NumberSystemJustifyOption(Enum,IComparable,IFormattable,IConvertible):
  """
  The available options for justification of the numbers in a number system.
-
  
-
  enum NumberSystemJustifyOption,values: Back (2),Center (1),Front (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class NumberSystemJustifyOption(Enum,IComparable,IFormattable,IConvertible):
  Center=None
  Front=None
  value__=None
-

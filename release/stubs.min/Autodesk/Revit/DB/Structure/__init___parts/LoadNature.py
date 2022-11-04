@@ -4,17 +4,11 @@ class LoadNature(Element,IDisposable):
  def Create(document,name):
   """
   Create(document: Document,name: str) -> LoadNature
-
   
-
    Creates a new LoadNature.
-
   
-
    document: The Document to which new load nature element will be added.
-
    name: The name of the load nature.
-
    Returns: The newly created load nature element if successful,ll otherwise.
   """
   pass

@@ -8,41 +8,24 @@ class LinearArray(BaseArray,IDisposable):
  def ArrayElementWithoutAssociation(aDoc,dBView,id,count,translationToAnchorMember,anchorMember):
   """
   ArrayElementWithoutAssociation(aDoc: Document,dBView: View,id: ElementId,count: int,translationToAnchorMember: XYZ,anchorMember: ArrayAnchorMember) -> ICollection[ElementId]
-
   
-
    Creates a new linear array from a single element.
-
   
-
    aDoc: The document.
-
    dBView: The view. If it is a 2d view,translation vector must be in the view plane if 
-
     the element is a view-specific element.
-
   
-
    id: The element to array.
-
    count: The number of array members to create including the initial
-
      element 
-
     grouping. Must between 2 and 200.
-
   
-
    translationToAnchorMember: The translation vector for the array.
-
    anchorMember: Indicates if the translation vector specifies the location of the second member
-
 
     
      of the array,or the last member of the array.
-
   
-
    Returns: The ids of the elements created during the operation.
   """
   pass
@@ -50,43 +33,25 @@ class LinearArray(BaseArray,IDisposable):
  def Create(aDoc,dBView,*__args):
   """
   Create(aDoc: Document,dBView: View,ids: ICollection[ElementId],count: int,translationToAnchorMember: XYZ,anchorMember: ArrayAnchorMember) -> LinearArray
-
   Create(aDoc: Document,dBView: View,id: ElementId,count: int,translationToAnchorMember: XYZ,anchorMember: ArrayAnchorMember) -> LinearArray
-
   
-
    Creates a new linear array element from a single element.
-
   
-
    aDoc: The document.
-
    dBView: The view. If it is a 2d view,translation vector must be in the view plane if 
-
     the element is a view-specific element.
-
   
-
    id: The element to array.
-
    count: The number of array members to create including the initial
-
      element 
-
     grouping. Must between 2 and 200.
-
   
-
    translationToAnchorMember: The translation vector for the array.
-
    anchorMember: Indicates if the translation vector specifies the location of the second member
-
 
     
      of the array,or the last member of the array.
-
   
-
    Returns: The new linear array element.
   """
   pass
@@ -99,22 +64,16 @@ class LinearArray(BaseArray,IDisposable):
  def GetCopiedMemberIds(self):
   """
   GetCopiedMemberIds(self: LinearArray) -> ICollection[ElementId]
-
   
-
    Retrieves the copied member Ids of the Array.
-
    Returns: The copied member Ids of the Array
   """
   pass
  def GetOriginalMemberIds(self):
   """
   GetOriginalMemberIds(self: LinearArray) -> ICollection[ElementId]
-
   
-
    Retrieves the original member Ids of the Array.
-
    Returns: The original member Ids of the Array
   """
   pass
@@ -122,17 +81,11 @@ class LinearArray(BaseArray,IDisposable):
  def IsElementArrayable(aDoc,id):
   """
   IsElementArrayable(aDoc: Document,id: ElementId) -> bool
-
   
-
    Indicates whether the input element is arrayable.
-
   
-
    aDoc: The document.
-
    id: The element id.
-
    Returns: True if the input element is arrayable,false otherwise.
   """
   pass
@@ -140,15 +93,10 @@ class LinearArray(BaseArray,IDisposable):
  def IsValidArraySize(count):
   """
   IsValidArraySize(count: int) -> bool
-
   
-
    This indicates whether the input count is valid.
-
   
-
    count: The count.
-
    Returns: True if the input count is between 2 and 200,false otherwise.
   """
   pass
@@ -170,14 +118,8 @@ class LinearArray(BaseArray,IDisposable):
  NumMembers=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves or changes the number of the arrayed members.
 
-
-
 Get: NumMembers(self: LinearArray) -> int
 
-
-
 Set: NumMembers(self: LinearArray)=value
-
 """
-
 

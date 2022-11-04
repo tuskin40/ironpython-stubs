@@ -1,9 +1,7 @@
 class ViewPlanType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing plan view types.
-
  
-
  enum ViewPlanType,values: CeilingPlan (2),FloorPlan (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ViewPlanType(Enum,IComparable,IFormattable,IConvertible):
  CeilingPlan=None
  FloorPlan=None
  value__=None
-

@@ -4,16 +4,12 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # classes
-
 class AddInIdAttribute(Attribute,_Attribute):
  """
  The custom AddInId attribute for Macros macros use only.
-
  
-
  AddInIdAttribute(addInIdStr: str)
  """
  def __init__(self,*args):
@@ -26,22 +22,14 @@ class AddInIdAttribute(Attribute,_Attribute):
  Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """AddInId guid value.
 
-
-
 Get: Value(self: AddInIdAttribute) -> ValueType
 
-
-
 """
-
-
 
 class ApplicationEntryPoint(Application,IDisposable,IEntryPoint):
  """
  For Revit Macros use only.
-
  
-
  ApplicationEntryPoint()
  """
  def Dispose(self):
@@ -53,14 +41,12 @@ class ApplicationEntryPoint(Application,IDisposable,IEntryPoint):
  def FinishInitializationEO(self):
   """
   FinishInitializationEO(self: ApplicationEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
  def Initialize(self,obj,addinFolder):
   """
   Initialize(self: ApplicationEntryPoint,obj: object,addinFolder: str)
-
    For Revit Macros internal use only.
   """
   pass
@@ -70,7 +56,6 @@ class ApplicationEntryPoint(Application,IDisposable,IEntryPoint):
  def OnShutdownEO(self):
   """
   OnShutdownEO(self: ApplicationEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
@@ -89,24 +74,15 @@ class ApplicationEntryPoint(Application,IDisposable,IEntryPoint):
  AddinFolder=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The full path to the Revit Macros module.
 
-
-
 Get: AddinFolder(self: ApplicationEntryPoint) -> str
 
-
-
 """
-
  PrimaryCookie=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
-
 
 class DocumentEntryPoint(Document,IDisposable,IEntryPoint):
  """
  For Revit Macros use only.
-
  
-
  DocumentEntryPoint()
  """
  def Dispose(self):
@@ -118,14 +94,12 @@ class DocumentEntryPoint(Document,IDisposable,IEntryPoint):
  def FinishInitializationEO(self):
   """
   FinishInitializationEO(self: DocumentEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
  def Initialize(self,obj,addinFolder):
   """
   Initialize(self: DocumentEntryPoint,obj: object,addinFolder: str)
-
    For Revit Macros internal use only.
   """
   pass
@@ -135,7 +109,6 @@ class DocumentEntryPoint(Document,IDisposable,IEntryPoint):
  def OnShutdownEO(self):
   """
   OnShutdownEO(self: DocumentEntryPoint)
-
    For Revit Macros internal use only.
   """
   pass
@@ -157,17 +130,10 @@ class DocumentEntryPoint(Document,IDisposable,IEntryPoint):
  AddinFolder=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The full path to the Revit Macros module.
 
-
-
 Get: AddinFolder(self: DocumentEntryPoint) -> str
 
-
-
 """
-
  PrimaryCookie=property(lambda self: object(),lambda self,v: None,lambda self: None)
-
-
 
 class IEntryPoint:
  """ The interface supporting Document and Application level entry point classes for macros. """
@@ -186,18 +152,12 @@ class IEntryPoint:
  AddinFolder=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get: AddinFolder(self: IEntryPoint) -> str
 
-
-
 """
-
-
 
 class VendorIdAttribute(Attribute,_Attribute):
  """
  The custom VendorId attribute for Macros macros use only.
-
  
-
  VendorIdAttribute(vendorIdStr: str)
  """
  def __init__(self,*args):
@@ -210,13 +170,7 @@ class VendorIdAttribute(Attribute,_Attribute):
  Value=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """AddInId VendorId value.
 
-
-
 Get: Value(self: VendorIdAttribute) -> str
 
-
-
 """
-
-
 

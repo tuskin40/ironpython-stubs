@@ -1,9 +1,7 @@
 class ModelUpdatesStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates whether an element in the current model has additional user changes in the central model.
-
  
-
  enum ModelUpdatesStatus,values: CurrentWithCentral (0),DeletedInCentral (2),NotYetInCentral (1),UpdatedInCentral (3)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ModelUpdatesStatus(Enum,IComparable,IFormattable,IConvertible):
  NotYetInCentral=None
  UpdatedInCentral=None
  value__=None
-

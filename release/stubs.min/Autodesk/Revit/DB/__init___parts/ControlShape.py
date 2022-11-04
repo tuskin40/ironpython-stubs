@@ -1,9 +1,7 @@
 class ControlShape(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing four shapes of control that Autodesk Revit supports.
-
  
-
  enum ControlShape,values: DoubleHorizontalArrow (3),DoubleVerticalArrow (2),HorizontalArrow (1),VerticalArrow (0)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ControlShape(Enum,IComparable,IFormattable,IConvertible):
  HorizontalArrow=None
  value__=None
  VerticalArrow=None
-

@@ -1,9 +1,7 @@
 class WorksetConfigurationOption(Enum,IComparable,IFormattable,IConvertible):
  """
  A collection of options used to initialize a WorksetConfiguration.
-
  
-
  enum WorksetConfigurationOption,values: CloseAllWorksets (1),OpenAllWorksets (0),OpenLastViewed (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class WorksetConfigurationOption(Enum,IComparable,IFormattable,IConvertible):
  OpenAllWorksets=None
  OpenLastViewed=None
  value__=None
-

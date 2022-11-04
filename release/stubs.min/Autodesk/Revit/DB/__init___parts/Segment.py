@@ -3,11 +3,8 @@ class Segment(Element,IDisposable):
  def AddSize(self,size):
   """
   AddSize(self: Segment,size: MEPSize)
-
    Adds a new MEPSize to the segment.
-
   
-
    size: The new MEPSize to be added.
   """
   pass
@@ -20,9 +17,7 @@ class Segment(Element,IDisposable):
  def GetSizes(self):
   """
   GetSizes(self: Segment) -> ICollection[MEPSize]
-
   
-
    Gets the defined sizes of the segment.
   """
   pass
@@ -32,11 +27,8 @@ class Segment(Element,IDisposable):
  def RemoveSize(self,nominalDiameter):
   """
   RemoveSize(self: Segment,nominalDiameter: float)
-
    Remove the existing MEPSize with this nominal diameter from the segment.
-
   
-
    nominalDiameter: The nominal diameter of the size.
   """
   pass
@@ -55,49 +47,27 @@ class Segment(Element,IDisposable):
  Description=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The description of the segment.
 
-
-
 Get: Description(self: Segment) -> str
 
-
-
 Set: Description(self: Segment)=value
-
 """
-
  MaterialId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The ElementId of the MaterialElem.
 
-
-
 Get: MaterialId(self: Segment) -> ElementId
 
-
-
 """
-
  Roughness=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The roughness value for given material.
 
-
-
 Get: Roughness(self: Segment) -> float
 
-
-
 Set: Roughness(self: Segment)=value
-
 """
-
  SizeCount=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number of size objects in the segment.
 
-
-
 Get: SizeCount(self: Segment) -> int
 
-
-
 """
-
 

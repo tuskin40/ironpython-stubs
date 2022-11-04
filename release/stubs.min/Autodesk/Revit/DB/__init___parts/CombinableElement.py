@@ -24,12 +24,7 @@ class CombinableElement(Element,IDisposable):
  Combinations=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The geometry combinations that this element belongs to.
 
-
-
 Get: Combinations(self: CombinableElement) -> GeomCombinationSet
 
-
-
 """
-
 

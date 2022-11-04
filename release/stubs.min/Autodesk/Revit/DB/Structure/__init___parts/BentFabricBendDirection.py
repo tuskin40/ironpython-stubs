@@ -1,9 +1,7 @@
 class BentFabricBendDirection(Enum,IComparable,IFormattable,IConvertible):
  """
  Direction in which FabricSheet is bent.
-
  
-
  enum BentFabricBendDirection,values: Major (0),Minor (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class BentFabricBendDirection(Enum,IComparable,IFormattable,IConvertible):
  Major=None
  Minor=None
  value__=None
-

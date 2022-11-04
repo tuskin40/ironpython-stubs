@@ -4,17 +4,11 @@ class LoadUsage(Element,IDisposable):
  def Create(document,name):
   """
   Create(document: Document,name: str) -> LoadUsage
-
   
-
    Creates a new LoadUsage.
-
   
-
    document: The Document to which new load usage element will be added.
-
    name: The name of the load usage.
-
    Returns: The newly created load usage element if successful,ll otherwise.
   """
   pass

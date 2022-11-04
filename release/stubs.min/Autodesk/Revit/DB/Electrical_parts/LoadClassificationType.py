@@ -1,9 +1,7 @@
 class LoadClassificationType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all the possible load classification types for a connector object.
-
  
-
  enum LoadClassificationType,values: HVAC (3),Lighting (2),Other (0),Power (1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class LoadClassificationType(Enum,IComparable,IFormattable,IConvertible):
  Other=None
  Power=None
  value__=None
-

@@ -1,11 +1,8 @@
 class FormatStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type indicating the formatting status of a range of characters
-
     in FormattedText
-
  
-
  enum FormatStatus,values: All (1),Mixed (2),None (0)
  """
  def __eq__(self,*args):
@@ -35,4 +32,3 @@ class FormatStatus(Enum,IComparable,IFormattable,IConvertible):
  Mixed=None
  None=None
  value__=None
-

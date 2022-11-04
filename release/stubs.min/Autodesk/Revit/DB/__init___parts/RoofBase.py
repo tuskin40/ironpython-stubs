@@ -24,51 +24,28 @@ class RoofBase(HostObject,IDisposable):
  EaveCuts=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve or set the EaveCutterType.
 
-
-
 Get: EaveCuts(self: RoofBase) -> EaveCutterType
 
-
-
 Set: EaveCuts(self: RoofBase)=value
-
 """
-
  FasciaDepth=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve or set the FasciaDepth.
 
-
-
 Get: FasciaDepth(self: RoofBase) -> float
 
-
-
 Set: FasciaDepth(self: RoofBase)=value
-
 """
-
  RoofType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve or set the Type.
 
-
-
 Get: RoofType(self: RoofBase) -> RoofType
 
-
-
 Set: RoofType(self: RoofBase)=value
-
 """
-
  SlabShapeEditor=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get the SlabShapeEditor used for slab shape editing.
 
-
-
 Get: SlabShapeEditor(self: RoofBase) -> SlabShapeEditor
 
-
-
 """
-
 

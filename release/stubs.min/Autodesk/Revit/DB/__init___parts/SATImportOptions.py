@@ -1,11 +1,8 @@
 class SATImportOptions(BaseImportOptions,IDisposable):
  """
  The import options used to import SAT format files.
-
  
-
  SATImportOptions(option: SATImportOptions)
-
  SATImportOptions()
  """
  def Dispose(self):
@@ -27,7 +24,6 @@ class SATImportOptions(BaseImportOptions,IDisposable):
  def __new__(self,option=None):
   """
   __new__(cls: type,option: SATImportOptions)
-
   __new__(cls: type)
   """
   pass

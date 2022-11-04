@@ -1,11 +1,8 @@
 class SATExportOptions(object,IDisposable):
  """
  The export options used by exporting SAT format file. So far,there is no option in it.
-
  
-
  SATExportOptions(option: SATExportOptions)
-
  SATExportOptions()
  """
  def Dispose(self):
@@ -27,7 +24,6 @@ class SATExportOptions(object,IDisposable):
  def __new__(self,option=None):
   """
   __new__(cls: type,option: SATExportOptions)
-
   __new__(cls: type)
   """
   pass
@@ -37,12 +33,7 @@ class SATExportOptions(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: SATExportOptions) -> bool
 
-
-
 """
-
 

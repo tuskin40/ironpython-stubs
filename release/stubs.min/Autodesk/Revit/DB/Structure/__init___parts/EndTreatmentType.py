@@ -4,17 +4,11 @@ class EndTreatmentType(ElementType,IDisposable):
  def Create(doc,strTreatment=None):
   """
   Create(doc: Document) -> EndTreatmentType
-
   
-
    Creates a new EndTreatmentType in a document.
-
   Create(doc: Document,strTreatment: str) -> EndTreatmentType
-
   
-
    Creates a new EndTreatmentType in a document and adds the input string to the 
-
     endTreatment parameter.
   """
   pass
@@ -22,15 +16,10 @@ class EndTreatmentType(ElementType,IDisposable):
  def CreateDefaultEndTreatmentType(ADoc):
   """
   CreateDefaultEndTreatmentType(ADoc: Document) -> ElementId
-
   
-
    Creates a new EndTreatmentType object with a default name.
-
   
-
    ADoc: The document.
-
    Returns: The newly created type id.
   """
   pass
@@ -58,14 +47,8 @@ class EndTreatmentType(ElementType,IDisposable):
  EndTreatment=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """String describing the end treatment
 
-
-
 Get: EndTreatment(self: EndTreatmentType) -> str
 
-
-
 Set: EndTreatment(self: EndTreatmentType)=value
-
 """
-
 

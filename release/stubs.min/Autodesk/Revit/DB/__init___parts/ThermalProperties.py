@@ -1,7 +1,6 @@
 class ThermalProperties(APIObject,IDisposable):
  """
  Class specific to thermal properties for assembly types,such as Wall,
-
     Floor,Ceiling,Roof and Building Pad.
  """
  def Dispose(self):
@@ -25,77 +24,42 @@ class ThermalProperties(APIObject,IDisposable):
  Absorptance=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Value of absorptance.
 
-
-
 Get: Absorptance(self: ThermalProperties) -> float
 
-
-
 Set: Absorptance(self: ThermalProperties)=value
-
 """
-
  HeatTransferCoefficient=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The heat transfer coefficient value (U-Value).
-
    The unit is watts per meter-squared kelvin (W/(m^2*K)).
-
-
 
 Get: HeatTransferCoefficient(self: ThermalProperties) -> float
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ThermalProperties) -> bool
 
-
-
 """
-
  Roughness=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Value of roughness.
 
-
-
 Get: Roughness(self: ThermalProperties) -> int
 
-
-
 Set: Roughness(self: ThermalProperties)=value
-
 """
-
  ThermalMass=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The calculated thermal mass value.
-
    The unit is kilogram feet-squared per second squared kelvin (kg ft^2/(s^2 K)).
-
-
 
 Get: ThermalMass(self: ThermalProperties) -> float
 
-
-
 """
-
  ThermalResistance=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The calculated thermal resistance value (R-Value).
-
    The unit is meter-squared kelvin per watt ((m^2*K)/Watt).
-
-
 
 Get: ThermalResistance(self: ThermalProperties) -> float
 
-
-
 """
-
 

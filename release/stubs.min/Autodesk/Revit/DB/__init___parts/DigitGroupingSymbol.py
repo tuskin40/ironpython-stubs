@@ -1,9 +1,7 @@
 class DigitGroupingSymbol(Enum,IComparable,IFormattable,IConvertible):
  """
  The symbol used to separate groups of digits when numbers are formatted with digit grouping.
-
  
-
  enum DigitGroupingSymbol,values: Apostrophe (3),Comma (1),Dot (0),Space (2),Tick (3)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class DigitGroupingSymbol(Enum,IComparable,IFormattable,IConvertible):
  Space=None
  Tick=None
  value__=None
-

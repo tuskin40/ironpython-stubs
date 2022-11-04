@@ -18,23 +18,13 @@ class AssemblyDifferenceNamingCategory(AssemblyDifference,IDisposable):
  NamingCategoryId1=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Naming category id of the first assembly
 
-
-
 Get: NamingCategoryId1(self: AssemblyDifferenceNamingCategory) -> ElementId
 
-
-
 """
-
  NamingCategoryId2=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Naming category id of the second assembly
 
-
-
 Get: NamingCategoryId2(self: AssemblyDifferenceNamingCategory) -> ElementId
 
-
-
 """
-
 

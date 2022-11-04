@@ -4,10 +4,8 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # classes
-
 class RevitAPIEventArgs(EventArgs,IDisposable):
  """ The class is used as base class for all event argument classes. """
  def Dispose(self):
@@ -16,9 +14,7 @@ class RevitAPIEventArgs(EventArgs,IDisposable):
  def IsCancelled(self):
   """
   IsCancelled(self: RevitAPIEventArgs) -> bool
-
   
-
    Indicates whether the event is being cancelled.
   """
   pass
@@ -37,26 +33,15 @@ class RevitAPIEventArgs(EventArgs,IDisposable):
  Cancellable=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether an event may be cancelled by an event delegate.
 
-
-
 Get: Cancellable(self: RevitAPIEventArgs) -> bool
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: RevitAPIEventArgs) -> bool
 
-
-
 """
-
-
 
 class RevitAPISingleEventArgs(RevitAPIEventArgs,IDisposable):
  """ The class is used as a base class for arguments of any single-event. """
@@ -75,7 +60,6 @@ class RevitAPISingleEventArgs(RevitAPIEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class ApplicationInitializedEventArgs(RevitAPISingleEventArgs,IDisposable):
  """ The event arguments used by the ApplicationLaunched event. """
  def Dispose(self):
@@ -93,7 +77,6 @@ class ApplicationInitializedEventArgs(RevitAPISingleEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
  """ The event arguments used by the DocumentChanged event. """
  def Dispose(self):
@@ -102,91 +85,58 @@ class DocumentChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
  def GetAddedElementIds(self,filter=None):
   """
   GetAddedElementIds(self: DocumentChangedEventArgs) -> ICollection[ElementId]
-
   
-
    Returns set of elements newly added to the document.
-
    Returns: The set of ElementId for elements newly added to the document.
-
   GetAddedElementIds(self: DocumentChangedEventArgs,filter: ElementFilter) -> ICollection[ElementId]
-
   
-
    Returns set of newly added elements that pass the filter.
-
   
-
    filter: The element filter to be applied.
-
    Returns: The set of ElementId for newly added elements that pass the filter.
-
      Returns 
-
     empty set if no elements are found which pass the filter.
   """
   pass
  def GetDeletedElementIds(self):
   """
   GetDeletedElementIds(self: DocumentChangedEventArgs) -> ICollection[ElementId]
-
   
-
    Returns set of elements that were deleted from the document.
-
    Returns: The set of ElementId for elements that were deleted from the document.
   """
   pass
  def GetDocument(self):
   """
   GetDocument(self: DocumentChangedEventArgs) -> Document
-
   
-
    Returns document associated with this event
-
    Returns: The document associated with this event.
   """
   pass
  def GetModifiedElementIds(self,filter=None):
   """
   GetModifiedElementIds(self: DocumentChangedEventArgs) -> ICollection[ElementId]
-
   
-
    Returns set of elements that were modified.
-
    Returns: The set of ElementId for elements that were modified.
-
   GetModifiedElementIds(self: DocumentChangedEventArgs,filter: ElementFilter) -> ICollection[ElementId]
-
   
-
    Returns set of elements  that were modified according to the given element 
-
     filter.
-
   
-
   
-
    filter: The element filter to be applied.
-
    Returns: The set of ElementId for modified elements that pass the filter.
-
      Returns 
-
     empty set if no elements are found which pass the filter.
   """
   pass
  def GetTransactionNames(self):
   """
   GetTransactionNames(self: DocumentChangedEventArgs) -> IList[str]
-
   
-
    Returns names of the transactions associated with this event
-
    Returns: The names of the transactions associated with this event
   """
   pass
@@ -205,15 +155,9 @@ class DocumentChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
  Operation=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The operation associated with this event
 
-
-
 Get: Operation(self: DocumentChangedEventArgs) -> UndoOperation
 
-
-
 """
-
-
 
 class RevitAPIPostEventArgs(RevitAPIEventArgs,IDisposable):
  """ The class is used as a base class for arguments of any post-event. """
@@ -235,15 +179,9 @@ class RevitAPIPostEventArgs(RevitAPIEventArgs,IDisposable):
  Status=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the action associated with this event succeeded,failed,or was cancelled (by an API event handler).
 
-
-
 Get: Status(self: RevitAPIPostEventArgs) -> RevitAPIEventStatus
 
-
-
 """
-
-
 
 class DocumentClosedEventArgs(RevitAPIPostEventArgs,IDisposable):
  """ The event arguments used by the DocumentClosed event. """
@@ -265,22 +203,15 @@ class DocumentClosedEventArgs(RevitAPIPostEventArgs,IDisposable):
  DocumentId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the document that has just been closed.
 
-
-
 Get: DocumentId(self: DocumentClosedEventArgs) -> int
 
-
-
 """
-
-
 
 class RevitAPIPreEventArgs(RevitAPIEventArgs,IDisposable):
  """ The class is used as a base class for the arguments for any pre-event. """
  def Cancel(self):
   """
   Cancel(self: RevitAPIPreEventArgs)
-
    When the event is cancellable,may call the Cancel() method to cancel it.
   """
   pass
@@ -299,7 +230,6 @@ class RevitAPIPreEventArgs(RevitAPIEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class RevitAPIPreDocEventArgs(RevitAPIPreEventArgs,IDisposable):
  """ The base class used for pre events where the arguments must supply access to the document. """
  def Dispose(self):
@@ -320,15 +250,9 @@ class RevitAPIPreDocEventArgs(RevitAPIPreEventArgs,IDisposable):
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The document associated with the event.
 
-
-
 Get: Document(self: RevitAPIPreDocEventArgs) -> Document
 
-
-
 """
-
-
 
 class DocumentClosingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentClosing event. """
@@ -350,15 +274,9 @@ class DocumentClosingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  DocumentId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the document that is about to be closed.
 
-
-
 Get: DocumentId(self: DocumentClosingEventArgs) -> int
 
-
-
 """
-
-
 
 class RevitAPIPostDocEventArgs(RevitAPIPostEventArgs,IDisposable):
  """ The base class used for post events where the arguments must supply access to the document. """
@@ -380,15 +298,9 @@ class RevitAPIPostDocEventArgs(RevitAPIPostEventArgs,IDisposable):
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The document associated with the event.
 
-
-
 Get: Document(self: RevitAPIPostDocEventArgs) -> Document
 
-
-
 """
-
-
 
 class DocumentCreatedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentCreated event. """
@@ -407,7 +319,6 @@ class DocumentCreatedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentCreatingEventArgs(RevitAPIPreEventArgs,IDisposable):
  """ The event arguments used by the DocumentCreating event. """
  def Dispose(self):
@@ -428,26 +339,15 @@ class DocumentCreatingEventArgs(RevitAPIPreEventArgs,IDisposable):
  DocumentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Type of the document which is about to be created,e.g. Project or Template.
 
-
-
 Get: DocumentType(self: DocumentCreatingEventArgs) -> DocumentType
 
-
-
 """
-
  Template=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The template file path to be used for creating the new document.
 
-
-
 Get: Template(self: DocumentCreatingEventArgs) -> str
 
-
-
 """
-
-
 
 class DocumentOpenedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentOpened event. """
@@ -466,7 +366,6 @@ class DocumentOpenedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentOpeningEventArgs(RevitAPIPreEventArgs,IDisposable):
  """ The event arguments used by the DocumentOpening event. """
  def Dispose(self):
@@ -487,26 +386,15 @@ class DocumentOpeningEventArgs(RevitAPIPreEventArgs,IDisposable):
  DocumentType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Type of the document,e.g. Project or Template.
 
-
-
 Get: DocumentType(self: DocumentOpeningEventArgs) -> DocumentType
 
-
-
 """
-
  PathName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Path of the document to be opened.
 
-
-
 Get: PathName(self: DocumentOpeningEventArgs) -> str
 
-
-
 """
-
-
 
 class DocumentPrintedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentPrinted event. """
@@ -516,22 +404,16 @@ class DocumentPrintedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  def GetFailedViewElementIds(self):
   """
   GetFailedViewElementIds(self: DocumentPrintedEventArgs) -> IList[ElementId]
-
   
-
    Returns ElementIds of the views that that failed to print (if any).
-
    Returns: ElementIds of the views that that failed to print (if any).
   """
   pass
  def GetPrintedViewElementIds(self):
   """
   GetPrintedViewElementIds(self: DocumentPrintedEventArgs) -> IList[ElementId]
-
   
-
    Returns ElementIds of the views that printed successfully.
-
    Returns: ElementIds of the views that printed successfully.
   """
   pass
@@ -547,7 +429,6 @@ class DocumentPrintedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentPrintingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentPrinting event. """
  def Dispose(self):
@@ -556,22 +437,16 @@ class DocumentPrintingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  def GetSettings(self):
   """
   GetSettings(self: DocumentPrintingEventArgs) -> IPrintSetting
-
   
-
    Gets the print settings of the active printing session.
-
    Returns: The print settings of the active printing session.
   """
   pass
  def GetViewElementIds(self):
   """
   GetViewElementIds(self: DocumentPrintingEventArgs) -> IList[ElementId]
-
   
-
    Returns ElementIds of the views to be printed.
-
    Returns: ElementIds of the views to be printed.
   """
   pass
@@ -590,15 +465,9 @@ class DocumentPrintingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  Settings=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The print settings of the active printing session.
 
-
-
 Get: Settings(self: DocumentPrintingEventArgs) -> IPrintSetting
 
-
-
 """
-
-
 
 class DocumentSavedAsEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentSavedAs event. """
@@ -620,26 +489,15 @@ class DocumentSavedAsEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  IsSavingAsMasterFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the document is to be saved as master file.
 
-
-
 Get: IsSavingAsMasterFile(self: DocumentSavedAsEventArgs) -> bool
 
-
-
 """
-
  OriginalPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Original path of the document.
 
-
-
 Get: OriginalPath(self: DocumentSavedAsEventArgs) -> str
 
-
-
 """
-
-
 
 class DocumentSavedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentSaved event. """
@@ -658,7 +516,6 @@ class DocumentSavedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentSavingAsEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentSavingAs event. """
  def Dispose(self):
@@ -679,26 +536,15 @@ class DocumentSavingAsEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  IsSavingAsMasterFile=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the document is to be saved as master file.
 
-
-
 Get: IsSavingAsMasterFile(self: DocumentSavingAsEventArgs) -> bool
 
-
-
 """
-
  PathName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Target path to which the document is to be saved.
 
-
-
 Get: PathName(self: DocumentSavingAsEventArgs) -> str
 
-
-
 """
-
-
 
 class DocumentSavingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentSaving event. """
@@ -717,7 +563,6 @@ class DocumentSavingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentSynchronizedWithCentralEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentSynchronizedWithCentralEventArgs event. """
  def Dispose(self):
@@ -735,7 +580,6 @@ class DocumentSynchronizedWithCentralEventArgs(RevitAPIPostDocEventArgs,IDisposa
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class DocumentSynchronizingWithCentralEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the DocumentSynchronizingWithCentralEventArgs event. """
  def Dispose(self):
@@ -756,37 +600,21 @@ class DocumentSynchronizingWithCentralEventArgs(RevitAPIPreDocEventArgs,IDisposa
  Comments=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """User's comments for synchronization.
 
-
-
 Get: Comments(self: DocumentSynchronizingWithCentralEventArgs) -> str
 
-
-
 """
-
  Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Full path of the central model which is to be synchronized.
 
-
-
 Get: Location(self: DocumentSynchronizingWithCentralEventArgs) -> str
 
-
-
 """
-
  Options=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """User's options associated with the synchronization operation.
 
-
-
 Get: Options(self: DocumentSynchronizingWithCentralEventArgs) -> SynchronizeWithCentralOptions
 
-
-
 """
-
-
 
 class DocumentWorksharingEnabledEventArgs(RevitAPISingleEventArgs,IDisposable):
  """ The event arguments used by the DocumentWorksharingEnabled event. """
@@ -796,11 +624,8 @@ class DocumentWorksharingEnabledEventArgs(RevitAPISingleEventArgs,IDisposable):
  def GetDocument(self):
   """
   GetDocument(self: DocumentWorksharingEnabledEventArgs) -> Document
-
   
-
    Returns document associated with this event
-
    Returns: The document associated with this event.
   """
   pass
@@ -816,7 +641,6 @@ class DocumentWorksharingEnabledEventArgs(RevitAPISingleEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class ElementTypeDuplicatedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the ElementTypeDuplicated event. """
  def Dispose(self):
@@ -837,37 +661,21 @@ class ElementTypeDuplicatedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  NewElementTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The id of the newly duplicated ElementType.
 
-
-
 Get: NewElementTypeId(self: ElementTypeDuplicatedEventArgs) -> ElementId
 
-
-
 """
-
  NewName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The name of the newly duplicated ElementType.
 
-
-
 Get: NewName(self: ElementTypeDuplicatedEventArgs) -> str
 
-
-
 """
-
  OriginalElementTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The id of the element type that is duplicated.
 
-
-
 Get: OriginalElementTypeId(self: ElementTypeDuplicatedEventArgs) -> ElementId
 
-
-
 """
-
-
 
 class ElementTypeDuplicatingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the ElementTypeDuplicating event. """
@@ -889,22 +697,14 @@ class ElementTypeDuplicatingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  ElementTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The id of the ElementType to be duplicated.
 
-
-
 Get: ElementTypeId(self: ElementTypeDuplicatingEventArgs) -> ElementId
 
-
-
 """
-
-
 
 class EventStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  Describes the status of an action which triggered a post event.
-
  
-
  enum EventStatus,values: Cancelled (1),Failed (-1),Succeeded (0)
  """
  def __eq__(self,*args):
@@ -935,7 +735,6 @@ class EventStatus(Enum,IComparable,IFormattable,IConvertible):
  Succeeded=None
  value__=None
 
-
 class FailuresProcessingEventArgs(RevitAPISingleEventArgs,IDisposable):
  """ The event arguments used by the FailuresProcessing event. """
  def Dispose(self):
@@ -944,22 +743,16 @@ class FailuresProcessingEventArgs(RevitAPISingleEventArgs,IDisposable):
  def GetFailuresAccessor(self):
   """
   GetFailuresAccessor(self: FailuresProcessingEventArgs) -> FailuresAccessor
-
   
-
    Provides access to the failure information in the document.
-
    Returns: The accessor to the failures in the document.
   """
   pass
  def GetProcessingResult(self):
   """
   GetProcessingResult(self: FailuresProcessingEventArgs) -> FailureProcessingResult
-
   
-
    Retrieves current status of the failures processing result.
-
    Returns: The current failures processing result.
   """
   pass
@@ -969,15 +762,10 @@ class FailuresProcessingEventArgs(RevitAPISingleEventArgs,IDisposable):
  def SetProcessingResult(self,result):
   """
   SetProcessingResult(self: FailuresProcessingEventArgs,result: FailureProcessingResult)
-
    Sets the result of the failures processing accomplished during this event 
-
     callback.
-
   
-
   
-
    result: The result.
   """
   pass
@@ -990,7 +778,6 @@ class FailuresProcessingEventArgs(RevitAPISingleEventArgs,IDisposable):
  def __init__(self,*args):
   """ x.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signaturex.__init__(...) initializes x; see x.__class__.__doc__ for signature """
   pass
-
 class FamilyLoadedIntoDocumentEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the FamilyLoadedInto event. """
  def Dispose(self):
@@ -1011,48 +798,27 @@ class FamilyLoadedIntoDocumentEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  FamilyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The file name of the family that is loaded into the document.
 
-
-
 Get: FamilyName(self: FamilyLoadedIntoDocumentEventArgs) -> str
 
-
-
 """
-
  FamilyPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The file path of the family that is loaded into the document.
 
-
-
 Get: FamilyPath(self: FamilyLoadedIntoDocumentEventArgs) -> str
 
-
-
 """
-
  NewFamilyId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The newly loaded family id.
 
-
-
 Get: NewFamilyId(self: FamilyLoadedIntoDocumentEventArgs) -> ElementId
 
-
-
 """
-
  OriginalFamilyId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The original family id that is overridden by the newly loaded family.
 
-
-
 Get: OriginalFamilyId(self: FamilyLoadedIntoDocumentEventArgs) -> ElementId
 
-
-
 """
-
-
 
 class FamilyLoadingIntoDocumentEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the FamilyLoadingInto event. """
@@ -1074,26 +840,15 @@ class FamilyLoadingIntoDocumentEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  FamilyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The file name of the family that is being loaded into the document.
 
-
-
 Get: FamilyName(self: FamilyLoadingIntoDocumentEventArgs) -> str
 
-
-
 """
-
  FamilyPath=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The file path of the family that is being loaded into the document.
 
-
-
 Get: FamilyPath(self: FamilyLoadingIntoDocumentEventArgs) -> str
 
-
-
 """
-
-
 
 class FileExportedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the FileExported event. """
@@ -1115,26 +870,15 @@ class FileExportedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  Format=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies the export format,e.g. DWG or image.
 
-
-
 Get: Format(self: FileExportedEventArgs) -> ImportExportFileFormat
 
-
-
 """
-
  Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Target path for the exported file (or files).
 
-
-
 Get: Path(self: FileExportedEventArgs) -> str
 
-
-
 """
-
-
 
 class FileExportingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the FileExporting event. """
@@ -1156,26 +900,15 @@ class FileExportingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  Format=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies the export format,e.g. DWG or image.
 
-
-
 Get: Format(self: FileExportingEventArgs) -> ImportExportFileFormat
 
-
-
 """
-
  Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The target path for the export.
 
-
-
 Get: Path(self: FileExportingEventArgs) -> str
 
-
-
 """
-
-
 
 class FileImportedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the FileImported event. """
@@ -1197,39 +930,22 @@ class FileImportedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  Format=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies the import format,e.g. DWG or image.
 
-
-
 Get: Format(self: FileImportedEventArgs) -> ImportExportFileFormat
 
-
-
 """
-
  ImportedInstanceId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The ElementId of the imported instance that represents the imported object(s) after a successful import.
-
    It could be used for further manipulation of that instance.
-
-
 
 Get: ImportedInstanceId(self: FileImportedEventArgs) -> ElementId
 
-
-
 """
-
  Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Path of the source file that was imported.
 
-
-
 Get: Path(self: FileImportedEventArgs) -> str
 
-
-
 """
-
-
 
 class FileImportingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the FileImporting event. """
@@ -1251,26 +967,15 @@ class FileImportingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  Format=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies the import format,e.g. DWG or image.
 
-
-
 Get: Format(self: FileImportingEventArgs) -> ImportExportFileFormat
 
-
-
 """
-
  Path=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Path of the source file which is about to be imported.
 
-
-
 Get: Path(self: FileImportingEventArgs) -> str
 
-
-
 """
-
-
 
 class RevitEventArgs(EventArgs):
  """ The class is used as base class for all event argument classes. """
@@ -1279,86 +984,53 @@ class RevitEventArgs(EventArgs):
   pass
  Cancel=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the event is being cancelled. 
-
 When the event is cancellable,set the property to True to cancel it.
-
-
 
 Get: Cancel(self: RevitEventArgs) -> bool
 
-
-
 Set: Cancel(self: RevitEventArgs)=value
-
 """
-
  Cancellable=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether an event may be cancelled by an event delegate.
 
-
-
 Get: Cancellable(self: RevitEventArgs) -> bool
 
-
-
 """
-
-
 
 class PostEventArgs(RevitEventArgs):
  """ The class is used as a base class for arguments of any post-event. """
  Status=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the action associated with this event succeeded,failed,or was cancelled (by an APIevent handler).
 
-
-
 Get: Status(self: PostEventArgs) -> EventStatus
 
-
-
 """
-
-
 
 class PostDocEventArgs(PostEventArgs):
  """ The class is used as base class for arguments of any post-event that is associated to a particular Document. """
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The document associated with the event.
 
-
-
 Get: Document(self: PostDocEventArgs) -> Document
-
-
 
 """
 
-
-
 class PreEventArgs(RevitEventArgs):
  """ The class is used as a base class for the arguments for any pre-event. """
-
 class PreDocEventArgs(PreEventArgs):
  """ The class is used as base class for the arguments of any pre-event arguments that is associated to a particular Document. """
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The document associated with the event.
 
-
-
 Get: Document(self: PreDocEventArgs) -> Document
 
-
-
 """
-
-
 
 class ProgressChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
  """ The event arguments used by the ProgressChanged event. """
  def Cancel(self):
   """
   Cancel(self: ProgressChangedEventArgs)
-
    Requests to cancel the progress bar's operation.
   """
   pass
@@ -1380,66 +1052,38 @@ class ProgressChangedEventArgs(RevitAPISingleEventArgs,IDisposable):
  Caption=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The text from the progress bar caption that describes the operation in progress
 
-
-
 Get: Caption(self: ProgressChangedEventArgs) -> str
 
-
-
 """
-
  LowerRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Lower part of progress bar range - always zero
 
-
-
 Get: LowerRange(self: ProgressChangedEventArgs) -> int
 
-
-
 """
-
  Position=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Progress bar position - value is always between zero and upperRange and is incremented by one with each event of stage "PositionChanged"
 
-
-
 Get: Position(self: ProgressChangedEventArgs) -> int
 
-
-
 """
-
  Stage=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current stage of the progress bar
 
-
-
 Get: Stage(self: ProgressChangedEventArgs) -> ProgressStage
 
-
-
 """
-
  UpperRange=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Upper part of progress bar range - will be any non-zero number
 
-
-
 Get: UpperRange(self: ProgressChangedEventArgs) -> int
 
-
-
 """
-
-
 
 class ProgressStage(Enum,IComparable,IFormattable,IConvertible):
  """
  The associated action of a ProgressChanged event
-
  
-
  enum ProgressStage,values: CaptionChanged (3),Finished (5),PositionChanged (2),RangeChanged (1),Started (0),Unchanged (4)
  """
  def __eq__(self,*args):
@@ -1473,13 +1117,10 @@ class ProgressStage(Enum,IComparable,IFormattable,IConvertible):
  Unchanged=None
  value__=None
 
-
 class RevitAPIEventStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  Describes the status of an action which triggered a post event.
-
  
-
  enum RevitAPIEventStatus,values: Cancelled (1),Failed (-1),Succeeded (0)
  """
  def __eq__(self,*args):
@@ -1510,13 +1151,10 @@ class RevitAPIEventStatus(Enum,IComparable,IFormattable,IConvertible):
  Succeeded=None
  value__=None
 
-
 class UndoOperation(Enum,IComparable,IFormattable,IConvertible):
  """
  The operation associated with DocumentChanged event
-
  
-
  enum UndoOperation,values: TransactionCommitted (0),TransactionGroupRolledBack (2),TransactionRedone (4),TransactionRolledBack (1),TransactionUndone (3)
  """
  def __eq__(self,*args):
@@ -1549,7 +1187,6 @@ class UndoOperation(Enum,IComparable,IFormattable,IConvertible):
  TransactionUndone=None
  value__=None
 
-
 class ViewPrintedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  """ The event arguments used by the ViewPrinted event. """
  def Dispose(self):
@@ -1570,37 +1207,21 @@ class ViewPrintedEventArgs(RevitAPIPostDocEventArgs,IDisposable):
  Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The index of the view being printed out of the set of all views being printed.
 
-
-
 Get: Index(self: ViewPrintedEventArgs) -> int
 
-
-
 """
-
  TotalViews=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number of all views being printed.
 
-
-
 Get: TotalViews(self: ViewPrintedEventArgs) -> int
 
-
-
 """
-
  View=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The view that was printed.
 
-
-
 Get: View(self: ViewPrintedEventArgs) -> View
 
-
-
 """
-
-
 
 class ViewPrintingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  """ The event arguments used by the ViewPrinting event. """
@@ -1610,9 +1231,7 @@ class ViewPrintingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  def GetSettings(self):
   """
   GetSettings(self: ViewPrintingEventArgs) -> IPrintSetting
-
   
-
    Get the print settings of the active printing session.
   """
   pass
@@ -1631,46 +1250,25 @@ class ViewPrintingEventArgs(RevitAPIPreDocEventArgs,IDisposable):
  Index=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The index of the view being printed out of the set of all views being printed.
 
-
-
 Get: Index(self: ViewPrintingEventArgs) -> int
 
-
-
 """
-
  Settings=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The print settings of the active printing session.
 
-
-
 Get: Settings(self: ViewPrintingEventArgs) -> IPrintSetting
 
-
-
 """
-
  TotalViews=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The number of all views being printed.
 
-
-
 Get: TotalViews(self: ViewPrintingEventArgs) -> int
 
-
-
 """
-
  View=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The view to be printed.
 
-
-
 Get: View(self: ViewPrintingEventArgs) -> View
 
-
-
 """
-
-
 

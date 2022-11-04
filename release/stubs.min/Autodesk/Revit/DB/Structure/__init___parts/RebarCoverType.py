@@ -4,9 +4,7 @@ class RebarCoverType(ElementType,IDisposable):
  def Create(doc,name,coverDistance):
   """
   Create(doc: Document,name: str,coverDistance: float) -> RebarCoverType
-
   
-
    Creates a new CoverType in the document.
   """
   pass
@@ -34,14 +32,8 @@ class RebarCoverType(ElementType,IDisposable):
  CoverDistance=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """A distance that can be used as a concrete cover value in a document.
 
-
-
 Get: CoverDistance(self: RebarCoverType) -> float
 
-
-
 Set: CoverDistance(self: RebarCoverType)=value
-
 """
-
 

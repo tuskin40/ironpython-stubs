@@ -4,21 +4,13 @@ class MassInstanceUtils(object,IDisposable):
  def AddMassLevelDataToMassInstance(document,massInstanceId,levelId):
   """
   AddMassLevelDataToMassInstance(document: Document,massInstanceId: ElementId,levelId: ElementId) -> ElementId
-
   
-
    Create a MassLevelData (Mass Floor) to associate a Level with a mass instance.
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    levelId: The ElementId of the Level to associate with the mass instance.
-
    Returns: The ElementId of the MassLevelData that was created,or the existing ElementId 
-
     if it was already in added.
   """
   pass
@@ -29,17 +21,11 @@ class MassInstanceUtils(object,IDisposable):
  def GetGrossFloorArea(document,massInstanceId):
   """
   GetGrossFloorArea(document: Document,massInstanceId: ElementId) -> float
-
   
-
    Get the total occupiable floor area represented by a mass instance.
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    Returns: The gross floor area in square feet.
   """
   pass
@@ -47,17 +33,11 @@ class MassInstanceUtils(object,IDisposable):
  def GetGrossSurfaceArea(document,massInstanceId):
   """
   GetGrossSurfaceArea(document: Document,massInstanceId: ElementId) -> float
-
   
-
    Get the total exterior building surface area represented by a mass instance.
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    Returns: The gross surface area in square feet.
   """
   pass
@@ -65,17 +45,11 @@ class MassInstanceUtils(object,IDisposable):
  def GetGrossVolume(document,massInstanceId):
   """
   GetGrossVolume(document: Document,massInstanceId: ElementId) -> float
-
   
-
    Get the total building volume represented by a mass instance.
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    Returns: The gross volume in cubic feet.
   """
   pass
@@ -83,17 +57,11 @@ class MassInstanceUtils(object,IDisposable):
  def GetJoinedElementIds(document,massInstanceId):
   """
   GetJoinedElementIds(document: Document,massInstanceId: ElementId) -> IList[ElementId]
-
   
-
    Get the ElementIds of Elements that are joined to a mass instance.
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    Returns: ElementIds of Elements joined to the mass instance.
   """
   pass
@@ -101,21 +69,13 @@ class MassInstanceUtils(object,IDisposable):
  def GetMassLevelDataIds(document,massInstanceId):
   """
   GetMassLevelDataIds(document: Document,massInstanceId: ElementId) -> IList[ElementId]
-
   
-
    Get the ElementIds of the MassLevelDatas (Mass Floors) associated with a mass 
-
     instance.
-
   
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    Returns: The ElementIds of the MassLevelDatas.
   """
   pass
@@ -123,17 +83,11 @@ class MassInstanceUtils(object,IDisposable):
  def GetMassLevelIds(document,massInstanceId):
   """
   GetMassLevelIds(document: Document,massInstanceId: ElementId) -> IList[ElementId]
-
   
-
    Get the ElementIds of the Levels associated with a mass instance.
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    Returns: The ElementIds of the Levels
   """
   pass
@@ -144,19 +98,12 @@ class MassInstanceUtils(object,IDisposable):
  def RemoveMassLevelDataFromMassInstance(document,massInstanceId,levelId):
   """
   RemoveMassLevelDataFromMassInstance(document: Document,massInstanceId: ElementId,levelId: ElementId)
-
    Delete the MassLevelData (Mass Floor) that associates a Level with a mass 
-
     instance.
-
   
-
   
-
    document: The Document.
-
    massInstanceId: The ElementId of the mass instance.
-
    levelId: The ElementId of the Level to disassociate from the mass instance.
   """
   pass
@@ -175,12 +122,7 @@ class MassInstanceUtils(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: MassInstanceUtils) -> bool
 
-
-
 """
-
 

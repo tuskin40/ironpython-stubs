@@ -1,9 +1,7 @@
 class ElectricalLoadClassificationSpace(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum is used by the ElectricalLoadClassification to specify the load class for use with spaces.
-
  
-
  enum ElectricalLoadClassificationSpace,values: Lighting (1),None (0),Power (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ElectricalLoadClassificationSpace(Enum,IComparable,IFormattable,IConvertib
  None=None
  Power=None
  value__=None
-

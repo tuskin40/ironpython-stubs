@@ -9,42 +9,26 @@ class KeyBasedTreeEntryTable(Element,IDisposable):
  def GetKeyBasedTreeEntries(self):
   """
   GetKeyBasedTreeEntries(self: KeyBasedTreeEntryTable) -> KeyBasedTreeEntries
-
   
-
    Gets the KeyBasedTreeEntries for this table.
-
    Returns: The KeyBasedTreeEntries for this table.
   """
   pass
  def LoadFrom(self,desiredResourceReference,loadResults):
   """
   LoadFrom(self: KeyBasedTreeEntryTable,desiredResourceReference: ExternalResourceReference,loadResults: KeyBasedTreeEntriesLoadResults) -> ExternalResourceLoadStatus
-
   
-
    Loads KeyBasedTreeEntries from the specified external resource into this 
-
     KeyBasedTreeEntryTable.
-
   
-
   
-
    desiredResourceReference: An external resource reference describing the source of the desired 
-
     KeyBasedTreeEntry data.
-
   
-
    loadResults: If provided,Revit will use this object to store any
-
      errors or warnings 
-
     that were encountered. This argument may be ll.
-
   
-
    Returns: Returns whether the operation succeeded or failed.
   """
   pass
@@ -54,58 +38,34 @@ class KeyBasedTreeEntryTable(Element,IDisposable):
  def Reload(self,loadResults):
   """
   Reload(self: KeyBasedTreeEntryTable,loadResults: KeyBasedTreeEntriesLoadResults) -> ExternalResourceLoadStatus
-
   
-
    Reloads KeyBasedTreeEntries from their currently-stored location into this 
-
     KeyBasedTreeEntryTable.
-
   
-
   
-
    loadResults: If provided,Revit will use this object to store any
-
      errors or warnings 
-
     that were encountered.  Note that if the KeyBasedTreeEntries in the model are
-
    
-
       already up to date,no errors or warnings will be added to this object. This 
-
     argument may be ll.
-
   
-
    Returns: Returns the outcome of the reload operation.
   """
   pass
  def ServerSupports(self,extRef):
   """
   ServerSupports(self: KeyBasedTreeEntryTable,extRef: ExternalResourceReference) -> bool
-
   
-
    Checks if the server referenced by the given ExternalResourceReference supports 
-
     the
-
      ExternalResourceReferenceType of this KeyBasedTreeEntryTable.
-
   
-
   
-
    extRef: The ExternalResourceReference to check.
-
    Returns: True if the ExternalResourceReference refers to a server that supports the 
-
     ExternalResourceReferenceType of this KeyBasedTreeEntryTable.
-
      False 
-
     otherwise.
   """
   pass

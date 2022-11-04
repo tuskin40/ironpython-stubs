@@ -308,4 +308,3 @@ class BuiltInFailures(object):
   'WallJoinRoofFailures',
   'WorksharingFailures',
  ]
-

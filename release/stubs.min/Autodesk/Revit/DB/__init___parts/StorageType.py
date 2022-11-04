@@ -1,9 +1,7 @@
 class StorageType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all of the internal parameter data storage types that Autodesk Revit supports.
-
  
-
  enum StorageType,values: Double (2),ElementId (4),Integer (1),None (0),String (3)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class StorageType(Enum,IComparable,IFormattable,IConvertible):
  None=None
  String=None
  value__=None
-

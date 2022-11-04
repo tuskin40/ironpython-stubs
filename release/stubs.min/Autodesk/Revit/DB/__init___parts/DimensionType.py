@@ -6,15 +6,10 @@ class DimensionType(ElementType,IDisposable):
  def GetAlternateUnitsFormatOptions(self):
   """
   GetAlternateUnitsFormatOptions(self: DimensionType) -> FormatOptions
-
   
-
    Gets the FormatOptions to optionally override the default settings in the Units 
-
     class for the alternate units value.
-
   
-
    Returns: A copy of the FormatOptions.
   """
   pass
@@ -27,15 +22,10 @@ class DimensionType(ElementType,IDisposable):
  def SetAlternateUnitsFormatOptions(self,formatOptions):
   """
   SetAlternateUnitsFormatOptions(self: DimensionType,formatOptions: FormatOptions)
-
    Sets the FormatOptions to optionally override the default settings in the Units 
-
     class for the alternate units value.
-
   
-
   
-
    formatOptions: The FormatOptions.
   """
   pass
@@ -54,62 +44,34 @@ class DimensionType(ElementType,IDisposable):
  AlternateUnits=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The alternate units display mode for this DimensionType.
 
-
-
 Get: AlternateUnits(self: DimensionType) -> AlternateUnits
 
-
-
 Set: AlternateUnits(self: DimensionType)=value
-
 """
-
  AlternateUnitsPrefix=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The prefix text for the alternate units value.
 
-
-
 Get: AlternateUnitsPrefix(self: DimensionType) -> str
 
-
-
 Set: AlternateUnitsPrefix(self: DimensionType)=value
-
 """
-
  AlternateUnitsSuffix=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The suffix text for the alternate units value.
 
-
-
 Get: AlternateUnitsSuffix(self: DimensionType) -> str
 
-
-
 Set: AlternateUnitsSuffix(self: DimensionType)=value
-
 """
-
  StyleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The dimension style type of this DimensionType.
 
-
-
 Get: StyleType(self: DimensionType) -> DimensionStyleType
 
-
-
 """
-
  UnitType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The unit type of this dimension style.
 
-
-
 Get: UnitType(self: DimensionType) -> UnitType
 
-
-
 """
-
 

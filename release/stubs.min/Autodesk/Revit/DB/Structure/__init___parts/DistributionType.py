@@ -1,9 +1,7 @@
 class DistributionType(Enum,IComparable,IFormattable,IConvertible):
  """
  The type of the distribution
-
  
-
  enum DistributionType,values: Uniform (0),VaryingLength (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DistributionType(Enum,IComparable,IFormattable,IConvertible):
  Uniform=None
  value__=None
  VaryingLength=None
-

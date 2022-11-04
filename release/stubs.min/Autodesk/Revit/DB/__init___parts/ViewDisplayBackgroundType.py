@@ -1,9 +1,7 @@
 class ViewDisplayBackgroundType(Enum,IComparable,IFormattable,IConvertible):
  """
  A collection of settings defining the type of the view background
-
  
-
  enum ViewDisplayBackgroundType,values: Gradient (257),Image (258),None (256),SunAndClouds (512)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ViewDisplayBackgroundType(Enum,IComparable,IFormattable,IConvertible):
  None=None
  SunAndClouds=None
  value__=None
-

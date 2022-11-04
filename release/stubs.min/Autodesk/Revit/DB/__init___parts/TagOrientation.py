@@ -1,9 +1,7 @@
 class TagOrientation(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing tag orientation options that are supported by IndependentTags.
-
  
-
  enum TagOrientation,values: Horizontal (0),Vertical (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class TagOrientation(Enum,IComparable,IFormattable,IConvertible):
  Horizontal=None
  value__=None
  Vertical=None
-

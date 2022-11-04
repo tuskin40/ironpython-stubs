@@ -4,15 +4,10 @@ class RebarHookType(ElementType,IDisposable):
  def Create(doc,angle,multiplier):
   """
   Create(doc: Document,angle: float,multiplier: float) -> RebarHookType
-
   
-
    Creates a new RebarHookType in a document.
-
   
-
    angle: Determine the hook angle of new RebarHookType.
-
    multiplier: Determine the straight line multiplier of new RebarHookType.
   """
   pass
@@ -20,15 +15,10 @@ class RebarHookType(ElementType,IDisposable):
  def CreateDefaultRebarHookType(ADoc):
   """
   CreateDefaultRebarHookType(ADoc: Document) -> ElementId
-
   
-
    Creates a new RebarHookType object with a default name.
-
   
-
    ADoc: The document.
-
    Returns: The newly created type id.
   """
   pass
@@ -41,35 +31,25 @@ class RebarHookType(ElementType,IDisposable):
  def GetDefaultHookExtension(self,barDiameter):
   """
   GetDefaultHookExtension(self: RebarHookType,barDiameter: float) -> float
-
   
-
    Computes the default hook length,which is equal to barDiameter * multiplier.
   """
   pass
  def GetHookExtensionLength(self,barType):
   """
   GetHookExtensionLength(self: RebarHookType,barType: RebarBarType) -> float
-
   
-
    Computes the hook extension length based on current hook length
   """
   pass
  def IsOffsetLengthRequired(self):
   """
   IsOffsetLengthRequired(self: RebarHookType) -> bool
-
   
-
    Check whether hook offset length is required.
-
      remarks: If hook angle is no 
-
     more than 90 degree,hook offset length is not meaningful.
-
      returns: True if 
-
     hook offset length is required,otherwise false.
   """
   pass
@@ -91,42 +71,23 @@ class RebarHookType(ElementType,IDisposable):
  HookAngle=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The hook angle,measured in radians. Must be greater than 0 and no more than pi.
 
-
-
 Get: HookAngle(self: RebarHookType) -> float
 
-
-
 Set: HookAngle(self: RebarHookType)=value
-
 """
-
  StraightLineMultiplier=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Multiplier of bar diameter. Used to compute a default hook length.
-
    The default hook length can be overridden by the RebarBarType class.
-
-
 
 Get: StraightLineMultiplier(self: RebarHookType) -> float
 
-
-
 Set: StraightLineMultiplier(self: RebarHookType)=value
-
 """
-
  Style=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The hook may only be applied to shapes of the specified style.
 
-
-
 Get: Style(self: RebarHookType) -> RebarStyle
 
-
-
 Set: Style(self: RebarHookType)=value
-
 """
-
 

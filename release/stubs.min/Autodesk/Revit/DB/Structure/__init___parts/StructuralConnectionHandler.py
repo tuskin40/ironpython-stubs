@@ -7,7 +7,6 @@ class StructuralConnectionHandler(Element,IDisposable):
  def Create(document,idsToConnect,typeId=None):
   """
   Create(document: Document,idsToConnect: IList[ElementId]) -> StructuralConnectionHandler
-
   Create(document: Document,idsToConnect: IList[ElementId],typeId: ElementId) -> StructuralConnectionHandler
   """
   pass
@@ -20,33 +19,24 @@ class StructuralConnectionHandler(Element,IDisposable):
  def GetConnectedElementIds(self):
   """
   GetConnectedElementIds(self: StructuralConnectionHandler) -> IList[ElementId]
-
   
-
    Retrieves list of element ids of connected elements.
-
    Returns: Returns connected element ids.
   """
   pass
  def GetOrigin(self):
   """
   GetOrigin(self: StructuralConnectionHandler) -> XYZ
-
   
-
    Retrieves origin point of Structural Connection Handler element.
-
    Returns: The origin point of element.
   """
   pass
  def IsDetailed(self):
   """
   IsDetailed(self: StructuralConnectionHandler) -> bool
-
   
-
    Checks if Structural Connection Handler has the detailed connection style.
-
    Returns: True if Structural Connection Handler has the detailed connection style.
   """
   pass
@@ -59,25 +49,15 @@ class StructuralConnectionHandler(Element,IDisposable):
  def SetDefaultPrimaryElement(self):
   """
   SetDefaultPrimaryElement(self: StructuralConnectionHandler)
-
    Sets primary element in connection according to structural categories,element 
-
     materials and geometries.
-
      The steel element is set rather than an element 
-
     of other material.
-
      The priorities of the elements are set according 
-
     structural categories in following order: columns,framings,walls,
-
     foundations,floors.
-
      In case of several Structural Framing elements order 
-
     is determined by cutting - the cutting element is set as the primary one rather 
-
     than element being cut.
   """
   pass
@@ -96,40 +76,22 @@ class StructuralConnectionHandler(Element,IDisposable):
  ApprovalTypeId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves or changes approval type of the Structural Connection Handler.
 
-
-
 Get: ApprovalTypeId(self: StructuralConnectionHandler) -> ElementId
 
-
-
 Set: ApprovalTypeId(self: StructuralConnectionHandler)=value
-
 """
-
  CodeCheckingStatus=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Code checking status of the structural connection.
 
-
-
 Get: CodeCheckingStatus(self: StructuralConnectionHandler) -> StructuralConnectionCodeCheckingStatus
 
-
-
 Set: CodeCheckingStatus(self: StructuralConnectionHandler)=value
-
 """
-
  SingleElementEndIndex=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Element end index for single element connections (0: start,1: end).
 
-
-
 Get: SingleElementEndIndex(self: StructuralConnectionHandler) -> int
 
-
-
 Set: SingleElementEndIndex(self: StructuralConnectionHandler)=value
-
 """
-
 

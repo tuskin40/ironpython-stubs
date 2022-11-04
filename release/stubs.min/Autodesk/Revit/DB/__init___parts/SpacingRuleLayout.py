@@ -1,9 +1,7 @@
 class SpacingRuleLayout(Enum,IComparable,IFormattable,IConvertible):
  """
  Rules for laying out a series of equidistant points or parallel lines
-
  
-
  enum SpacingRuleLayout,values: FixedDistance (1),FixedNumber (2),MaximumSpacing (3),MinimumSpacing (5),None (0)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class SpacingRuleLayout(Enum,IComparable,IFormattable,IConvertible):
  MinimumSpacing=None
  None=None
  value__=None
-

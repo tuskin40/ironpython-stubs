@@ -6,11 +6,8 @@ class FaceNode(RenderNode,IDisposable):
  def GetFace(self):
   """
   GetFace(self: FaceNode) -> Face
-
   
-
    Returns the Face object corresponding to the node.
-
    Returns: The face.
   """
   pass

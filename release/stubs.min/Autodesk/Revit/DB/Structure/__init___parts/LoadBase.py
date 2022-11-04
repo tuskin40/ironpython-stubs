@@ -9,15 +9,10 @@ class LoadBase(Element,IDisposable):
  def IsOrientToPermitted(self,orientTo):
   """
   IsOrientToPermitted(self: LoadBase,orientTo: LoadOrientTo) -> bool
-
   
-
    Indicates if the provided orientation is permitted for this load.
-
   
-
    orientTo: Load orientation to check.
-
    Returns: True if provided orientation type is permitted for this load,false if not.
   """
   pass
@@ -39,128 +34,70 @@ class LoadBase(Element,IDisposable):
  HostElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The host element for the load.
 
-
-
 Get: HostElement(self: LoadBase) -> AnalyticalModel
 
-
-
 """
-
  HostElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The host element ID for the load.
 
-
-
 Get: HostElementId(self: LoadBase) -> ElementId
 
-
-
 """
-
  IsHosted=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates if the Load is hosted or non-hosted.
 
-
-
 Get: IsHosted(self: LoadBase) -> bool
 
-
-
 """
-
  IsReaction=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The load is reaction option.
 
-
-
 Get: IsReaction(self: LoadBase) -> bool
 
-
-
 Set: IsReaction(self: LoadBase)=value
-
 """
-
  LoadCase=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The load case for the load.
 
-
-
 Get: LoadCase(self: LoadBase) -> LoadCase
 
-
-
 """
-
  LoadCaseId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The load case ID for the load.
 
-
-
 Get: LoadCaseId(self: LoadBase) -> ElementId
 
-
-
 Set: LoadCaseId(self: LoadBase)=value
-
 """
-
  LoadCaseName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The name of the load case to which this load belongs.
 
-
-
 Get: LoadCaseName(self: LoadBase) -> str
 
-
-
 """
-
  LoadCategoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The name of the category to which this load belongs.
 
-
-
 Get: LoadCategoryName(self: LoadBase) -> str
 
-
-
 """
-
  LoadNatureName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """A string representing the nature of the load.
 
-
-
 Get: LoadNatureName(self: LoadBase) -> str
 
-
-
 """
-
  OrientTo=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The load orientation option.
 
-
-
 Get: OrientTo(self: LoadBase) -> LoadOrientTo
 
-
-
 Set: OrientTo(self: LoadBase)=value
-
 """
-
  WorkPlaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the work plane which may determine the orientation of the load.
 
-
-
 Get: WorkPlaneId(self: LoadBase) -> ElementId
 
-
-
 """
-
 

@@ -21,23 +21,13 @@ class HermiteFace(Face,IDisposable):
  MixedDerivs=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Mixed derivatives of the surface.
 
-
-
 Get: MixedDerivs(self: HermiteFace) -> IList[XYZ]
 
-
-
 """
-
  Points=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Interpolation points of the surface.
 
-
-
 Get: Points(self: HermiteFace) -> IList[XYZ]
 
-
-
 """
-
 

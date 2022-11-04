@@ -1,9 +1,7 @@
 class DWFImageFormat(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing possible image format for DWF Export.
-
  
-
  enum DWFImageFormat,values: Lossless (0),Lossy (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DWFImageFormat(Enum,IComparable,IFormattable,IConvertible):
  Lossless=None
  Lossy=None
  value__=None
-

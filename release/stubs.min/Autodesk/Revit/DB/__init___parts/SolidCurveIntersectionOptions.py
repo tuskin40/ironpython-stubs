@@ -1,9 +1,7 @@
 class SolidCurveIntersectionOptions(object,IDisposable):
  """
  This class contains the options used to calculate the intersection between a solid and a curve.
-
  
-
  SolidCurveIntersectionOptions()
  """
  def Dispose(self):
@@ -27,25 +25,14 @@ class SolidCurveIntersectionOptions(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: SolidCurveIntersectionOptions) -> bool
 
-
-
 """
-
  ResultType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The type of results expected by the calculation.  The default is CurveSegmentsInside.
 
-
-
 Get: ResultType(self: SolidCurveIntersectionOptions) -> SolidCurveIntersectionMode
 
-
-
 Set: ResultType(self: SolidCurveIntersectionOptions)=value
-
 """
-
 

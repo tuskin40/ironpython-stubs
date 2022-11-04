@@ -1,9 +1,7 @@
 class FilterStringEquals(FilterStringRuleEvaluator,IDisposable):
  """
  Tests whether string values from the document match a certain string.
-
  
-
  FilterStringEquals()
  """
  def Dispose(self):

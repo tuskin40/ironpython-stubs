@@ -3,11 +3,8 @@ class SlabEdge(HostedSweep,IDisposable):
  def AddSegment(self,targetRef):
   """
   AddSegment(self: SlabEdge,targetRef: Reference)
-
    Add segments to the slab edge.
-
   
-
    targetRef: Segment's reference on which want to be added.
   """
   pass
@@ -35,14 +32,8 @@ class SlabEdge(HostedSweep,IDisposable):
  SlabEdgeType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves/set an object that represents the type of the SlabEdge.
 
-
-
 Get: SlabEdgeType(self: SlabEdge) -> SlabEdgeType
 
-
-
 Set: SlabEdgeType(self: SlabEdge)=value
-
 """
-
 

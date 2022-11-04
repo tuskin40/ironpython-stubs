@@ -6,68 +6,49 @@ class AnalyticalModelSupport(object,IDisposable):
  def GetCurve(self):
   """
   GetCurve(self: AnalyticalModelSupport) -> Curve
-
   
-
    Retrieves the curve providing support.
-
    Returns: Represents the curve providing support,if the Support Type is Curve Support.
   """
   pass
  def GetFace(self):
   """
   GetFace(self: AnalyticalModelSupport) -> Face
-
   
-
    Retrieves surface providing support,
-
    Returns: Surface representing the surface providing support,if the Support Type is 
-
     Surface Support.
   """
   pass
  def GetPoint(self):
   """
   GetPoint(self: AnalyticalModelSupport) -> XYZ
-
   
-
    Retrieves the point providing support.
-
    Returns: Represents the point providing support,if the Support Type is Point Support.
   """
   pass
  def GetPriority(self):
   """
   GetPriority(self: AnalyticalModelSupport) -> AnalyticalSupportPriority
-
   
-
    Retrieves the priority of the support provided.
-
    Returns: Indicates the support priority,as determined by Analytical Support Checking
   """
   pass
  def GetSupportingElement(self):
   """
   GetSupportingElement(self: AnalyticalModelSupport) -> ElementId
-
   
-
    Retrieves the actual Element Id providing support.
-
    Returns: Represents Element that provides support.
   """
   pass
  def GetSupportType(self):
   """
   GetSupportType(self: AnalyticalModelSupport) -> AnalyticalSupportType
-
   
-
    Gets the type of support provided.
-
    Returns: Indicates type of support provided.
   """
   pass
@@ -89,12 +70,7 @@ class AnalyticalModelSupport(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: AnalyticalModelSupport) -> bool
 
-
-
 """
-
 

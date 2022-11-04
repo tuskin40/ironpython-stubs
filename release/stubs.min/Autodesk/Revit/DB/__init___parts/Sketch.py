@@ -24,23 +24,13 @@ class Sketch(SketchBase,IDisposable):
  Profile=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the Profile of the Sketch.
 
-
-
 Get: Profile(self: Sketch) -> CurveArrArray
 
-
-
 """
-
  SketchPlane=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the Sketch Plane of the Sketch.
 
-
-
 Get: SketchPlane(self: Sketch) -> SketchPlane
 
-
-
 """
-
 

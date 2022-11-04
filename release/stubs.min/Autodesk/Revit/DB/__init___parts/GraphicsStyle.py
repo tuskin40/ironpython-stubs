@@ -24,23 +24,13 @@ class GraphicsStyle(Element,IDisposable):
  GraphicsStyleCategory=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The graphics style category.
 
-
-
 Get: GraphicsStyleCategory(self: GraphicsStyle) -> Category
 
-
-
 """
-
  GraphicsStyleType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The graphics style type.
 
-
-
 Get: GraphicsStyleType(self: GraphicsStyle) -> GraphicsStyleType
 
-
-
 """
-
 

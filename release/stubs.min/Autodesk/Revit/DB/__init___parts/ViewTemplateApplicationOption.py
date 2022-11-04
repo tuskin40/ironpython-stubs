@@ -1,9 +1,7 @@
 class ViewTemplateApplicationOption(Enum,IComparable,IFormattable,IConvertible):
  """
  Options for applying view templates
-
  
-
  enum ViewTemplateApplicationOption,values: AllParameters (0),AllParametersAndStickIfNone (2),UncontrolledParameters (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ViewTemplateApplicationOption(Enum,IComparable,IFormattable,IConvertible):
  AllParametersAndStickIfNone=None
  UncontrolledParameters=None
  value__=None
-

@@ -4,4 +4,3 @@ class NumberingSchemaTypes(object):
  __all__=[
   'StructuralNumberingSchemas',
  ]
-

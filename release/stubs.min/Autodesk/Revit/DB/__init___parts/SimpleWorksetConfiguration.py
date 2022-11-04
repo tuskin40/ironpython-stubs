@@ -1,9 +1,7 @@
 class SimpleWorksetConfiguration(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the set of user-created worksets to open in memory
-
  
-
  enum SimpleWorksetConfiguration,values: AllEditable (1),AllWorksets (0),AskUserToSpecify (3),LastViewed (2)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class SimpleWorksetConfiguration(Enum,IComparable,IFormattable,IConvertible):
  AskUserToSpecify=None
  LastViewed=None
  value__=None
-

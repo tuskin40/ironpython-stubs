@@ -1,9 +1,7 @@
 class LoadOrientTo(Enum,IComparable,IFormattable,IConvertible):
  """
  Specifies load orientation.
-
  
-
  enum LoadOrientTo,values: HostLocalCoordinateSystem (2),Project (0),WorkPlane (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class LoadOrientTo(Enum,IComparable,IFormattable,IConvertible):
  Project=None
  value__=None
  WorkPlane=None
-

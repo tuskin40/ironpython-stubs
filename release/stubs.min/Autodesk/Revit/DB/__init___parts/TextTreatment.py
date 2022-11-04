@@ -1,9 +1,7 @@
 class TextTreatment(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing possible text treatment modes.
-
  
-
  enum TextTreatment,values: Approximate (1),Exact (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class TextTreatment(Enum,IComparable,IFormattable,IConvertible):
  Approximate=None
  Exact=None
  value__=None
-

@@ -24,12 +24,7 @@ class BasePoint(Element,IDisposable):
  IsShared=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates whether the base point is shared.
 
-
-
 Get: IsShared(self: BasePoint) -> bool
 
-
-
 """
-
 

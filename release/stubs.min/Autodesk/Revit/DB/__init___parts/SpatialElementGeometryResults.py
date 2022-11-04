@@ -6,30 +6,20 @@ class SpatialElementGeometryResults(object,IDisposable):
  def GetBoundaryFaceInfo(self,face):
   """
   GetBoundaryFaceInfo(self: SpatialElementGeometryResults,face: Face) -> IList[SpatialElementBoundarySubface]
-
   
-
    Query the spatial element boundary face information with the given face.
-
   
-
    face: The face from the spatial element's geometry.
-
    Returns: Sub-faces related to the room bounding elements that define the spatial element 
-
     face. Returns ll if there is no corresponding boundary information with the 
-
     given face.
   """
   pass
  def GetGeometry(self):
   """
   GetGeometry(self: SpatialElementGeometryResults) -> Solid
-
   
-
    The solid from the spatial element.
-
    Returns: Requested solid.
   """
   pass
@@ -51,12 +41,7 @@ class SpatialElementGeometryResults(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: SpatialElementGeometryResults) -> bool
 
-
-
 """
-
 

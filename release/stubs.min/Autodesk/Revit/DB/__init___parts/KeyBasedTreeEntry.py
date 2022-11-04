@@ -6,17 +6,11 @@ class KeyBasedTreeEntry(object,IDisposable):
  def GetChildrenKeys(self):
   """
   GetChildrenKeys(self: KeyBasedTreeEntry) -> IList[str]
-
   
-
    Gets a collection containing the keys of all children entry objects from this 
-
     entry.
-
   
-
    Returns: The collection containing the keys of all children entry objects from this 
-
     entry.
   """
   pass
@@ -38,34 +32,19 @@ class KeyBasedTreeEntry(object,IDisposable):
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: KeyBasedTreeEntry) -> bool
 
-
-
 """
-
  Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The key of this entry.
 
-
-
 Get: Key(self: KeyBasedTreeEntry) -> str
 
-
-
 """
-
  ParentKey=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The parent key of this entry.
 
-
-
 Get: ParentKey(self: KeyBasedTreeEntry) -> str
 
-
-
 """
-
 

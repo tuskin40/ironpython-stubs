@@ -6,11 +6,8 @@ class PointNode(ModelCurveNode,IDisposable):
  def GetPoint(self):
   """
   GetPoint(self: PointNode) -> Point
-
   
-
    Returns the point object corresponding to the node.
-
    Returns: The point instance.
   """
   pass

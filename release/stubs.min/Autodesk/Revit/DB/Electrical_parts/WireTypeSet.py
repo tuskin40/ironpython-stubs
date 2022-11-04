@@ -1,32 +1,23 @@
 class WireTypeSet(APIObject,IDisposable,IEnumerable):
  """
  A set that contains wire types.
-
  
-
  WireTypeSet()
  """
  def Clear(self):
   """
   Clear(self: WireTypeSet)
-
    Removes every wire type from the set,rendering it empty.
   """
   pass
  def Contains(self,item):
   """
   Contains(self: WireTypeSet,item: WireType) -> bool
-
   
-
    Tests for the existence of a wire type within the set.
-
   
-
    item: The wire type to be searched for.
-
    Returns: The Contains method returns True if the wire type is within the set,otherwise 
-
     False.
   """
   pass
@@ -36,52 +27,36 @@ class WireTypeSet(APIObject,IDisposable,IEnumerable):
  def Erase(self,item):
   """
   Erase(self: WireTypeSet,item: WireType) -> int
-
   
-
    Removes a specified wire type from the set.
-
   
-
    item: The wire type to be erased.
-
    Returns: The number of wire types that were erased from the set.
   """
   pass
  def ForwardIterator(self):
   """
   ForwardIterator(self: WireTypeSet) -> WireTypeSetIterator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: WireTypeSet) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def Insert(self,item):
   """
   Insert(self: WireTypeSet,item: WireType) -> bool
-
   
-
    Insert the specified wire type into the set.
-
   
-
    item: The wire type to be inserted into the set.
-
    Returns: Returns whether the wire type was inserted into the set.
   """
   pass
@@ -94,11 +69,8 @@ class WireTypeSet(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: WireTypeSet) -> WireTypeSetIterator
-
   
-
    Retrieve a backward moving iterator to the set.
-
    Returns: Returns a backward moving iterator to the set.
   """
   pass
@@ -117,23 +89,13 @@ class WireTypeSet(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the set is empty.
 
-
-
 Get: IsEmpty(self: WireTypeSet) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of wire types that are in the set.
 
-
-
 Get: Size(self: WireTypeSet) -> int
 
-
-
 """
-
 

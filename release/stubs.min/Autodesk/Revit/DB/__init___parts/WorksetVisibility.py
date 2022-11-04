@@ -1,9 +1,7 @@
 class WorksetVisibility(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the visibility settings of a workset in a particular view.
-
  
-
  enum WorksetVisibility,values: Hidden (1),UseGlobalSetting (2),Visible (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class WorksetVisibility(Enum,IComparable,IFormattable,IConvertible):
  UseGlobalSetting=None
  value__=None
  Visible=None
-

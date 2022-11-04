@@ -1,30 +1,22 @@
 class ViewSet(APIObject,IDisposable,IEnumerable):
  """
  A set that contains views.
-
  
-
  ViewSet()
  """
  def Clear(self):
   """
   Clear(self: ViewSet)
-
    Removes every view from the set,rendering it empty.
   """
   pass
  def Contains(self,item):
   """
   Contains(self: ViewSet,item: View) -> bool
-
   
-
    Tests for the existence of a view within the set.
-
   
-
    item: The view to be searched for.
-
    Returns: The Contains method returns True if the view is within the set,otherwise False.
   """
   pass
@@ -34,52 +26,36 @@ class ViewSet(APIObject,IDisposable,IEnumerable):
  def Erase(self,item):
   """
   Erase(self: ViewSet,item: View) -> int
-
   
-
    Removes a specified view from the set.
-
   
-
    item: The view to be erased.
-
    Returns: The number of views that were erased from the set.
   """
   pass
  def ForwardIterator(self):
   """
   ForwardIterator(self: ViewSet) -> ViewSetIterator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def GetEnumerator(self):
   """
   GetEnumerator(self: ViewSet) -> IEnumerator
-
   
-
    Retrieve a forward moving iterator to the set.
-
    Returns: Returns a forward moving iterator to the set.
   """
   pass
  def Insert(self,item):
   """
   Insert(self: ViewSet,item: View) -> bool
-
   
-
    Insert the specified view into the set.
-
   
-
    item: The view to be inserted into the set.
-
    Returns: Returns whether the view was inserted into the set.
   """
   pass
@@ -92,11 +68,8 @@ class ViewSet(APIObject,IDisposable,IEnumerable):
  def ReverseIterator(self):
   """
   ReverseIterator(self: ViewSet) -> ViewSetIterator
-
   
-
    Retrieve a backward moving iterator to the set.
-
    Returns: Returns a backward moving iterator to the set.
   """
   pass
@@ -115,23 +88,13 @@ class ViewSet(APIObject,IDisposable,IEnumerable):
  IsEmpty=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Test to see if the set is empty.
 
-
-
 Get: IsEmpty(self: ViewSet) -> bool
 
-
-
 """
-
  Size=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Returns the number of views that are in the set.
 
-
-
 Get: Size(self: ViewSet) -> int
 
-
-
 """
-
 

@@ -1,9 +1,7 @@
 class WallKind(Enum,IComparable,IFormattable,IConvertible):
  """
  Describes the fundamental type of wall,such as curtain wall or stacked wall.
-
  
-
  enum WallKind,values: Basic (0),Curtain (1),Stacked (2),Unknown (-1)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class WallKind(Enum,IComparable,IFormattable,IConvertible):
  Stacked=None
  Unknown=None
  value__=None
-

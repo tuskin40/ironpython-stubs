@@ -6,17 +6,11 @@ class RevisionSettings(Element,IDisposable):
  def GetAlphanumericRevisionSettings(self):
   """
   GetAlphanumericRevisionSettings(self: RevisionSettings) -> AlphanumericRevisionSettings
-
   
-
    Returns a copy of the AlphanumericRevisionSettings owned by this 
-
     RevisionSettings object.
-
   
-
    Returns: The copy of the AlphaumericRevisionSettings owned by this RevisionSettings 
-
     object.
   """
   pass
@@ -26,15 +20,10 @@ class RevisionSettings(Element,IDisposable):
  def GetNumericRevisionSettings(self):
   """
   GetNumericRevisionSettings(self: RevisionSettings) -> NumericRevisionSettings
-
   
-
    Returns a copy of the NumericRevisionSettings owned by this RevisionSettings 
-
     object.
-
   
-
    Returns: The copy of the NumericRevisionSettings owned by this RevisionSettings object.
   """
   pass
@@ -42,38 +31,24 @@ class RevisionSettings(Element,IDisposable):
  def GetRevisionSettings(ccda):
   """
   GetRevisionSettings(ccda: Document) -> RevisionSettings
-
   
-
    Returns the RevisionSettings for the given project document.
-
   
-
    ccda: The document to get the RevisionSettings from.
-
    Returns: The RevisionSettings for the document.
   """
   pass
  def IsAcceptableRevisionCloudSpacing(self,rawValue):
   """
   IsAcceptableRevisionCloudSpacing(self: RevisionSettings,rawValue: float) -> bool
-
   
-
    Rounds the given raw value and checks whether it is an acceptable cloud spacing 
-
     value after it is rounded.
-
   
-
   
-
    rawValue: The raw value to check.  This value need not be rounded prior to calling this 
-
     function.
-
   
-
    Returns: True if the value will be acceptable after rounding,False otherwise
   """
   pass
@@ -84,38 +59,24 @@ class RevisionSettings(Element,IDisposable):
  def RoundRevisionCloudSpacing(ccda,rawValue):
   """
   RoundRevisionCloudSpacing(ccda: Document,rawValue: float) -> float
-
   
-
    Rounds the given revision cloud spacing value according to the document's 
-
     settings.
-
   
-
   
-
    ccda: The document to use for rounding.
-
    rawValue: The unrounded value.
-
    Returns: The rounded revision cloud spacing.
   """
   pass
  def SetAlphanumericRevisionSettings(self,newSettings):
   """
   SetAlphanumericRevisionSettings(self: RevisionSettings,newSettings: AlphanumericRevisionSettings)
-
    Replaces the current alphanumeric revision numbering settings with the 
-
     specified AlphanumericRevisionSettings.
-
   
-
   
-
    newSettings: The specified AlphanumericRevisionSettings to be applied to alphanumeric 
-
     revision numbering.
   """
   pass
@@ -125,17 +86,11 @@ class RevisionSettings(Element,IDisposable):
  def SetNumericRevisionSettings(self,newSettings):
   """
   SetNumericRevisionSettings(self: RevisionSettings,newSettings: NumericRevisionSettings)
-
    Replaces the current numeric revision numbering settings with the specified 
-
     NumericRevisionSettings.
-
   
-
   
-
    newSettings: The specified NumericRevisionSettings to be applied to numeric revision 
-
     numbering.
   """
   pass
@@ -151,27 +106,15 @@ class RevisionSettings(Element,IDisposable):
  RevisionCloudSpacing=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Determines the size in paper space of revision clouds drawn in a project.
 
-
-
 Get: RevisionCloudSpacing(self: RevisionSettings) -> float
 
-
-
 Set: RevisionCloudSpacing(self: RevisionSettings)=value
-
 """
-
  RevisionNumbering=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Determines how the revision number values will display on sheets.
 
-
-
 Get: RevisionNumbering(self: RevisionSettings) -> RevisionNumbering
 
-
-
 Set: RevisionNumbering(self: RevisionSettings)=value
-
 """
-
 

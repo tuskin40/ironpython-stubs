@@ -1,9 +1,7 @@
 class ShellLayerType(Enum,IComparable,IFormattable,IConvertible):
  """
  Used to distinguish exterior and interior shell layers.
-
  
-
  enum ShellLayerType,values: Exterior (1),Interior (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class ShellLayerType(Enum,IComparable,IFormattable,IConvertible):
  Exterior=None
  Interior=None
  value__=None
-

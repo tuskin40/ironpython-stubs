@@ -4,11 +4,8 @@ class PanelScheduleSheetInstance(Element,IDisposable):
  def Create(ADoc,scheduleId,DBView):
   """
   Create(ADoc: Document,scheduleId: ElementId,DBView: View) -> PanelScheduleSheetInstance
-
   
-
    Creates a new instance of panel schedule on sheet and adds it to the document.
-
    Returns: The newly created panel schedule sheet instance element.
   """
   pass
@@ -21,11 +18,8 @@ class PanelScheduleSheetInstance(Element,IDisposable):
  def GetSchedule(self):
   """
   GetSchedule(self: PanelScheduleSheetInstance) -> PanelScheduleView
-
   
-
    Gets the panel schedule view.
-
    Returns: The panel schedule view element.
   """
   pass
@@ -38,11 +32,8 @@ class PanelScheduleSheetInstance(Element,IDisposable):
  def SplitSegment(self,iSeg):
   """
   SplitSegment(self: PanelScheduleSheetInstance,iSeg: int) -> bool
-
   
-
    Split the panel schedule into
-
      Thrown if the index is out of bounds.
   """
   pass
@@ -58,27 +49,15 @@ class PanelScheduleSheetInstance(Element,IDisposable):
  Origin=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The sheet instance offset in drawing sheet coordinates.
 
-
-
 Get: Origin(self: PanelScheduleSheetInstance) -> XYZ
 
-
-
 Set: Origin(self: PanelScheduleSheetInstance)=value
-
 """
-
  ScheduleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The panel schedule id.
 
-
-
 Get: ScheduleId(self: PanelScheduleSheetInstance) -> ElementId
 
-
-
 Set: ScheduleId(self: PanelScheduleSheetInstance)=value
-
 """
-
 

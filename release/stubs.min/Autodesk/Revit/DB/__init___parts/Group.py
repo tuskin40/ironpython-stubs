@@ -9,15 +9,10 @@ class Group(Element,IDisposable):
  def GetMemberIds(self):
   """
   GetMemberIds(self: Group) -> IList[ElementId]
-
   
-
    Retrieves all the member ElementIds of the group.
-
    Returns: An ordered list of the members within the group. The order of this
-
   list can be 
-
     used to match members between other instances of the group.
   """
   pass
@@ -30,11 +25,8 @@ class Group(Element,IDisposable):
  def UngroupMembers(self):
   """
   UngroupMembers(self: Group) -> ICollection[ElementId]
-
   
-
    Ungroups the group.
-
    Returns: If successful,the ids of the members of group are returned.
   """
   pass
@@ -50,25 +42,14 @@ class Group(Element,IDisposable):
  GroupType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get or set the type of the group.
 
-
-
 Get: GroupType(self: Group) -> GroupType
 
-
-
 Set: GroupType(self: Group)=value
-
 """
-
  Location=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property is used to find the physical location of a group within project.
 
-
-
 Get: Location(self: Group) -> Location
 
-
-
 """
-
 

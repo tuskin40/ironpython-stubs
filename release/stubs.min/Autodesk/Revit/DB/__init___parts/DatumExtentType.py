@@ -1,9 +1,7 @@
 class DatumExtentType(Enum,IComparable,IFormattable,IConvertible):
  """
  Represents the type of datum extent that is displayed in a particular view.
-
  
-
  enum DatumExtentType,values: Model (0),ViewSpecific (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DatumExtentType(Enum,IComparable,IFormattable,IConvertible):
  Model=None
  value__=None
  ViewSpecific=None
-

@@ -1,9 +1,7 @@
 class MemberForcesServiceData(object,IDisposable):
  """
  The data needed by member forces server to perform type definition.
-
  
-
  MemberForcesServiceData(document: Document,currentElementIds: IList[ElementId])
  """
  def Dispose(self):
@@ -12,13 +10,9 @@ class MemberForcesServiceData(object,IDisposable):
  def GetCurrentElements(self):
   """
   GetCurrentElements(self: MemberForcesServiceData) -> IList[ElementId]
-
   
-
    Returns the list of Ids of the current elements.
-
    Returns: Ids of the current elements. Contains the family base element to which the 
-
     Member Forces parameters belongs.
   """
   pass
@@ -44,23 +38,13 @@ class MemberForcesServiceData(object,IDisposable):
  Document=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current document.
 
-
-
 Get: Document(self: MemberForcesServiceData) -> Document
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: MemberForcesServiceData) -> bool
 
-
-
 """
-
 

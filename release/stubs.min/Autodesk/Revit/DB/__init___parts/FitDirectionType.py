@@ -1,9 +1,7 @@
 class FitDirectionType(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum is used to define the direction to fit the number of pixels defined by PixelSize.
-
  
-
  enum FitDirectionType,values: Horizontal (0),Vertical (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class FitDirectionType(Enum,IComparable,IFormattable,IConvertible):
  Horizontal=None
  value__=None
  Vertical=None
-

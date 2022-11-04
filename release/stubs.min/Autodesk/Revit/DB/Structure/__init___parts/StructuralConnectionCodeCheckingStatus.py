@@ -1,9 +1,7 @@
 class StructuralConnectionCodeCheckingStatus(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all code checking status of the structural connection element.
-
  
-
  enum StructuralConnectionCodeCheckingStatus,values: CheckingFailed (2),NotCalculated (0),OkChecked (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class StructuralConnectionCodeCheckingStatus(Enum,IComparable,IFormattable,IConv
  NotCalculated=None
  OkChecked=None
  value__=None
-

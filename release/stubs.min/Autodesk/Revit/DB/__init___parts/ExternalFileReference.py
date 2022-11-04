@@ -6,64 +6,42 @@ class ExternalFileReference(object,IDisposable):
  def GetAbsolutePath(self):
   """
   GetAbsolutePath(self: ExternalFileReference) -> ModelPath
-
   
-
    Returns an absolute path to the referenced file,
-
      regardless of whether the 
-
     PathType.Enum is relative or absolute.
-
   
-
    Returns: A full path to the linked model.
   """
   pass
  def GetLinkedFileStatus(self):
   """
   GetLinkedFileStatus(self: ExternalFileReference) -> LinkedFileStatus
-
   
-
    Returns a LinkedFileStatus.Enum corresponding to the
-
      load status of the 
-
     referenced file.
   """
   pass
  def GetPath(self):
   """
   GetPath(self: ExternalFileReference) -> ModelPath
-
   
-
    Gets the path of the link,relative or absolute according
-
      to the link's 
-
     settings
-
   
-
    Returns: The path of the link. This path will be relative for
-
      relatively-pathed 
-
     links.
   """
   pass
  def GetReferencingId(self):
   """
   GetReferencingId(self: ExternalFileReference) -> ElementId
-
   
-
    Gets the ElementId corresponding to the element which
-
      this 
-
     ExternalFileReference is associated with.
   """
   pass
@@ -71,28 +49,19 @@ class ExternalFileReference(object,IDisposable):
  def IsValidExternalFileReference(data):
   """
   IsValidExternalFileReference(data: ExternalFileReference) -> bool
-
   
-
    Checks an ExternalFileReference to see if it is
-
      properly created.
-
   
-
    data: The ExternalFileReference to be checked
   """
   pass
  def IsValidPathTypeForExternalFileReference(self,pathType):
   """
   IsValidPathTypeForExternalFileReference(self: ExternalFileReference,pathType: PathType) -> bool
-
   
-
    Checks whether a PathType enum value will be valid to
-
      use with this 
-
     ExternalFileReference.
   """
   pass
@@ -113,37 +82,21 @@ class ExternalFileReference(object,IDisposable):
   pass
  ExternalFileReferenceType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The type of external file which this object
-
    references.
-
-
 
 Get: ExternalFileReferenceType(self: ExternalFileReference) -> ExternalFileReferenceType
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ExternalFileReference) -> bool
 
-
-
 """
-
  PathType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The path type of the link (relative,absolute,or server).
 
-
-
 Get: PathType(self: ExternalFileReference) -> PathType
 
-
-
 """
-
 

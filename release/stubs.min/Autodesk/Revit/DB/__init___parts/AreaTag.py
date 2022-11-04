@@ -24,25 +24,14 @@ class AreaTag(SpatialElementTag,IDisposable):
  Area=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The area that the tag is associated with.
 
-
-
 Get: Area(self: AreaTag) -> Area
 
-
-
 """
-
  AreaTagType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The tag type.
 
-
-
 Get: AreaTagType(self: AreaTag) -> AreaTagType
 
-
-
 Set: AreaTagType(self: AreaTag)=value
-
 """
-
 

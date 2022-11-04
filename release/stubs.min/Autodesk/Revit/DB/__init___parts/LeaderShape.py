@@ -1,9 +1,7 @@
 class LeaderShape(Enum,IComparable,IFormattable,IConvertible):
  """
  Supported geometric shapes of annotation leaders.
-
  
-
  enum LeaderShape,values: Arc (2),Kinked (1),Straight (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class LeaderShape(Enum,IComparable,IFormattable,IConvertible):
  Kinked=None
  Straight=None
  value__=None
-

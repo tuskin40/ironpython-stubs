@@ -1,13 +1,9 @@
 class SchedulableField(object,IDisposable):
  """
  A non-calculated field eligible to be included in a schedule.
-
  
-
  SchedulableField(fieldType: ScheduleFieldType,parameterId: ElementId)
-
  SchedulableField(fieldType: ScheduleFieldType)
-
  SchedulableField()
  """
  def Dispose(self):
@@ -16,41 +12,28 @@ class SchedulableField(object,IDisposable):
  def Equals(self,obj):
   """
   Equals(self: SchedulableField,obj: object) -> bool
-
   
-
    Determines whether the specified System.Object is equal to the current 
-
     System.Object.
-
   
-
   
-
    obj: The other object to evaluate.
   """
   pass
  def GetHashCode(self):
   """
   GetHashCode(self: SchedulableField) -> int
-
   
-
    Gets the integer value of the SchedulableField as hash code
   """
   pass
  def GetName(self,document):
   """
   GetName(self: SchedulableField,document: Document) -> str
-
   
-
    Gets the name of the field.
-
   
-
    document: The document in which the field will be used.
-
    Returns: The name of the field.
   """
   pass
@@ -73,9 +56,7 @@ class SchedulableField(object,IDisposable):
  def __new__(self,fieldType=None,parameterId=None):
   """
   __new__(cls: type,fieldType: ScheduleFieldType,parameterId: ElementId)
-
   __new__(cls: type,fieldType: ScheduleFieldType)
-
   __new__(cls: type)
   """
   pass
@@ -87,38 +68,21 @@ class SchedulableField(object,IDisposable):
  FieldType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The type of data displayed by the field.
 
-
-
 Get: FieldType(self: SchedulableField) -> ScheduleFieldType
 
-
-
 Set: FieldType(self: SchedulableField)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: SchedulableField) -> bool
 
-
-
 """
-
  ParameterId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The ID of the parameter displayed by the field.
 
-
-
 Get: ParameterId(self: SchedulableField) -> ElementId
 
-
-
 Set: ParameterId(self: SchedulableField)=value
-
 """
-
 

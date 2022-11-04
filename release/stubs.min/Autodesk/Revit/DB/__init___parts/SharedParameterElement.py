@@ -4,21 +4,13 @@ class SharedParameterElement(ParameterElement,IDisposable):
  def Create(document,sharedParameterDefinition):
   """
   Create(document: Document,sharedParameterDefinition: ExternalDefinition) -> SharedParameterElement
-
   
-
    Creates a new shared parameter element in the document representing the 
-
     parameter stored in the input ExternalDefinition.
-
   
-
   
-
    document: The document.
-
    sharedParameterDefinition: Shared parameter definition.
-
    Returns: The newly created shared parameter instance.
   """
   pass
@@ -32,19 +24,12 @@ class SharedParameterElement(ParameterElement,IDisposable):
  def Lookup(document,guidValue):
   """
   Lookup(document: Document,guidValue: Guid) -> SharedParameterElement
-
   
-
    Finds the shared parameter element that corresponds to the given Guid.
-
   
-
    document: The document.
-
    guidValue: Shared parameter Guid.
-
    Returns: The retrieved shared parameter instance,or ll if the matching element is not 
-
     found.
   """
   pass
@@ -66,12 +51,7 @@ class SharedParameterElement(ParameterElement,IDisposable):
  GuidValue=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Guid that identifies this shared parameter.
 
-
-
 Get: GuidValue(self: SharedParameterElement) -> Guid
 
-
-
 """
-
 

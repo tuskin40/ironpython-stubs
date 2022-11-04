@@ -21,14 +21,8 @@ class LocationCurve(Location,IDisposable):
  Curve=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Provides the ability to get and set the curve of a curve based element.
 
-
-
 Get: Curve(self: LocationCurve) -> Curve
 
-
-
 Set: Curve(self: LocationCurve)=value
-
 """
-
 

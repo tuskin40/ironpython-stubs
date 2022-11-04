@@ -4,39 +4,22 @@ class PropertySetElement(Element,IDisposable):
  def Create(document,*__args):
   """
   Create(document: Document,structuralAsset: StructuralAsset) -> PropertySetElement
-
   
-
    Creates a new PropertySetElement to contain the given asset.
-
   
-
    document: The document in which to create the PropertySetElement.
-
    structuralAsset: The structural asset containing the values that will be present in the 
-
     PropertySetElement.
-
   
-
    Returns: The new PropertySetElement.
-
   Create(document: Document,thermalAsset: ThermalAsset) -> PropertySetElement
-
   
-
    Creates a new PropertySetElement to contain the given asset.
-
   
-
    document: The document in which to create the PropertySetElement.
-
    thermalAsset: The thermal asset containing the values that will be present in the 
-
     PropertySetElement.
-
   
-
    Returns: The new PropertySetElement.
   """
   pass
@@ -46,17 +29,11 @@ class PropertySetElement(Element,IDisposable):
  def Duplicate(self,document,name):
   """
   Duplicate(self: PropertySetElement,document: Document,name: str) -> PropertySetElement
-
   
-
    Creates a duplicate of this PropertySetElement.
-
   
-
    document: The document in which to create the PropertySetElement.
-
    name: The name to use for the new PropertySetElement.
-
    Returns: The new PropertySetElement.
   """
   pass
@@ -66,18 +43,14 @@ class PropertySetElement(Element,IDisposable):
  def GetStructuralAsset(self):
   """
   GetStructuralAsset(self: PropertySetElement) -> StructuralAsset
-
   
-
    Gets a copy of the StructuralAsset.
   """
   pass
  def GetThermalAsset(self):
   """
   GetThermalAsset(self: PropertySetElement) -> ThermalAsset
-
   
-
    Gets a copy of the ThermalAsset.
   """
   pass
@@ -90,14 +63,12 @@ class PropertySetElement(Element,IDisposable):
  def SetStructuralAsset(self,structuralAsset):
   """
   SetStructuralAsset(self: PropertySetElement,structuralAsset: StructuralAsset)
-
    Sets a copy of the given StucturalAsset to be used in the PropertySetElement.
   """
   pass
  def SetThermalAsset(self,thermalAsset):
   """
   SetThermalAsset(self: PropertySetElement,thermalAsset: ThermalAsset)
-
    Sets a copy of the given ThermalAsset to be used in the PropertySetElement.
   """
   pass

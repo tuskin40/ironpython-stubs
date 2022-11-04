@@ -1,9 +1,7 @@
 class LoadComponent(object,IDisposable):
  """
  An object that represents a load combination component.
-
  
-
  LoadComponent(loadCaseOrCombinationId: ElementId,factor: float)
  """
  def Dispose(self):
@@ -31,38 +29,21 @@ class LoadComponent(object,IDisposable):
  Factor=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Load component factor.
 
-
-
 Get: Factor(self: LoadComponent) -> float
 
-
-
 Set: Factor(self: LoadComponent)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: LoadComponent) -> bool
 
-
-
 """
-
  LoadCaseOrCombinationId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Load case or combination id.
 
-
-
 Get: LoadCaseOrCombinationId(self: LoadComponent) -> ElementId
 
-
-
 Set: LoadCaseOrCombinationId(self: LoadComponent)=value
-
 """
-
 

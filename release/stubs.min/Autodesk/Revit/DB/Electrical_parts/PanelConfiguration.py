@@ -1,9 +1,7 @@
 class PanelConfiguration(Enum,IComparable,IFormattable,IConvertible):
  """
  This enum declares the configuration for given panel schedule type.
-
  
-
  enum PanelConfiguration,values: OneColumn (0),TwoColumnsCircuitsAcross (1),TwoColumnsCircuitsDown (2)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class PanelConfiguration(Enum,IComparable,IFormattable,IConvertible):
  TwoColumnsCircuitsAcross=None
  TwoColumnsCircuitsDown=None
  value__=None
-

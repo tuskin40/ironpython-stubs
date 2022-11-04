@@ -1,11 +1,8 @@
 class ExportLayerKey(object,IDisposable):
  """
  A key used to represent an item stored in an Autodesk.Revit.DB.ExportLayerTable.
-
  
-
  ExportLayerKey(categoryName: str,subCategoryName: str,num: SpecialType)
-
  ExportLayerKey()
  """
  def Dispose(self):
@@ -27,7 +24,6 @@ class ExportLayerKey(object,IDisposable):
  def __new__(self,categoryName=None,subCategoryName=None,num=None):
   """
   __new__(cls: type,categoryName: str,subCategoryName: str,num: SpecialType)
-
   __new__(cls: type)
   """
   pass
@@ -37,51 +33,28 @@ class ExportLayerKey(object,IDisposable):
  CategoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The category name.
 
-
-
 Get: CategoryName(self: ExportLayerKey) -> str
 
-
-
 Set: CategoryName(self: ExportLayerKey)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ExportLayerKey) -> bool
 
-
-
 """
-
  SpecialType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The special type for layer key.
 
-
-
 Get: SpecialType(self: ExportLayerKey) -> SpecialType
 
-
-
 Set: SpecialType(self: ExportLayerKey)=value
-
 """
-
  SubCategoryName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The subcategrory Name.
 
-
-
 Get: SubCategoryName(self: ExportLayerKey) -> str
 
-
-
 Set: SubCategoryName(self: ExportLayerKey)=value
-
 """
-
 

@@ -1,9 +1,7 @@
 class ScheduleFieldDisplayType(Enum,IComparable,IFormattable,IConvertible):
  """
  Display type of schedule field.
-
  
-
  enum ScheduleFieldDisplayType,values: Max (3),Min (4),MinMax (2),Standard (0),Totals (1)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class ScheduleFieldDisplayType(Enum,IComparable,IFormattable,IConvertible):
  Standard=None
  Totals=None
  value__=None
-

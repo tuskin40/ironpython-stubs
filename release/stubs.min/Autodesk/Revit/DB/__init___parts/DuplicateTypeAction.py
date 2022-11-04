@@ -1,9 +1,7 @@
 class DuplicateTypeAction(Enum,IComparable,IFormattable,IConvertible):
  """
  This enumerated type defines the action to be taken when there are types with the same name being pasted.
-
  
-
  enum DuplicateTypeAction,values: Abort (2),UseDestinationTypes (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class DuplicateTypeAction(Enum,IComparable,IFormattable,IConvertible):
  Abort=None
  UseDestinationTypes=None
  value__=None
-

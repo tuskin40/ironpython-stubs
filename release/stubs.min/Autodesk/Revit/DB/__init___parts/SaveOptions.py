@@ -1,9 +1,7 @@
 class SaveOptions(object,IDisposable):
  """
  This class contains options available for saving a document to disk.
-
  
-
  SaveOptions()
  """
  def Dispose(self):
@@ -26,41 +24,23 @@ class SaveOptions(object,IDisposable):
   pass
  Compact=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Default is false: let the OS eliminate as much or as little dead data as it wants to.
-
    True: force the OS to eliminate all dead data from the file on disk.
-
-
 
 Get: Compact(self: SaveOptions) -> bool
 
-
-
 Set: Compact(self: SaveOptions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: SaveOptions) -> bool
 
-
-
 """
-
  PreviewViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The view id that will be used to generate the preview; this id is not saved to the document's permanent settings.
 
-
-
 Get: PreviewViewId(self: SaveOptions) -> ElementId
 
-
-
 Set: PreviewViewId(self: SaveOptions)=value
-
 """
-
 

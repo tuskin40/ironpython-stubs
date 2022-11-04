@@ -1,11 +1,8 @@
 class PointOnCurveMeasurementType(Enum,IComparable,IFormattable,IConvertible):
  """
  Point on curve measurement type
-
     Defines the types of measurements that may be used when placing a point at a designated distance along a curve.
-
  
-
  enum PointOnCurveMeasurementType,values: Angle (6),ChordLength (5),NonNormalizedCurveParameter (1),NormalizedCurveParameter (2),NormalizedSegmentLength (4),SegmentLength (3)
  """
  def __eq__(self,*args):
@@ -38,4 +35,3 @@ class PointOnCurveMeasurementType(Enum,IComparable,IFormattable,IConvertible):
  NormalizedSegmentLength=None
  SegmentLength=None
  value__=None
-

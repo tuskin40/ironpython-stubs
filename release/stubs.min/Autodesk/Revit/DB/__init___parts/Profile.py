@@ -3,9 +3,7 @@ class Profile(GeometryObject,IDisposable):
  def Clone(self):
   """
   Clone(self: Profile) -> Profile
-
   
-
    Returns a copy of this profile.
   """
   pass
@@ -30,25 +28,14 @@ class Profile(GeometryObject,IDisposable):
  Curves=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve the curves that make up the boundary of the profile.
 
-
-
 Get: Curves(self: Profile) -> CurveArray
 
-
-
 """
-
  Filled=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Get or set whether the profile is filled.
 
-
-
 Get: Filled(self: Profile) -> bool
 
-
-
 Set: Filled(self: Profile)=value
-
 """
-
 

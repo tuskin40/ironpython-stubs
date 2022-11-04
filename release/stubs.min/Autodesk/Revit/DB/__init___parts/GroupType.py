@@ -24,12 +24,7 @@ class GroupType(ElementType,IDisposable):
  Groups=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieve a set of all the groups that have this type.
 
-
-
 Get: Groups(self: GroupType) -> GroupSet
 
-
-
 """
-
 

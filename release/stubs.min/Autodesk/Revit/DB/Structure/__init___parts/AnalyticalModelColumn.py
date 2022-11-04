@@ -24,79 +24,43 @@ class AnalyticalModelColumn(AnalyticalModelStick,IDisposable):
  BaseExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The base extension option.
 
-
-
 Get: BaseExtension(self: AnalyticalModelColumn) -> StickElementExtension
 
-
-
 Set: BaseExtension(self: AnalyticalModelColumn)=value
-
 """
-
  BaseExtensionMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The bottom extension method option.
 
-
-
 Get: BaseExtensionMethod(self: AnalyticalModelColumn) -> AnalyticalAlignmentMethod
 
-
-
 Set: BaseExtensionMethod(self: AnalyticalModelColumn)=value
-
 """
-
  BaseExtensionPlaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The bottom extension plane ID option.
 
-
-
 Get: BaseExtensionPlaneId(self: AnalyticalModelColumn) -> ElementId
 
-
-
 Set: BaseExtensionPlaneId(self: AnalyticalModelColumn)=value
-
 """
-
  TopExtension=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The top extension option.
 
-
-
 Get: TopExtension(self: AnalyticalModelColumn) -> StickElementExtension
 
-
-
 Set: TopExtension(self: AnalyticalModelColumn)=value
-
 """
-
  TopExtensionMethod=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The top extension method option.
 
-
-
 Get: TopExtensionMethod(self: AnalyticalModelColumn) -> AnalyticalAlignmentMethod
 
-
-
 Set: TopExtensionMethod(self: AnalyticalModelColumn)=value
-
 """
-
  TopExtensionPlaneId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The top extension plane ID option.
 
-
-
 Get: TopExtensionPlaneId(self: AnalyticalModelColumn) -> ElementId
 
-
-
 Set: TopExtensionPlaneId(self: AnalyticalModelColumn)=value
-
 """
-
 

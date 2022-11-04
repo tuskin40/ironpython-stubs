@@ -1,9 +1,7 @@
 class ShapeImporterSourceFormat(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing the possible formats supported by the Shapeimporter.
-
  
-
  enum ShapeImporterSourceFormat,values: Auto (0),Rhino (2),SAT (1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ShapeImporterSourceFormat(Enum,IComparable,IFormattable,IConvertible):
  Rhino=None
  SAT=None
  value__=None
-

@@ -1,9 +1,7 @@
 class IFCVersion(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing available IFC file versions into which a file may be exported.
-
  
-
  enum IFCVersion,values: Default (0),IFC2x2 (9),IFC2x3 (10),IFC2x3BFM (27),IFC2x3CV2 (21),IFC2x3FM (24),IFC4 (23),IFC4DTV (26),IFC4RV (25),IFCBCA (8),IFCCOBIE (17)
  """
  def __eq__(self,*args):
@@ -41,4 +39,3 @@ class IFCVersion(Enum,IComparable,IFormattable,IConvertible):
  IFCBCA=None
  IFCCOBIE=None
  value__=None
-

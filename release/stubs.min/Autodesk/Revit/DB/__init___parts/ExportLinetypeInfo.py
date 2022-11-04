@@ -1,13 +1,9 @@
 class ExportLinetypeInfo(object,IDisposable):
  """
  A value used to represent the info stored in the Autodesk.Revit.DB.ExportLinetypeTable.
-
  
-
  ExportLinetypeInfo(destinationLinetypeName: str)
-
  ExportLinetypeInfo()
-
  ExportLinetypeInfo(other: ExportLinetypeInfo)
  """
  def Dispose(self):
@@ -29,9 +25,7 @@ class ExportLinetypeInfo(object,IDisposable):
  def __new__(self,*__args):
   """
   __new__(cls: type,destinationLinetypeName: str)
-
   __new__(cls: type)
-
   __new__(cls: type,other: ExportLinetypeInfo)
   """
   pass
@@ -41,25 +35,14 @@ class ExportLinetypeInfo(object,IDisposable):
  DestinationLinetypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The destination linetype name (the name of the linetype in the exported format).
 
-
-
 Get: DestinationLinetypeName(self: ExportLinetypeInfo) -> str
 
-
-
 Set: DestinationLinetypeName(self: ExportLinetypeInfo)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ExportLinetypeInfo) -> bool
 
-
-
 """
-
 

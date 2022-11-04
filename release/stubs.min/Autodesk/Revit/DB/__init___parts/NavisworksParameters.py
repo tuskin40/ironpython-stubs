@@ -1,9 +1,7 @@
 class NavisworksParameters(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing possible "Parameter conversions" of Navisworks Exporter.
-
  
-
  enum NavisworksParameters,values: All (2),Elements (1),None (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class NavisworksParameters(Enum,IComparable,IFormattable,IConvertible):
  Elements=None
  None=None
  value__=None
-

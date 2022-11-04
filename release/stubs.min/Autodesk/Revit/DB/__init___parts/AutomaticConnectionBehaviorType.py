@@ -1,9 +1,7 @@
 class AutomaticConnectionBehaviorType(Enum,IComparable,IFormattable,IConvertible):
  """
  Enumeration of automatic connection behavior types
-
  
-
  enum AutomaticConnectionBehaviorType,values: Accepting (3),Active (1),Exclude (0),Forced (2),Full (4)
  """
  def __eq__(self,*args):
@@ -35,4 +33,3 @@ class AutomaticConnectionBehaviorType(Enum,IComparable,IFormattable,IConvertible
  Forced=None
  Full=None
  value__=None
-

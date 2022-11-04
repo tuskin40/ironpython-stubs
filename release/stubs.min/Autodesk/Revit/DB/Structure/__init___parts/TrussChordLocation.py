@@ -1,9 +1,7 @@
 class TrussChordLocation(Enum,IComparable,IFormattable,IConvertible):
  """
  This enumerated type represents the options for the Truss Chord Location.
-
  
-
  enum TrussChordLocation,values: Bottom (0),Top (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class TrussChordLocation(Enum,IComparable,IFormattable,IConvertible):
  Bottom=None
  Top=None
  value__=None
-

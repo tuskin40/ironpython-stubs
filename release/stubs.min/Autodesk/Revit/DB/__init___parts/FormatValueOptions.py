@@ -1,9 +1,7 @@
 class FormatValueOptions(object,IDisposable):
  """
  Options for formatting numbers with units into strings.
-
  
-
  FormatValueOptions()
  """
  def Dispose(self):
@@ -12,15 +10,10 @@ class FormatValueOptions(object,IDisposable):
  def GetFormatOptions(self):
   """
   GetFormatOptions(self: FormatValueOptions) -> FormatOptions
-
   
-
    Gets the FormatOptions to optionally override the default settings in the Units 
-
     class.
-
   
-
    Returns: A copy of the FormatOptions.
   """
   pass
@@ -30,15 +23,10 @@ class FormatValueOptions(object,IDisposable):
  def SetFormatOptions(self,formatOptions):
   """
   SetFormatOptions(self: FormatValueOptions,formatOptions: FormatOptions)
-
    Sets the FormatOptions to optionally override the default settings in the Units 
-
     class.
-
   
-
   
-
    formatOptions: The FormatOptions.
   """
   pass
@@ -57,25 +45,14 @@ class FormatValueOptions(object,IDisposable):
  AppendUnitSymbol=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates if a unit symbol should be appended regardless of the settings in the FormatOptions.
 
-
-
 Get: AppendUnitSymbol(self: FormatValueOptions) -> bool
 
-
-
 Set: AppendUnitSymbol(self: FormatValueOptions)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: FormatValueOptions) -> bool
 
-
-
 """
-
 

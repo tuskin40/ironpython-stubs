@@ -24,12 +24,7 @@ class AreaScheme(Element,IDisposable):
  IsGrossBuildingArea=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates if the area scheme is a Gross Building Area scheme.
 
-
-
 Get: IsGrossBuildingArea(self: AreaScheme) -> bool
 
-
-
 """
-
 

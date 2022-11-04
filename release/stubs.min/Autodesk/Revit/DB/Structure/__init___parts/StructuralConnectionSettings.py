@@ -10,19 +10,12 @@ class StructuralConnectionSettings(Element,IDisposable):
  def GetStructuralConnectionSettings(document):
   """
   GetStructuralConnectionSettings(document: Document) -> StructuralConnectionSettings
-
   
-
    Obtains the StructuralConnectionSettings object for the specified project 
-
     document.
-
   
-
   
-
    document: A project document.
-
    Returns: The StructuralConnectionSettings object.
   """
   pass
@@ -43,17 +36,10 @@ class StructuralConnectionSettings(Element,IDisposable):
   pass
  IncludeWarningControls=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property controls how Structural Connection Element is generated.
-
    If set to true and warnings are reported for given Element,additional yellow triangle is displayed.
-
-
 
 Get: IncludeWarningControls(self: StructuralConnectionSettings) -> bool
 
-
-
 Set: IncludeWarningControls(self: StructuralConnectionSettings)=value
-
 """
-
 

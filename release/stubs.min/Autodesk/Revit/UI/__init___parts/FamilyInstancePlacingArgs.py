@@ -20,63 +20,24 @@ class FamilyInstancePlacingArgs(object,IDisposable):
   pass
  ActiveView=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The active view
-
-
-
 Get: ActiveView(self: FamilyInstancePlacingArgs) -> View
-
-
-
 """
-
  IsBanned=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Indicates if the cursor is banned or not.
-
-
-
 Get: IsBanned(self: FamilyInstancePlacingArgs) -> bool
-
-
-
 Set: IsBanned(self: FamilyInstancePlacingArgs)=value
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
-
-
-
 Get: IsValidObject(self: FamilyInstancePlacingArgs) -> bool
-
-
-
 """
-
  StatusMessage=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The message to be shown on the status bar
-
-
-
 Get: StatusMessage(self: FamilyInstancePlacingArgs) -> str
-
-
-
 Set: StatusMessage(self: FamilyInstancePlacingArgs)=value
-
 """
-
  TooltipMessage=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The message to be shown via tooltip
-
-
-
 Get: TooltipMessage(self: FamilyInstancePlacingArgs) -> str
-
-
-
 Set: TooltipMessage(self: FamilyInstancePlacingArgs)=value
-
 """
-
-

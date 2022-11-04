@@ -1,7 +1,6 @@
 class SelectionFilterElement(FilterElement,IDisposable):
  """
  A filter element that stores an explicit list of ElementIds.
-
     Only elements whose ElementIds are in this list will pass the filter.
  """
  def AddSet(self,ids):
@@ -10,33 +9,24 @@ class SelectionFilterElement(FilterElement,IDisposable):
  def AddSingle(self,id):
   """
   AddSingle(self: SelectionFilterElement,id: ElementId)
-
    Adds a single ElementId to the filter's set.
-
   
-
    id: The ElementId to add.
   """
   pass
  def Clear(self):
   """
   Clear(self: SelectionFilterElement)
-
    Removes all ElementIds from the filter.
   """
   pass
  def Contains(self,id):
   """
   Contains(self: SelectionFilterElement,id: ElementId) -> bool
-
   
-
    Returns true if the given ElementId is a member of this filter's set.
-
   
-
    id: The ElementId to look for.
-
    Returns: True if the given ElementId is a member of the filter,otherwise false.
   """
   pass
@@ -44,17 +34,11 @@ class SelectionFilterElement(FilterElement,IDisposable):
  def Create(document,name):
   """
   Create(document: Document,name: str) -> SelectionFilterElement
-
   
-
    Creates a new SelectionFilterElement in the given document.
-
   
-
    document: The document in which to create the SelectionFilterElement.
-
    name: The name for the new SelectionFilterElement.
-
    Returns: The new SelectionFilterElement.
   """
   pass
@@ -67,22 +51,16 @@ class SelectionFilterElement(FilterElement,IDisposable):
  def GetElementIds(self):
   """
   GetElementIds(self: SelectionFilterElement) -> ICollection[ElementId]
-
   
-
    Returns the set of ElementIds contained by this filter.
-
    Returns: The set of ElementIds.
   """
   pass
  def IsEmpty(self):
   """
   IsEmpty(self: SelectionFilterElement) -> bool
-
   
-
    Determines whether this filter's set is empty or not.
-
    Returns: True if the set is empty,otherwise false.
   """
   pass
@@ -95,11 +73,8 @@ class SelectionFilterElement(FilterElement,IDisposable):
  def RemoveSingle(self,id):
   """
   RemoveSingle(self: SelectionFilterElement,id: ElementId)
-
    Removes a single ElementId from the filter's set.
-
   
-
    id: The ElementId to remove.
   """
   pass

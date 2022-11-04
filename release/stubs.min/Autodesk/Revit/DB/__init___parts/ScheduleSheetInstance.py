@@ -4,21 +4,13 @@ class ScheduleSheetInstance(Element,IDisposable):
  def Create(document,viewSheetId,scheduleId,origin):
   """
   Create(document: Document,viewSheetId: ElementId,scheduleId: ElementId,origin: XYZ) -> ScheduleSheetInstance
-
   
-
    Create an instance of a schedule on a sheet.
-
   
-
    document: The document
-
    viewSheetId: The id of the sheet where the schedule will be placed.
-
    scheduleId: The id of the schedule view.
-
    origin: Location on the sheet where the schedule will be placed.
-
    Returns: The new ScheduleInstance.
   """
   pass
@@ -46,49 +38,27 @@ class ScheduleSheetInstance(Element,IDisposable):
  IsTitleblockRevisionSchedule=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Identifies if this ScheduleSheetInstance is a revision schedule in a titleblock family.
 
-
-
 Get: IsTitleblockRevisionSchedule(self: ScheduleSheetInstance) -> bool
 
-
-
 """
-
  Point=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Location on the sheet where the ScheduleInstance is placed (in sheet coordinates).
 
-
-
 Get: Point(self: ScheduleSheetInstance) -> XYZ
 
-
-
 Set: Point(self: ScheduleSheetInstance)=value
-
 """
-
  Rotation=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Rotation of the ScheduleInstance.
 
-
-
 Get: Rotation(self: ScheduleSheetInstance) -> ViewportRotation
 
-
-
 Set: Rotation(self: ScheduleSheetInstance)=value
-
 """
-
  ScheduleId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Id of the "master" schedule that generates this ScheduleInstance.
 
-
-
 Get: ScheduleId(self: ScheduleSheetInstance) -> ElementId
 
-
-
 """
-
 

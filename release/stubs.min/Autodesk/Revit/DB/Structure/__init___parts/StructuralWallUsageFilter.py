@@ -1,11 +1,8 @@
 class StructuralWallUsageFilter(ElementSlowFilter,IDisposable):
  """
  A filter used to match walls that have the given structural wall usage.
-
  
-
  StructuralWallUsageFilter(structuralWallUsage: StructuralWallUsage,inverted: bool)
-
  StructuralWallUsageFilter(structuralWallUsage: StructuralWallUsage)
  """
  def Dispose(self):
@@ -27,19 +24,13 @@ class StructuralWallUsageFilter(ElementSlowFilter,IDisposable):
  def __new__(self,structuralWallUsage,inverted=None):
   """
   __new__(cls: type,structuralWallUsage: StructuralWallUsage,inverted: bool)
-
   __new__(cls: type,structuralWallUsage: StructuralWallUsage)
   """
   pass
  StructuralWallUsage=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The wall structural usage.
 
-
-
 Get: StructuralWallUsage(self: StructuralWallUsageFilter) -> StructuralWallUsage
 
-
-
 """
-
 

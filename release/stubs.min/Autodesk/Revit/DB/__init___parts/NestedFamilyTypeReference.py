@@ -24,34 +24,19 @@ class NestedFamilyTypeReference(Element,IDisposable):
  CategoryId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Category Id of the referenced family
 
-
-
 Get: CategoryId(self: NestedFamilyTypeReference) -> ElementId
 
-
-
 """
-
  FamilyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Name of the referenced family
 
-
-
 Get: FamilyName(self: NestedFamilyTypeReference) -> str
 
-
-
 """
-
  TypeName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Type of the referenced family
 
-
-
 Get: TypeName(self: NestedFamilyTypeReference) -> str
 
-
-
 """
-
 

@@ -3,15 +3,10 @@ class PrintSetup(APIObject,IDisposable):
  def Delete(self):
   """
   Delete(self: PrintSetup) -> bool
-
   
-
    Delete the current print setting,and make the In-Session setting as the 
-
     current one.
-
   
-
    Returns: False if Delete operation fails,otherwise true.
   """
   pass
@@ -27,48 +22,34 @@ class PrintSetup(APIObject,IDisposable):
  def Rename(self,newName):
   """
   Rename(self: PrintSetup,newName: str) -> bool
-
   
-
    Rename the current print setting with the specified name.
-
   
-
    newName: print setting name to be renamed as.
-
    Returns: False if Rename operation fails,otherwise true.
   """
   pass
  def Revert(self):
   """
   Revert(self: PrintSetup)
-
    Revert the current print setting.
   """
   pass
  def Save(self):
   """
   Save(self: PrintSetup) -> bool
-
   
-
    Save the changes for the current print setting.
-
    Returns: False if save operation fails,otherwise True.
   """
   pass
  def SaveAs(self,newName):
   """
   SaveAs(self: PrintSetup,newName: str) -> bool
-
   
-
    Save the current print setting to another print setting with the specified name.
-
   
-
    newName: print setting name to be saved as.
-
    Returns: False if Save As operation fails,otherwise true.
   """
   pass
@@ -84,25 +65,14 @@ class PrintSetup(APIObject,IDisposable):
  CurrentPrintSetting=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The current Print Setting of Print Setup.
 
-
-
 Get: CurrentPrintSetting(self: PrintSetup) -> IPrintSetting
 
-
-
 Set: CurrentPrintSetting(self: PrintSetup)=value
-
 """
-
  InSession=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The in-session Print Setting of Print Setup.
 
-
-
 Get: InSession(self: PrintSetup) -> InSessionPrintSetting
 
-
-
 """
-
 

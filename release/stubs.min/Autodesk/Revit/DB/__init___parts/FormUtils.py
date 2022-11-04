@@ -8,7 +8,6 @@ class FormUtils(object):
  def DissolveForms(ADoc,elements,BondingPointSet=None):
   """
   DissolveForms(ADoc: Document,elements: ICollection[ElementId]) -> (ICollection[ElementId],ICollection[ElementId])
-
   DissolveForms(ADoc: Document,elements: ICollection[ElementId]) -> ICollection[ElementId]
   """
   pass
@@ -16,4 +15,3 @@ class FormUtils(object):
   'CanBeDissolved',
   'DissolveForms',
  ]
-

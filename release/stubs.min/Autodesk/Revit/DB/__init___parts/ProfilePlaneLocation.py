@@ -1,9 +1,7 @@
 class ProfilePlaneLocation(Enum,IComparable,IFormattable,IConvertible):
  """
  Indicates the location of Sweep profile plane on the path curve.
-
  
-
  enum ProfilePlaneLocation,values: End (2),MidPoint (1),Start (0)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class ProfilePlaneLocation(Enum,IComparable,IFormattable,IConvertible):
  MidPoint=None
  Start=None
  value__=None
-

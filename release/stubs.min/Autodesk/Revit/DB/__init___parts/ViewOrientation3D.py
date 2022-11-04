@@ -1,9 +1,7 @@
 class ViewOrientation3D(object,IDisposable):
  """
  Container for the point and vectors which define View3D's orientation.
-
  
-
  ViewOrientation3D(eyePosition: XYZ,upDirection: XYZ,forwardDirection: XYZ)
  """
  def Dispose(self):
@@ -31,45 +29,25 @@ class ViewOrientation3D(object,IDisposable):
  EyePosition=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The eye position point
 
-
-
 Get: EyePosition(self: ViewOrientation3D) -> XYZ
 
-
-
 """
-
  ForwardDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The forward direction vector
 
-
-
 Get: ForwardDirection(self: ViewOrientation3D) -> XYZ
 
-
-
 """
-
  IsValidObject=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Specifies whether the .NET object represents a valid Revit entity.
 
-
-
 Get: IsValidObject(self: ViewOrientation3D) -> bool
 
-
-
 """
-
  UpDirection=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The up direction vector
 
-
-
 Get: UpDirection(self: ViewOrientation3D) -> XYZ
 
-
-
 """
-
 

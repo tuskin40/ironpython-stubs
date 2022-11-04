@@ -4,7 +4,6 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # classes
 from __init___parts.AddInCommandBinding import AddInCommandBinding

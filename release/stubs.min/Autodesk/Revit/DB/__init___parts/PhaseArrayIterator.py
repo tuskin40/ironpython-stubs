@@ -1,9 +1,7 @@
 class PhaseArrayIterator(APIObject,IDisposable,IEnumerator):
  """
  An iterator to a phase array.
-
  
-
  PhaseArrayIterator()
  """
  def Dispose(self):
@@ -12,19 +10,12 @@ class PhaseArrayIterator(APIObject,IDisposable,IEnumerator):
  def MoveNext(self):
   """
   MoveNext(self: PhaseArrayIterator) -> bool
-
   
-
    Move the iterator one item forward.
-
    Returns: Returns True if the iterator was successfully moved forward one item and the 
-
     Current
-
      property will return a valid item. False will be returned 
-
     it the iterator has reached the end of
-
      the array.
   """
   pass
@@ -40,7 +31,6 @@ class PhaseArrayIterator(APIObject,IDisposable,IEnumerator):
  def Reset(self):
   """
   Reset(self: PhaseArrayIterator)
-
    Bring the iterator back to the start of the array.
   """
   pass
@@ -59,12 +49,7 @@ class PhaseArrayIterator(APIObject,IDisposable,IEnumerator):
  Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves the item that is the current focus of the iterator.
 
-
-
 Get: Current(self: PhaseArrayIterator) -> object
 
-
-
 """
-
 

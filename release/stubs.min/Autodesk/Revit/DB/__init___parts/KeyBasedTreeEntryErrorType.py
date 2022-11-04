@@ -1,9 +1,7 @@
 class KeyBasedTreeEntryErrorType(Enum,IComparable,IFormattable,IConvertible):
  """
  An Enum indicating the type of error associated with a KeyBasedTreeEntry.
-
  
-
  enum KeyBasedTreeEntryErrorType,values: BadClassificationCategoryId (5),BadClassificationLevel (4),CircularParentage (2),DuplicateEntry (0),InvalidClassificationCode (3),MissingParent (1)
  """
  def __eq__(self,*args):
@@ -36,4 +34,3 @@ class KeyBasedTreeEntryErrorType(Enum,IComparable,IFormattable,IConvertible):
  InvalidClassificationCode=None
  MissingParent=None
  value__=None
-

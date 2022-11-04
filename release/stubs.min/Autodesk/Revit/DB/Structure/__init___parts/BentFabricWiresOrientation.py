@@ -1,9 +1,7 @@
 class BentFabricWiresOrientation(Enum,IComparable,IFormattable,IConvertible):
  """
  Bent Fabric wires orientation.
-
  
-
  enum BentFabricWiresOrientation,values: Down (0),Up (1)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class BentFabricWiresOrientation(Enum,IComparable,IFormattable,IConvertible):
  Down=None
  Up=None
  value__=None
-

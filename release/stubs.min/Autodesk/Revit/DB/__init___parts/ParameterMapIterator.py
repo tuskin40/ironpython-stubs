@@ -1,9 +1,7 @@
 class ParameterMapIterator(APIObject,IDisposable,IEnumerator):
  """
  An iterator to a map relating a parameter name (the key,a String) to a parameter.
-
  
-
  ParameterMapIterator()
  """
  def Dispose(self):
@@ -12,19 +10,12 @@ class ParameterMapIterator(APIObject,IDisposable,IEnumerator):
  def MoveNext(self):
   """
   MoveNext(self: ParameterMapIterator) -> bool
-
   
-
    Move the iterator one item forward.
-
    Returns: Returns True if the iterator was successfully moved forward one item and the 
-
     Current
-
      property will return a valid item. False will be returned 
-
     it the iterator has reached the end of
-
      the map.
   """
   pass
@@ -40,7 +31,6 @@ class ParameterMapIterator(APIObject,IDisposable,IEnumerator):
  def Reset(self):
   """
   Reset(self: ParameterMapIterator)
-
    Bring the iterator back to the start of the map.
   """
   pass
@@ -59,23 +49,13 @@ class ParameterMapIterator(APIObject,IDisposable,IEnumerator):
  Current=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves the item that is the current focus of the iterator.
 
-
-
 Get: Current(self: ParameterMapIterator) -> object
 
-
-
 """
-
  Key=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Retrieves the key that is the current focus of the iterator.
 
-
-
 Get: Key(self: ParameterMapIterator) -> str
 
-
-
 """
-
 

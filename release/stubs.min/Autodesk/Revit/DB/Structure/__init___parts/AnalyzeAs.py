@@ -1,15 +1,10 @@
 class AnalyzeAs(Enum,IComparable,IFormattable,IConvertible):
  """
  Analyze As has various functions within the Analytical Model,and is Element-dependent.
-
     "Not for Analysis" usually means that there will not be an Analytical Model generated.
-
     The others indicate how the Analytical Model behavior will treat the Element in question.
-
     For instance "Hanger" columns have different support expectations than "Gravity" columns.
-
  
-
  enum AnalyzeAs,values: Gravity (1),GravityLateral (10),Hanger (0),Lateral (2),Mat (4),NotApplicable (8),NotForAnalysis (7),SlabOneWay (3),SlabOnGrade (5),SlabTwoWay (9)
  """
  def __eq__(self,*args):
@@ -46,4 +41,3 @@ class AnalyzeAs(Enum,IComparable,IFormattable,IConvertible):
  SlabOnGrade=None
  SlabTwoWay=None
  value__=None
-

@@ -4,21 +4,13 @@ class StructuralConnectionHandlerType(ElementType,IDisposable):
  def Create(pADoc,name,guid,familyName):
   """
   Create(pADoc: Document,name: str,guid: Guid,familyName: str) -> StructuralConnectionHandlerType
-
   
-
    Creates a new StructuralConnectionHandlerType object.
-
   
-
    pADoc: The document.
-
    name: The type name.
-
    guid: Connection GUID.
-
    familyName: Name of system family which created type will belong to.
-
    Returns: The newly created instance.
   """
   pass
@@ -26,15 +18,10 @@ class StructuralConnectionHandlerType(ElementType,IDisposable):
  def CreateDefaultStructuralConnectionHandlerType(pADoc):
   """
   CreateDefaultStructuralConnectionHandlerType(pADoc: Document) -> ElementId
-
   
-
    Creates a new StructuralConnectionHandlerType object with a default name.
-
   
-
    pADoc: The document.
-
    Returns: The newly created type id.
   """
   pass
@@ -48,15 +35,10 @@ class StructuralConnectionHandlerType(ElementType,IDisposable):
  def GetDefaultConnectionHandlerType(pADoc):
   """
   GetDefaultConnectionHandlerType(pADoc: Document) -> ElementId
-
   
-
    Gets a default type id for Structural Connection.
-
   
-
    pADoc: The document.
-
    Returns: The type id.
   """
   pass
@@ -78,12 +60,7 @@ class StructuralConnectionHandlerType(ElementType,IDisposable):
  ConnectionGuid=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The GUID to use for identifying connection geometry generation algorithm.
 
-
-
 Get: ConnectionGuid(self: StructuralConnectionHandlerType) -> Guid
 
-
-
 """
-
 

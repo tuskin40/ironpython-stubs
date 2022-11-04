@@ -6,23 +6,14 @@ class Panel(FamilyInstance,IDisposable):
  def FindHostPanel(self):
   """
   FindHostPanel(self: Panel) -> ElementId
-
   
-
    Finds the id of the host panel (i.e.,wall)
-
   associated with this panel. If a 
-
     host panel is present,then
-
   it is displayed instead of the curtain panel.
-
   
-
    Returns: Element id of the host panel associated with this panel.
-
   Otherwise,
-
     InvalidElementId is returned
   """
   pass
@@ -32,9 +23,7 @@ class Panel(FamilyInstance,IDisposable):
  def GetRefGridLines(self,uGridLineId,vGridLineId):
   """
   GetRefGridLines(self: Panel,uGridLineId: ElementId,vGridLineId: ElementId) -> (ElementId,ElementId)
-
   
-
    This method is used to get the reference gridlines.
   """
   pass
@@ -56,36 +45,20 @@ class Panel(FamilyInstance,IDisposable):
  Lockable=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property is used to know whether a panel can be locked.
 
-
-
 Get: Lockable(self: Panel) -> bool
 
-
-
 """
-
  PanelType=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Panel style of this Panel.
 
-
-
 Get: PanelType(self: Panel) -> PanelType
 
-
-
 Set: PanelType(self: Panel)=value
-
 """
-
  Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """This property is used to find the transform of a curtain panel within project.
 
-
-
 Get: Transform(self: Panel) -> Transform
 
-
-
 """
-
 

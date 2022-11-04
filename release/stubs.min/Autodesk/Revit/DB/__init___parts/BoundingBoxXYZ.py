@@ -1,9 +1,7 @@
 class BoundingBoxXYZ(APIObject,IDisposable):
  """
  A three-dimensional rectangular box at an arbitrary location and orientation within the Revit model.
-
  
-
  BoundingBoxXYZ()
  """
  def Dispose(self):
@@ -27,53 +25,29 @@ class BoundingBoxXYZ(APIObject,IDisposable):
  Enabled=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Defines whether the entire bounding box is enabled.
 
-
-
 Get: Enabled(self: BoundingBoxXYZ) -> bool
 
-
-
 Set: Enabled(self: BoundingBoxXYZ)=value
-
 """
-
  Max=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Maximum coordinates (upper-right-front corner of the box).
 
-
-
 Get: Max(self: BoundingBoxXYZ) -> XYZ
 
-
-
 Set: Max(self: BoundingBoxXYZ)=value
-
 """
-
  Min=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Minimum coordinates (lower-left-rear corner of the box).
 
-
-
 Get: Min(self: BoundingBoxXYZ) -> XYZ
 
-
-
 Set: Min(self: BoundingBoxXYZ)=value
-
 """
-
  Transform=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The transform from the coordinate space of the box to the model coordinate space.
 
-
-
 Get: Transform(self: BoundingBoxXYZ) -> Transform
 
-
-
 Set: Transform(self: BoundingBoxXYZ)=value
-
 """
-
 

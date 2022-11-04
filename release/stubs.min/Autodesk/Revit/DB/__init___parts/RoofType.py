@@ -24,12 +24,7 @@ class RoofType(HostObjAttributes,IDisposable):
  ThermalProperties=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The calculated and settable thermal properties of the RoofType
 
-
-
 Get: ThermalProperties(self: RoofType) -> ThermalProperties
 
-
-
 """
-
 

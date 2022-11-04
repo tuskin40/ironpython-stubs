@@ -1,9 +1,7 @@
 class ZJustification(Enum,IComparable,IFormattable,IConvertible):
  """
  The justification of the framing element in Z.
-
  
-
  enum ZJustification,values: Bottom (3),Center (1),Origin (2),Top (0)
  """
  def __eq__(self,*args):
@@ -35,6 +33,4 @@ class ZJustification(Enum,IComparable,IFormattable,IConvertible):
  Top=None
  value__=None
 
-
 # variables with complex values
-

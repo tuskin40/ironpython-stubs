@@ -1,9 +1,7 @@
 class RebarShapeVertexTurn(Enum,IComparable,IFormattable,IConvertible):
  """
  Specify whether a bend at a RebarShapeVertex represents a left or right turn.
-
  
-
  enum RebarShapeVertexTurn,values: Default (0),Left (1),Right (-1)
  """
  def __eq__(self,*args):
@@ -33,4 +31,3 @@ class RebarShapeVertexTurn(Enum,IComparable,IFormattable,IConvertible):
  Left=None
  Right=None
  value__=None
-

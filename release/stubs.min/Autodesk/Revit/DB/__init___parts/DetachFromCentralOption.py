@@ -1,9 +1,7 @@
 class DetachFromCentralOption(Enum,IComparable,IFormattable,IConvertible):
  """
  Options for workset detachment behavior.
-
  
-
  enum DetachFromCentralOption,values: ClearTransmittedSaveAsNewCentral (3),DetachAndDiscardWorksets (2),DetachAndPreserveWorksets (1),DoNotDetach (0)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class DetachFromCentralOption(Enum,IComparable,IFormattable,IConvertible):
  DetachAndPreserveWorksets=None
  DoNotDetach=None
  value__=None
-

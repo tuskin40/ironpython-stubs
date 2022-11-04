@@ -11,43 +11,17 @@ class PushButton(RibbonButton):
   pass
  AssemblyName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The assembly path of the button.
-
-
-
 Get: AssemblyName(self: PushButton) -> str
-
-
-
 Set: AssemblyName(self: PushButton)=value
-
 """
-
  AvailabilityClassName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The full class name for the class providing the entry point to decide availability of this push button.
-
-
-
 Get: AvailabilityClassName(self: PushButton) -> str
-
-
-
 Set: AvailabilityClassName(self: PushButton)=value
-
 """
-
  ClassName=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The name of the class containing the implementation for the command.
-
-
-
 Get: ClassName(self: PushButton) -> str
-
-
-
 Set: ClassName(self: PushButton)=value
-
 """
-
-
  m_ItemType=None
-

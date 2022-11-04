@@ -1,9 +1,7 @@
 class HiddenLineViewsType(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing all Hidden Line Views types of Print Setting.
-
  
-
  enum HiddenLineViewsType,values: RasterProcessing (1),VectorProcessing (0)
  """
  def __eq__(self,*args):
@@ -32,4 +30,3 @@ class HiddenLineViewsType(Enum,IComparable,IFormattable,IConvertible):
  RasterProcessing=None
  value__=None
  VectorProcessing=None
-

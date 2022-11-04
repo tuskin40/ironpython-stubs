@@ -1,9 +1,7 @@
 class ExternalEventRequest(Enum,IComparable,IFormattable,IConvertible):
  """
  Represents the possible outcomes of a request for raising an external event.
-
  
-
  enum ExternalEventRequest,values: Accepted (0),Denied (2),Pending (1),TimedOut (3)
  """
  def __eq__(self,*args):
@@ -34,4 +32,3 @@ class ExternalEventRequest(Enum,IComparable,IFormattable,IConvertible):
  Pending=None
  TimedOut=None
  value__=None
-

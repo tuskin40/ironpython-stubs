@@ -6,11 +6,8 @@ class ViewNode(RenderNode,IDisposable):
  def GetCameraInfo(self):
   """
   GetCameraInfo(self: ViewNode) -> CameraInfo
-
   
-
    Information about the observation point (the camera) of the view.
-
    Returns: An instance of CameraInfo or ll if there is no info associated with the view
   """
   pass
@@ -29,25 +26,14 @@ class ViewNode(RenderNode,IDisposable):
  LevelOfDetail=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The level of detail the view is going to be rendered at.
 
-
-
 Get: LevelOfDetail(self: ViewNode) -> int
 
-
-
 Set: LevelOfDetail(self: ViewNode)=value
-
 """
-
  ViewId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The Id of the view element.
 
-
-
 Get: ViewId(self: ViewNode) -> ElementId
 
-
-
 """
-
 

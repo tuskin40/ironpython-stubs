@@ -21,14 +21,8 @@ class InSessionViewSheetSet(object,IViewSheetSet,IDisposable):
  Views=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The views.
 
-
-
 Get: Views(self: InSessionViewSheetSet) -> ViewSet
 
-
-
 Set: Views(self: InSessionViewSheetSet)=value
-
 """
-
 

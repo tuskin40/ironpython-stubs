@@ -1,9 +1,7 @@
 class ImportUnit(Enum,IComparable,IFormattable,IConvertible):
  """
  An enumerated type listing possible target units for CAD Import.
-
  
-
  enum ImportUnit,values: Centimeter (5),Custom (7),Decimeter (4),Default (0),Foot (1),Inch (2),Meter (3),Millimeter (6)
  """
  def __eq__(self,*args):
@@ -38,4 +36,3 @@ class ImportUnit(Enum,IComparable,IFormattable,IConvertible):
  Meter=None
  Millimeter=None
  value__=None
-
