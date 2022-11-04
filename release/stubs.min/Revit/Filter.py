@@ -4,32 +4,23 @@
 # by generator 1.145
 # no doc
 # no imports
-
 # no functions
 # classes
-
 class FilterRule(object):
  """ Revit Filter Rule """
  @staticmethod
  def ByRuleType(type,value,parameter):
   """
   ByRuleType(type: str,value: object,parameter: Parameter) -> FilterRule
-
   
-
    Create a new Filter Rule
-
   
-
    type: Filter Rule Type
-
    value: Value to check
-
    parameter: Parameter to filter
   """
   pass
  RuleType=None
-
 
 class OverrideGraphicSettings(object):
  """ Override Graphic Settings """
@@ -37,37 +28,22 @@ class OverrideGraphicSettings(object):
  def ByProperties(cutFillColor,projectionFillColor,cutLineColor,projectionLineColor,cutFillPattern,projectionFillPattern,cutLinePattern,projectionLinePattern,cutLineWeight,projectionLineWeight):
   """
   ByProperties(cutFillColor: Color,projectionFillColor: Color,cutLineColor: Color,projectionLineColor: Color,cutFillPattern: FillPatternElement,projectionFillPattern: FillPatternElement,cutLinePattern: LinePatternElement,projectionLinePattern: LinePatternElement,cutLineWeight: int,projectionLineWeight: int) -> OverrideGraphicSettings
-
   
-
    Create a OverrideGraphicSettings element
-
   
-
    cutFillColor: Fill color
-
    projectionFillColor: Projection color
-
    cutLineColor: Cut line color
-
    projectionLineColor: Projection line color
-
    cutFillPattern: Cut fill pattern
-
    projectionFillPattern: Projection fill pattern
-
    cutLinePattern: Cut line pattern
-
    projectionLinePattern: Projection line pattern
-
    cutLineWeight: Cut line weight
-
    projectionLineWeight: Projection line weight
-
    Returns: OverrideGraphicSettings
   """
   pass
-
 class ParameterFilterElement(Element,IDisposable,IGraphicItem,IFormattable):
  """ Parameter Filter Element """
  @staticmethod
@@ -77,7 +53,6 @@ class ParameterFilterElement(Element,IDisposable,IGraphicItem,IFormattable):
  def SafeInit(self,*args):
   """
   SafeInit(self: Element,init: Action)
-
    Handling exceptions when calling the initializing function
   """
   pass
@@ -98,29 +73,17 @@ class ParameterFilterElement(Element,IDisposable,IGraphicItem,IFormattable):
  InternalElement=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Reference to the Element
 
-
-
 Get: InternalElement(self: ParameterFilterElement) -> Element
 
-
-
 """
-
  InternalElementId=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """The element id for this element
 
-
-
 """
-
  IsAlive=property(lambda self: object(),lambda self,v: None,lambda self: None)
  """Is this element still alive in Revit,and good to be drawn,queried etc.
 
-
-
 """
 
-
  InternalUniqueId=None
-
 
